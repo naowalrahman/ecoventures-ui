@@ -3,7 +3,7 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-            <nav>
+            <div className="main-search">
                 <div className="header-container"> 
                     <div className="header-container-left">
                         EcoVacations
@@ -13,29 +13,25 @@ function App() {
                     </div>
                     <div className="header-container-right">
                         <div>
-                            My Favorites
-                        </div>
-                        <div>
-                            Menu
+                            Locations
                         </div>
                         <div>
                             About Us
                         </div>
                         <div>
-                            Account Name
+                            Contact Us
                         </div>
                     </div>
                 </div>
-            </nav>
-            <div className="main-search">
+            
                 <div className="main-search-title">
-
+                    Eco<br></br>Ventures
                 </div>
                 <div className="main-search-text">
-
+                    Here to provide the best, cost-effective, eco friendly vacation areas.
                 </div>
                 <div className="main-search-bar">
-
+                    <button>Find Locations Now</button>
                 </div>
             </div>
 

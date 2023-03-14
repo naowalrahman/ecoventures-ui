@@ -1,24 +1,25 @@
 /* entire body */
 .App { 
-  overflow-x: hidden;
+  overflow: hidden;
 }
 /* 
 nav {
   position:fixed;
 } */
 .header-container {
-  
+  font-size: 1.5vw;
   background-color: aliceblue;
+  
   width:100vw;
   font-weight:700;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #7ed974;
   display: flex;
   flex-direction: row;
   
   justify-content: space-evenly;
-  margin-bottom:50px;
+  
 }
 
 .header-container-line {
@@ -41,17 +42,55 @@ nav {
   color:rgb(26, 151, 49);
 }
 
-.main-search {
+.main-search { /* contains the header as well */ 
+  position: relative;
   
-  border: 1px solid black;
   height:100vh;
-  width:100vw;
+  width:100%;
   
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../public/forest.jpg);
+  background-image: url(../public/rainforest.png);
 
 }
+
+.main-search-title, .main-search-text, .main-search-bar {
+  position:absolute;
+  /* min-width: 100px;
+  min-height: 100px;
+  max-width: 300px; */
+  border: 2px solid black;
+}
+.main-search-title {
+  top:30%;
+  transform: translateY(-50%);
+  left:7%;
+  font-size: 5vw;
+  color:whitesmoke;
+  
+}
+.main-search-text {
+  bottom: 40%;
+  left:7%;
+  transform: translateY(50%);
+  font-size:1.7vw;
+  color:honeydew;
+}
+
+.main-search-bar {
+  right: 10%;
+  top: 40%;
+  transform: translateY(-50%); 
+  width:30vw;
+  height: 10vh;
+}
+
+.main-search-bar button {
+  height:100%;
+  width: 100%;
+  font-size: 2.5vw;
+}
+
 
 
 
