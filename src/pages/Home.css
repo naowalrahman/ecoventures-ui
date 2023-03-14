@@ -1,0 +1,99 @@
+
+.main-search { /* contains the header as well */ 
+    position: relative;
+    
+    height:100vh;
+    width:100%;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../public/rainforest.png)
+  
+  }
+  
+  .main-search-title, .main-search-text, .main-search-bar {
+    position:absolute;
+    /* min-width: 100px;
+    min-height: 100px;
+    max-width: 300px; */
+  }
+  .main-search-title {
+    top:30%;
+    transform: translateY(-50%);
+    left:7%;
+    font-size: 5vw;
+    color:whitesmoke;
+    
+  }
+  .main-search-text {
+    bottom: 40%;
+    left:7%;
+    transform: translateY(50%);
+    font-size:1.7vw;
+    color:honeydew;
+  }
+  
+  .main-search-bar {
+    right: 10%;
+    top: 40%;
+    transform: translateY(-50%); 
+    
+    height: 48px;
+  
+  }
+/*   
+  .main-search-bar-button {
+    
+    font-size: 2.5vw;
+  }
+  
+  .main-search-bar-button:hover {
+    background-color: blue;
+    transition: 0.6s;
+  } */
+  
+
+/* CSS */
+.main-search-bar-button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: rgb(43, 206, 149);
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgb(0, 255, 166) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 2.5vw;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.main-search-bar-button:hover,
+.main-search-bar-button:focus {
+  background-color:rgb(115, 215, 180);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.main-search-bar-button:hover {
+  transform: translateY(-1px);
+}
+
+.main-search-bar-button:active {
+  background-color: rgb(115, 215, 180);
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}

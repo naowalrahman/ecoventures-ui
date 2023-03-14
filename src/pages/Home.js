@@ -1,10 +1,12 @@
-import './App.css';
+import './Home.css';
+import { Outlet, Link } from "react-router-dom";
 
-function App() {
+function Home() {
     return (
-        <div className="App">
+        
+        <div className="Home">
             <div className="main-search">
-                <div className="header-container"> 
+                {/* <div className="header-container"> 
                     <div className="header-container-left">
                         EcoVacations
                     </div>
@@ -22,7 +24,7 @@ function App() {
                             Contact Us
                         </div>
                     </div>
-                </div>
+                </div> */}
             
                 <div className="main-search-title">
                     Eco<br></br>Ventures
@@ -31,25 +33,31 @@ function App() {
                     Here to provide the best, cost-effective, eco friendly vacation areas.
                 </div>
                 <div className="main-search-bar">
-                    <button>Find Locations Now</button>
+                    <button className="main-search-bar-button" onClick={send}>Find Locations Now</button>
+                    
                 </div>
             </div>
 
-
-
-            {/* <header className="App-header">
+            
+            
+            
+        </div>
+        
+        
+    );
+}
+function send() {
+    window.location.href = "locations";
+}
+/* <header className="App-header">
                 <button onClick={callApi}>Call API</button>
                 <p id="first-paragraph"></p>
                 <p>Hello world!</p>
-            </header> */}
-        </div>
-    );
-}
-
+            </header> */
 // function callApi() {
 //     fetch('http://localhost:3001/details', { method: 'GET' })
 //         .then(data => data.json())
 //         .then(json => (document.getElementById("first-paragraph").innerHTML = json["data"]))
 // }
 
-export default App;
+export default Home;

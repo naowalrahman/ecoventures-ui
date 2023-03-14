@@ -1,11 +1,13 @@
 import React from 'react';
-  
+import Layout from "./Layout";
+
 const Locations = () => {
   return (
     <div>
-      <h1>Sign Up Successful</h1>
+      <Layout />
+      <h1>Locations Page Works</h1>
     </div>
   );
 };
   
-export default Sample;
+export default Locations;
