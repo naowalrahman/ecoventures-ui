@@ -2,35 +2,40 @@ import React from 'react';
 import Layout from "./Layout";
 
 const Locations = () => {
-  let apiData = callAPI();
+    return (
+        <div>
+            <Layout />
+            <h1>Locations Page Works</h1>
+            <input id="locationInput" placeholder='Type a location here...'></input>
+            <button onClick={callAPI}>Submit Location</button> 
+            <div id="locationData" style={{display: "none"}}>
+            <h1 className="holder"> Data: </h1>
 
-  return (
-    <div>
-      <Layout />
-      <h1>Locations Page Works</h1>
-      <input id="locationInput" placeholder='Type a location here...'></input>
-      <button onClick={callAPI}>Submit Location</button>
-      <h1 className="holder"> {apiData.date},{apiData.aqi},{apiData.gas}</h1>
-    </div>
-  );
+            {/* TODO: improve this layout */}
+            <ul>
+                <li>Date: <span id="date-holder"></span></li>
+                <li>Air Quality Index: <span id="aqi-holder"></span></li>
+                <li>Gas Components: <span id="gas-holder"></span></li>
+            </ul>
+            </div>
+        </div>
+    ); 
 };
 
-var date = "";
-var aqi = "";
-var gas = "";
+// var date = "";
+// var aqi = "";
+// var gas = "";
 function callAPI() {
-  const locationSubmission = document.getElementById("locationInput").value;
-  fetch(`http://localhost:3001/location/${locationSubmission}`, { method: 'GET' })
-
-  .then(data => data.json())
-  .then(json => {
-    console.log(json);
-    return {
-      date: date,
-      aqi: aqi,
-      gas: gas
-    }
-  })
+    document.getElementById("locationData").style.display = "block";
+    const locationSubmission = document.getElementById("locationInput").value;
+    fetch(`http://localhost:3001/location/${locationSubmission}`, { method: 'GET' })
+        .then(data => data.json())
+        .then(json => { 
+            console.log(json);
+            document.getElementById("date-holder").innerHTML = json.date;  
+            document.getElementById("aqi-holder").innerHTML = JSON.stringify(json.aqi);
+            document.getElementById("gas-holder").innerHTML = JSON.stringify(json.gas);
+        });
 }
 
 export default Locations;
