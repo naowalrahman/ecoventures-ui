@@ -28,7 +28,7 @@ const Locations = () => {
 function callAPI() {
     document.getElementById("locationData").style.display = "block";
     const locationSubmission = document.getElementById("locationInput").value;
-    fetch(`http://ecoventures-server.vercel.app/location/${locationSubmission}`, { method: 'GET' })
+    fetch(`https://ecoventures-server.vercel.app/location/${locationSubmission}`, { method: 'GET' })
         .then(data => data.json())
         .then(json => { 
             console.log(json);
