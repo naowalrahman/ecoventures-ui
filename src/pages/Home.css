@@ -1,13 +1,24 @@
 
+.main-search::before {
+  content: "";
+  position: absolute;
+  opacity: 0.95;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../public/rainforest.png)
+}
+
 .main-search { /* contains the header as well */ 
     position: relative;
     
     height:100vh;
     width:100%;
     
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../../public/rainforest.png)
+    
   
   }
   
@@ -31,6 +42,10 @@
     transform: translateY(50%);
     font-size:1.7vw;
     color:honeydew;
+    padding:1vh;
+    border-radius: 5px;
+    background-color: #5DBB63;
+    box-shadow: -1vh 1vh rgba(43, 206, 149, 0.8);
   }
   
   .main-search-bar {
