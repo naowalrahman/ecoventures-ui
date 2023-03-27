@@ -1,0 +1,23 @@
+
+#locationsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.city {
+    width:20vw;
+    height:50vh;
+    border: 2px solid bisque;
+    margin-bottom: 4vw;
+    position: relative;
+}
+
+#inputArea {
+    display:flex;
+    justify-content: center;
+}
+
+#locationInput {
+    width:50vw;
+}

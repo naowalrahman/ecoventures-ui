@@ -5,6 +5,7 @@ function Home() {
     return (
         
         <div className="Home">
+            {/* <div className="main-search-background"></div> */}
             <div className="main-search">
                 {/* <div className="header-container"> 
                     <div className="header-container-left">
