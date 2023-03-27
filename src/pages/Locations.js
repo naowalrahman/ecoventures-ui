@@ -74,7 +74,7 @@ const Locations = () => {
 // var gas = "";
 function callAPI() {
     const locationSubmission = document.getElementById("locationInput").value;
-    fetch(`http://localhost:3001/location/${locationSubmission}`, { method: 'GET' })
+    fetch(`https://ecoventures-server.vercel.app/location/${locationSubmission}`, { method: 'GET' })
         .then(data => data.json())
         .then(json => { 
             console.log(json);
