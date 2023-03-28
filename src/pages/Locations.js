@@ -12,11 +12,16 @@ const Locations = () => {
 
     const [allCities, setAllCities] = useState(() => {
         let allCitiesReturn = []
+        let maxCitiesDisplayed = 0;
         for (let property in cities) {
+           if (maxCitiesDisplayed > 100) {
+            break;
+           } 
+           else {
            allCitiesReturn.push(<div className="city">{property}</div>);
-           
+           maxCitiesDisplayed++;
+           }
         }
-        console.log(allCitiesReturn.length)
            return allCitiesReturn;
     })
     const [stringPercentArray, setStringPercentArray] = useState(() => {
@@ -30,7 +35,7 @@ const Locations = () => {
     return (
         <div id="locations">
             <Layout />
-            <h1>Locations Page Works</h1>
+
             <div id="inputArea">
                 <label for="locationInput">Location:</label>
                 
