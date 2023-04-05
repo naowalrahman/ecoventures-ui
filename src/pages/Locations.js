@@ -182,7 +182,7 @@ const Locations = () => {
 
 const Animation = (props) => {
 
-    const [opacityState, setOpacity] = useState(1);
+    const [opacityState, setOpacity] = useState(0);
     useEffect(() => {
         console.log("is running")
         if (props.isVisible) {
