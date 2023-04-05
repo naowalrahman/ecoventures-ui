@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import './Locations.css'
 const stringSimilarity = require("string-similarity");
 
+
 const cities = require("./locations/world_cities.json")
 
 
@@ -39,32 +40,49 @@ const Locations = () => {
 
     const [gas, setGas] = useState('');
 
-    const [animationView, setAnimationView] = useState(false);
+    
 
-    const [typing, setTyping] = useState(0.9);
-    const [typingPos, setTypingPos] = useState(0);
+    const [typing, setTyping] = useState(0);
+    
+    const [trigger, setTrigger] = useState(false);
     // useEffect(() => {
     //     setAnimationView(false);
     //     console.log("setting it false :(")
     // }, [allCities])
     
-    useEffect(()=>{
+    // useEffect(()=>{
+    //     const update = () => {
+    //         setTyping(typing-0.1);
+    //     }
+    //     const interval = setInterval(update, 2000);
         
-        // fix this with settyping pos, and fix the other parts of the code with pos instead of the main setytping
-        setTimeout(()=> {
-            setTyping(typing-1);
-            console.log(typing);
-            if (typing > 0) {
-                setAnimationView(true);
-            }
-            else {
-                setTyping(0)
-                setAnimationView(false);
-            }
-        }, 2000)
-    
-    },[typing])
+    //     console.log(typing);
+    //     return () => clearInterval(interval);
+    // },[])
 
+   
+
+    
+
+    useEffect(() => {
+        setInterval(() => {
+            setTyping(typing =>  {
+                if (typing == 0) {
+                    setTrigger(trigger => !trigger);
+                    return 0;
+                }    
+                else {
+                    return Math.max(typing-(typing/2 + 0.05), 0)
+                }
+            })
+            
+        }, 300)
+    } , [])
+
+    // useEffect(() => {
+    //     console.log(typing);
+        
+    // }, [typing, trigger])
     return (
         <div id="locations">
             <Layout />
@@ -80,9 +98,10 @@ const Locations = () => {
                     value={inputValue}
                     onChange={(e) => {
                         setInputValue(e.target.value)
+                        setTyping(typing => typing+0.2);
+                        console.log("incremented typing... typing is " + typing);
+                        
                        
-                        setTypingPos(0.3)
-                        console.log("incrementing typing: " + typing)
                         setStringPercentArray(stringPercentArray.map(item => {
                             
                             return [item[0], stringSimilarity.compareTwoStrings(e.target.value.toLowerCase(), item[0].toLowerCase()), item[2]];
@@ -107,8 +126,8 @@ const Locations = () => {
                     value={countryValue}
                     onChange={(e) => {
                         setCountryValue(e.target.value)
+                        setTyping(typing => typing+0.2);
                        
-                        setTypingPos(0.3)
                         console.log("incrementing typing: " + typing)
 
                         setStringPercentArray(stringPercentArray.map(item => {
@@ -150,7 +169,7 @@ const Locations = () => {
                 <span id="aqi-holder">{aqi}</span>
                 <span id="gas-holder">{gas}</span> 
             </h1>
-            {animationView == true ? <Animation /> : null}
+            <Animation isVisible={typing > 0} />
             <div id="locationsContainer">
                 {allCities}    
             </div>            
@@ -161,9 +180,26 @@ const Locations = () => {
     
 }
 
-const Animation = () => {
+const Animation = (props) => {
+
+    const [opacityState, setOpacity] = useState(1);
+    useEffect(() => {
+        console.log("is running")
+        if (props.isVisible) {
+            setTimeout(() => {
+                setOpacity(opacityState => Math.min(opacityState + 0.1, 1))
+            }, 70)
+        }
+        else {
+            setTimeout(() => {
+                setOpacity(opacityState => Math.max(opacityState - 0.1, 0))
+            }, 70)
+            
+        }
+    }, [props.isVisible, opacityState])
+    
     return (
-        <div id="loader">
+        <div id="loader" style={{opacity: opacityState}}>
             <div className="circle"></div>
             <div className="circle"></div>
             <div className="circle"></div>
