@@ -38,21 +38,6 @@ const Locations = () => {
 
     const [typing, setTyping] = useState(0);
     const [trigger, setTrigger] = useState(false);
-    // useEffect(() => {
-    //     setAnimationView(false);
-    //     console.log("setting it false :(")
-    // }, [allCities])
-
-    // useEffect(()=>{
-    //     const update = () => {
-    //         setTyping(typing-0.1);
-    //     }
-    //     const interval = setInterval(update, 2000);
-
-    //     console.log(typing);
-    //     return () => clearInterval(interval);
-    // },[])
-
 
     useEffect(() => {
         setInterval(() => {
@@ -196,25 +181,5 @@ const Animation = (props) => {
         </div>
     )
 }
-// async function finishCall(inputValue) {
-//     const data = await callAPI(inputValue);
-//     return data;
-// }
 
-// function callAPI(inputValue) {
-//     console.log("this function ran")
-//     if (inputValue == '') {
-//         inputValue = "Dhaka";
-//     }
-//     return new Promise((resolve, reject) => (
-//         fetch(`http://localhost:3001/location/${inputValue}`, { method: 'GET' })
-//         .then(data => data.json())
-//         .then(json => { 
-//             console.log(json);
-//             return resolve([json.date,JSON.stringify(json.aqi),JSON.stringify(json.gas)]);
-//         })
-
-//         ))
-//     return ;
-// };
 export default Locations;
