@@ -17,8 +17,7 @@ const Locations = () => {
                 break;
             }
             else {  
-                // current href is temporary
-                allCitiesReturn.push(<Link className="loc-link" to="/location/" params={{city: property}}><div className="city">{property}, {cities[property]["country"]}</div></Link>);
+                allCitiesReturn.push(<Link className="loc-link" to={`/location/${property}`}> <div className="city">{property}, {cities[property]["country"]}</div></Link>);
                 maxCitiesDisplayed++;
             }
         }

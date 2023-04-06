@@ -6,7 +6,9 @@ import Home from "./pages/Home";
 import AboutUs from './pages/AboutUs';
 import Locations from './pages/Locations';
 import ContactUs from './pages/ContactUs';
+import SingleLocation from './pages/SingleLocation';
 import './index.css';
+
 
 import reportWebVitals from './reportWebVitals';
 
@@ -23,6 +25,7 @@ root.render(
         <Route path="locations" element={<Locations />} />
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="contactus" element={<ContactUs />} />
+        <Route path="location/:city" element={<SingleLocation />}/>
       </Routes>
     </BrowserRouter>
     
