@@ -99,7 +99,7 @@ const Locations = () => {
                                 return b[1] - a[1]
                             }))
                             setAllCities(allCities.map(item => {
-                                return <Link className="loc-link" to="/location/" params={{city: stringPercentArray[allCities.indexOf(item)][0]}}><div className="city">{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></Link>
+                                return <Link className="loc-link" to={`location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div className="city">{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></Link>
                             }))
 
                         }}>
@@ -127,7 +127,7 @@ const Locations = () => {
                                 return b[1] - a[1]
                             }))
                             setAllCities(allCities.map(item => {
-                                return <Link className="loc-link" to="/location/" params={{city: stringPercentArray[allCities.indexOf(item)][0]}}><div className="city">{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></Link>
+                                return <Link className="loc-link" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div className="city">{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></Link>
                             }))
 
 
