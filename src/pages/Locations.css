@@ -7,11 +7,18 @@
 }
 .city {
     width: 20vw;
-    height: 20vh;
+    height: 40vh;
     border: 2px solid bisque;
-    margin-bottom: 4vw;
-    position: relative;
+    margin-bottom: 4vw; 
     text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cityLink {
+    display: block;
+    position: relative;
 }
 
 #inputArea {
@@ -24,6 +31,9 @@
 #locationInput, #countryInput {
     width:20vw;
 }
+
+
+
 .holder {
     text-align: center;
     display:none;

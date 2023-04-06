@@ -8,7 +8,7 @@ const cities = require("./locations/world_cities.json")
 const Locations = () => {
     const [inputValue, setInputValue] = useState('')
     const [countryValue, setCountryValue] = useState('')
-
+    
     const [allCities, setAllCities] = useState(() => {
         let allCitiesReturn = []
         let maxCitiesDisplayed = 0;
@@ -16,11 +16,12 @@ const Locations = () => {
             if (maxCitiesDisplayed > 1000) {
                 break;
             }
-            else {  
-                allCitiesReturn.push(<Link className="loc-link" to={`/location/${property}`}> <div className="city">{property}, {cities[property]["country"]}</div></Link>);
+            else {
+                allCitiesReturn.push(<Link className="cityLink" to={`/location/${property}`}> <div className="city"><div className='loc-link'>{property}, {cities[property]["country"]}</div></div></Link>);
                 maxCitiesDisplayed++;
             }
         }
+        console.log(maxCitiesDisplayed)
         return allCitiesReturn;
     })
 
@@ -76,7 +77,7 @@ const Locations = () => {
     return (
         <div id="locations">
             <Layout />
-
+            
             <div id="inputArea">
                 <div>
                     <label htmlFor="locationInput">City: </label>
@@ -99,7 +100,7 @@ const Locations = () => {
                                 return b[1] - a[1]
                             }))
                             setAllCities(allCities.map(item => {
-                                return <Link className="loc-link" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div className="city">{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></Link>
+                                return <Link className="cityLink" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div className="city"><div className='loc-link'>{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></div></Link>
                             }))
 
                         }}>
@@ -127,7 +128,7 @@ const Locations = () => {
                                 return b[1] - a[1]
                             }))
                             setAllCities(allCities.map(item => {
-                                return <Link className="loc-link" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div className="city">{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></Link>
+                                return <Link className="cityLink" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div className="city"><div className='loc-link'>{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></div></Link>
                             }))
 
 
