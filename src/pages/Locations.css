@@ -4,21 +4,31 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    row-gap: 5vh;
 }
-.city {
+
+.loc-link {
+    position:absolute;
+    top:70%;
+    left:50%;
+    width: 80%;
+    text-align: center;
+    transform:translate(-50%,-50%);
+    border:2px solid green;
+}
+.flag {
+    border: 2px solid black;
+    width:10px;
+    height: 20px;
+    position:absolute;
+    right:0%;
+}
+.cityLink {
+    position:relative;
     width: 20vw;
     height: 40vh;
     border: 2px solid bisque;
-    margin-bottom: 4vw; 
-    text-align: center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cityLink {
     display: block;
-    position: relative;
 }
 
 #inputArea {

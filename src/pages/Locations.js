@@ -13,11 +13,11 @@ const Locations = () => {
         let allCitiesReturn = []
         let maxCitiesDisplayed = 0;
         for (let property in cities) {
-            if (maxCitiesDisplayed > 1000) {
+            if (maxCitiesDisplayed > 50) {
                 break;
             }
             else {
-                allCitiesReturn.push(<Link className="cityLink" to={`/location/${property}`}> <div className="city"><div className='loc-link'>{property}, {cities[property]["country"]}</div></div></Link>);
+                allCitiesReturn.push(<Link className="cityLink" to={`/location/${property}`}> <div className='flag'></div> <div className='loc-link'>{property}, {cities[property]["country"]}</div></Link>);
                 maxCitiesDisplayed++;
             }
         }
@@ -85,7 +85,7 @@ const Locations = () => {
                                 return b[1] - a[1]
                             }))
                             setAllCities(allCities.map(item => {
-                                return <Link className="cityLink" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div className="city"><div className='loc-link'>{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></div></Link>
+                                return <Link className="cityLink" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div className='flag'></div><div className='loc-link'>{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></Link>
                             }))
 
                         }}>
@@ -113,7 +113,7 @@ const Locations = () => {
                                 return b[1] - a[1]
                             }))
                             setAllCities(allCities.map(item => {
-                                return <Link className="cityLink" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div className="city"><div className='loc-link'>{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></div></Link>
+                                return <Link className="cityLink" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div className='flag'></div><div className='loc-link'>{stringPercentArray[allCities.indexOf(item)][0]}, {stringPercentArray[allCities.indexOf(item)][2]}</div></Link>
                             }))
 
 
