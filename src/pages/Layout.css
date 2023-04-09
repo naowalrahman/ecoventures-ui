@@ -10,15 +10,18 @@
 
 
 .header-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size: 1.5vw;
     background-color: aliceblue;
-    
+    z-index:1;
     width:100vw;
     font-weight:700;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     color: #7ed974;
     display: flex;
+    position:fixed;
+    top:0;
     flex-direction: row;
     
     justify-content: space-evenly;

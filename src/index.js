@@ -22,7 +22,7 @@ root.render(
           
           
         </Route>
-        <Route path="locations" element={<Locations />} />
+        <Route path="locations/:userLocation" element={<Locations />} />
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="contactus" element={<ContactUs />} />
         <Route path="location/:city" element={<SingleLocation />}/>

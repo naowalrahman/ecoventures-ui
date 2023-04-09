@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import './Layout.css';
 
-const Layout = () => {
+const Layout = (props) => {
   return (
     <>
  <div className="header-container"> 
@@ -13,7 +13,7 @@ const Layout = () => {
                     </div>
                     <div className="header-container-right">
                         <div>
-                            <Link className="link" to="/locations">Locations</Link>
+                            <Link className="link" to={`/locations/${props.userLoc}`}>Locations</Link>
                         </div>
                         <div>
                             <Link className="link" to="/aboutus">About Us</Link>
@@ -24,19 +24,7 @@ const Layout = () => {
                         </div>
                     </div>
                 </div>
-      {/* <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/blogs">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav> */}
+     
 
       <Outlet />
     </>

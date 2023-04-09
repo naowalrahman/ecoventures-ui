@@ -1,0 +1,782 @@
+{
+    "Afghanistan": [
+        "#bf0000",
+        "#fff"
+    ],
+    "Albania": [
+        "#e41e20",
+        "#000"
+    ],
+    "Algeria": [
+        "#fff",
+        "#006233"
+    ],
+    "Andorra": [
+        "#c7b37f",
+        "#fff"
+    ],
+    "Angola": [
+        "#f9d616",
+        "#ce1126"
+    ],
+    "Antigua and Barbuda": [
+        "#fff",
+        "#fcd116"
+    ],
+    "Argentina": [
+        "#fff",
+        "#843511"
+    ],
+    "Armenia": [
+        "#d90012",
+        "#0033a0"
+    ],
+    "Australia": [
+        "#fff",
+        "#00008b"
+    ],
+    "Austria": [
+        "#ed2939",
+        "#fff"
+    ],
+    "Azerbaijan": [
+        "#3f9c35",
+        "#00b9e4"
+    ],
+    "Bahamas": [
+        "#000",
+        "#fae042"
+    ],
+    "Bahrain": [
+        "#ce1126",
+        "#fff"
+    ],
+    "Bangladesh": [
+        "#006a4e",
+        "#f42a41"
+    ],
+    "Barbados": [
+        "#000",
+        "#ffc726"
+    ],
+    "Belarus": [
+        "#c8313e",
+        "#fff"
+    ],
+    "Belgium": [
+        "#fae042",
+        "#ed2939"
+    ],
+    "Belize": [
+        "#730000",
+        "#5ac800"
+    ],
+    "Benin": [
+        "#fcd116",
+        "#008751"
+    ],
+    "Bhutan": [
+        "#000",
+        "#efb22d"
+    ],
+    "Bolivia": [
+        "#007934",
+        "#d52b1e"
+    ],
+    "Bosnia and Herzegovina": [
+        "#fff",
+        "#fecb00"
+    ],
+    "Botswana": [
+        "#75aadb",
+        "#fff"
+    ],
+    "Brazil": [
+        "#009b3a",
+        "#fedf00"
+    ],
+    "Brunei": [
+        "#000",
+        "#fff"
+    ],
+    "Bulgaria": [
+        "#d62612",
+        "#00966e"
+    ],
+    "Burkina Faso": [
+        "#ef2b2d",
+        "#009e49"
+    ],
+    "Burundi": [
+        "#1eb53a",
+        "#fff"
+    ],
+    "Cabo Verde": [
+        "#f7d116",
+        "#003893"
+    ],
+    "Cambodia": [
+        "#fff",
+        "#032ea1"
+    ],
+    "Cameroon": [
+        "#fcd116",
+        "#ce1126"
+    ],
+    "Canada": [
+        "#f00",
+        "#ff0000"
+    ],
+    "Central African Republic": [
+        "#289728",
+        "#003082"
+    ],
+    "Chad": [
+        "#c60c30",
+        "#002664"
+    ],
+    "Chile": [
+        "#0039a6",
+        "#fff"
+    ],
+    "China": [
+        "#de2910",
+        "#ffde00"
+    ],
+    "Colombia": [
+        "#003893",
+        "#ce1126"
+    ],
+    "Comoros": [
+        "#3d8e33",
+        "#fff"
+    ],
+    "Costa Rica": [
+        "#89c5e3",
+        "#000"
+    ],
+    "Croatia": [
+        "#f00",
+        "#f7db17"
+    ],
+    "Cuba": [
+        "#002a8f",
+        "#fff"
+    ],
+    "Cyprus": [
+        "#d47600",
+        "#435125"
+    ],
+    "Czech Republic": [
+        "#11457e",
+        "#fff"
+    ],
+    "C\u00f4te d'Ivoire": [
+        "#009e60",
+        "#f77f00"
+    ],
+    "Democratic Republic of the Congo": [
+        "#007fff",
+        "#ce1021"
+    ],
+    "Denmark": [
+        "#fff",
+        "#c60c30"
+    ],
+    "Djibouti": [
+        "#fff",
+        "#d7141a"
+    ],
+    "Dominica": [
+        "#9c4a00",
+        "#006b3f"
+    ],
+    "Dominican Republic": [
+        "#808000",
+        "#f00"
+    ],
+    "Ecuador": [
+        "#2f2311",
+        "#b76e11"
+    ],
+    "Egypt": [
+        "#c09300",
+        "#ce1126"
+    ],
+    "El Salvador": [
+        "#ffa600",
+        "#1f1f8a"
+    ],
+    "Equatorial Guinea": [
+        "#000",
+        "#e32118"
+    ],
+    "Eritrea": [
+        "#4189dd",
+        "#ffc726"
+    ],
+    "Estonia": [
+        "#4891d9",
+        "#000"
+    ],
+    "Ethiopia": [
+        "#fcdd09",
+        "#0f47af"
+    ],
+    "Federated States of Micronesia": [
+        "#75b2dd",
+        "#fff"
+    ],
+    "Fiji": [
+        "#68bfe5",
+        "#000"
+    ],
+    "Finland": [
+        "#fff",
+        "#003580"
+    ],
+    "France": [
+        "#fff",
+        "#002395"
+    ],
+    "Gabon": [
+        "#3a75c4",
+        "#fcd116"
+    ],
+    "Gambia": [
+        "#ce1126",
+        "#3a7728"
+    ],
+    "Georgia": [
+        "#fff",
+        "#f00"
+    ],
+    "Germany": [
+        "#000",
+        "#ffce00"
+    ],
+    "Ghana": [
+        "#006b3f",
+        "#ce1126"
+    ],
+    "Greece": [
+        "#0d5eaf",
+        "#fff"
+    ],
+    "Grenada": [
+        "#fcd116",
+        "#ce1126"
+    ],
+    "Guatemala": [
+        "#406325",
+        "#000"
+    ],
+    "Guinea": [
+        "#fcd116",
+        "#ce1126"
+    ],
+    "Guinea-Bissau": [
+        "#009e49",
+        "#000"
+    ],
+    "Guyana": [
+        "#009e49",
+        "#000"
+    ],
+    "Haiti": [
+        "#503200",
+        "#00209f"
+    ],
+    "Honduras": [
+        "#0073cf",
+        "#fff"
+    ],
+    "Hungary": [
+        "#cd2a3e",
+        "#fff"
+    ],
+    "Iceland": [
+        "#fff",
+        "#d72828"
+    ],
+    "India": [
+        "#128807",
+        "#f93"
+    ],
+    "Indonesia": [
+        "#fff",
+        "#ce1126"
+    ],
+    "Iran": [
+        "#fff",
+        "#239f40"
+    ],
+    "Iraq": [
+        "#000000",
+        "#ffffff"
+    ],
+    "Ireland": [
+        "#169b62",
+        "#ff883e"
+    ],
+    "Israel": [
+        "#0038b8",
+        "white"
+    ],
+    "Italy": [
+        "#009246",
+        "#fff"
+    ],
+    "Jamaica": [
+        "#fed100",
+        "#009b3a"
+    ],
+    "Japan": [
+        "#bc002d",
+        "#fff"
+    ],
+    "Jordan": [
+        "#ce1126",
+        "#000"
+    ],
+    "Kazakhstan": [
+        "#00afca",
+        "#fec50c"
+    ],
+    "Kenya": [
+        "#006600",
+        "#bb0000"
+    ],
+    "Kiribati": [
+        "#ce1126",
+        "#bd9c08"
+    ],
+    "Kuwait": [
+        "#fff",
+        "#ce1126"
+    ],
+    "Kyrgyzstan": [
+        "#ffef00",
+        "#e8112d"
+    ],
+    "Laos": [
+        "#002868",
+        "#ce1126"
+    ],
+    "Latvia": [
+        "#9e3039",
+        "#fff"
+    ],
+    "Lebanon": [
+        "#00a651",
+        "#ed1c24"
+    ],
+    "Lesotho": [
+        "#000",
+        "#009543"
+    ],
+    "Liberia": [
+        "#fff",
+        "#002868"
+    ],
+    "Libya": [
+        "#000",
+        "#239e46"
+    ],
+    "Liechtenstein": [
+        "#ce1126",
+        "#000"
+    ],
+    "Lithuania": [
+        "#c1272d",
+        "#fdb913"
+    ],
+    "Luxembourg": [
+        "#00a1de",
+        "#ed2939"
+    ],
+    "Madagascar": [
+        "#fff",
+        "#007e3a"
+    ],
+    "Malawi": [
+        "#339e35",
+        "#ce1126"
+    ],
+    "Malaysia": [
+        "#fff",
+        "#010066"
+    ],
+    "Maldives": [
+        "#d21034",
+        "#007e3a"
+    ],
+    "Mali": [
+        "#fcd116",
+        "#ce1126"
+    ],
+    "Malta": [
+        "#fff",
+        "#cf142b"
+    ],
+    "Marshall Islands": [
+        "#fff",
+        "#dd7500"
+    ],
+    "Mauritania": [
+        "#ffc400",
+        "#006233"
+    ],
+    "Mauritius": [
+        "#1a206d",
+        "#ffd500"
+    ],
+    "Mexico": [
+        "#f9aa51",
+        "#fcca3e"
+    ],
+    "Moldova": [
+        "#0046ae",
+        "#b07f55"
+    ],
+    "Monaco": [
+        "#ce1126",
+        "#fff"
+    ],
+    "Mongolia": [
+        "#c4272f",
+        "#f9cf02"
+    ],
+    "Montenegro": [
+        "#1d5e91",
+        "#6d8c3e"
+    ],
+    "Morocco": [
+        "#006233",
+        "#c1272d"
+    ],
+    "Mozambique": [
+        "#007168",
+        "#fff"
+    ],
+    "Myanmar": [
+        "#fff",
+        "#ea2839"
+    ],
+    "Namibia": [
+        "#fff",
+        "#ffce00"
+    ],
+    "Nauru": [
+        "#fff",
+        "#002b7f"
+    ],
+    "Nepal": [
+        "#dc143c",
+        "#fff"
+    ],
+    "Netherlands": [
+        "#ae1c28",
+        "#fff"
+    ],
+    "New Zealand": [
+        "#ffffff",
+        "#00247d"
+    ],
+    "Nicaragua": [
+        "#c6cb24",
+        "#ff2a2a"
+    ],
+    "Niger": [
+        "#e05206",
+        "#fff"
+    ],
+    "Nigeria": [
+        "#fff",
+        "#008751"
+    ],
+    "North Korea": [
+        "#ed1c27",
+        "#024fa2"
+    ],
+    "Norway": [
+        "#002868",
+        "#ef2b2d"
+    ],
+    "Oman": [
+        "#db161b",
+        "#fff"
+    ],
+    "Pakistan": [
+        "#fff",
+        "#01411c"
+    ],
+    "Palau": [
+        "#ffde00",
+        "#4aadd6"
+    ],
+    "Palestine": [
+        "#007a3d",
+        "#fff"
+    ],
+    "Panama": [
+        "#d21034",
+        "#005293"
+    ],
+    "Papua New Guinea": [
+        "#ce1126",
+        "#fcd116"
+    ],
+    "Paraguay": [
+        "#d52b1e",
+        "#fff"
+    ],
+    "Peru": [
+        "#d91023",
+        "white"
+    ],
+    "Philippines": [
+        "#ce1126",
+        "#0038a8"
+    ],
+    "Poland": [
+        "#fff",
+        "#dc143c"
+    ],
+    "Portugal": [
+        "#039",
+        "#f00"
+    ],
+    "Qatar": [
+        "#8d1b3d",
+        "#fff"
+    ],
+    "Republic of Macedonia": [
+        "#ffe600",
+        "#d20000"
+    ],
+    "Republic of the Congo": [
+        "#dc241f",
+        "#fbde4a"
+    ],
+    "Romania": [
+        "#002b7f",
+        "#ce1126"
+    ],
+    "Russia": [
+        "#fff",
+        "#d52b1e"
+    ],
+    "Rwanda": [
+        "#20603d",
+        "#fad201"
+    ],
+    "Saint Kitts and Nevis": [
+        "#ce1126",
+        "#fff"
+    ],
+    "Saint Lucia": [
+        "#6cf",
+        "#fcd116"
+    ],
+    "Saint Vincent and the Grenadines": [
+        "#009e60",
+        "#0072c6"
+    ],
+    "Samoa": [
+        "#002b7f",
+        "#ce1126"
+    ],
+    "San Marino": [
+        "#bdbfc1",
+        "#f1f1f2"
+    ],
+    "Sao Tome and Principe": [
+        "#ffce00",
+        "#d21034"
+    ],
+    "Saudi Arabia": [
+        "#006c35",
+        "#fff"
+    ],
+    "Senegal": [
+        "#e31b23",
+        "#fdef42"
+    ],
+    "Serbia": [
+        "#c6363c",
+        "#21231e"
+    ],
+    "Seychelles": [
+        "#007a3d",
+        "#fff"
+    ],
+    "Sierra Leone": [
+        "#0072c6",
+        "#1eb53a"
+    ],
+    "Singapore": [
+        "#fff",
+        "#ed2939"
+    ],
+    "Slovakia": [
+        "#ee1c25",
+        "#fff"
+    ],
+    "Slovenia": [
+        "#fd0",
+        "#005da4"
+    ],
+    "Solomon Islands": [
+        "#215b33",
+        "#fcd116"
+    ],
+    "Somalia": [
+        "#4189dd",
+        "#fff"
+    ],
+    "South Africa": [
+        "#007a4d",
+        "#ffb612"
+    ],
+    "South Korea": [
+        "#003478",
+        "#fff"
+    ],
+    "South Sudan": [
+        "#fcdd09",
+        "#fff"
+    ],
+    "Spain": [
+        "#c60b1e",
+        "#ad1519"
+    ],
+    "Sri Lanka": [
+        "#005641",
+        "#000"
+    ],
+    "Sudan": [
+        "#fff",
+        "#d21034"
+    ],
+    "Suriname": [
+        "#b40a2d",
+        "#fff"
+    ],
+    "Swaziland": [
+        "#fff",
+        "#3d5da7"
+    ],
+    "Sweden": [
+        "#006aa7",
+        "#fecc00"
+    ],
+    "Switzerland": [
+        "#f00",
+        "#fff"
+    ],
+    "Syria": [
+        "#fff",
+        "#007a3d"
+    ],
+    "Tajikistan": [
+        "#fff",
+        "#060"
+    ],
+    "Tanzania": [
+        "#000",
+        "#fcd116"
+    ],
+    "Thailand": [
+        "#fff",
+        "#241d4f"
+    ],
+    "Timor-Leste": [
+        "#ffc726",
+        "#dc241f"
+    ],
+    "Togo": [
+        "#fff",
+        "#ffce00"
+    ],
+    "Tonga": [
+        "#fff",
+        "#c10000"
+    ],
+    "Trinidad and Tobago": [
+        "#fff",
+        "#ce1126"
+    ],
+    "Tunisia": [
+        "#fff",
+        "#e70013"
+    ],
+    "Turkey": [
+        "#ffffff",
+        "#e30a17"
+    ],
+    "Turkmenistan": [
+        "#383739",
+        "#fff"
+    ],
+    "Tuvalu": [
+        "#fff",
+        "#cf142b"
+    ],
+    "Uganda": [
+        "#9ca69c",
+        "#fff"
+    ],
+    "Ukraine": [
+        "#ffd500",
+        "#005bbb"
+    ],
+    "United Arab Emirates": [
+        "#f00",
+        "#fff"
+    ],
+    "United Kingdom": [
+        "#00247d",
+        "#cf142b"
+    ],
+    "United States": [
+        "#fff",
+        "#b22234"
+    ],
+    "Uruguay": [
+        "#fff",
+        "#0038a8"
+    ],
+    "Uzbekistan": [
+        "#0099b5",
+        "#fff"
+    ],
+    "Vanuatu": [
+        "#000",
+        "#009543"
+    ],
+    "Vatican City": [
+        "#000",
+        "#ffe000"
+    ],
+    "Venezuela": [
+        "#f2622b",
+        "#9dab39"
+    ],
+    "Vietnam": [
+        "#da251d",
+        "#ff0"
+    ],
+    "Yemen": [
+        "#ce1126",
+        "#fff"
+    ],
+    "Zambia": [
+        "#198a00",
+        "#de2010"
+    ],
+    "Zimbabwe": [
+        "#000",
+        "#ffc618"
+    ]
+}
