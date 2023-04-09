@@ -124,7 +124,7 @@ function Home() {
                         }
                         else if (userLocation == "") {
                             alert("No location chosen at all, setting location to Tokyo, Japan")
-                            window.location.href ="locations/nothing"
+                            window.location.href ="locations/Tokyo, Japan"
                         }
                             else {
                                 alert("Error: location not selected, please search for your location again")

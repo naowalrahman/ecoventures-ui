@@ -1,11 +1,12 @@
 import json
 import random
+#import matplotlib.colors;
 
 def randomChooser(colors):
     colorsCopy = colors.copy();
-    firstChoice = colorsCopy.pop(random.randint(0, len(colorsCopy)-1))
-    secondChoice = colorsCopy.pop(random.randint(0, len(colorsCopy)-1))
-    return [firstChoice, secondChoice];
+    text = colorsCopy.pop(0);
+    background = colorsCopy.pop(0);
+    return [background, text];
 
 with open ('./country-colors-true.json', 'r', encoding="utf-8") as f:
     data = json.load(f)
