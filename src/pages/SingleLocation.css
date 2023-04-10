@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1600px) {
+
+    #city-info-wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Abril Fatface';
+        font-size: 5em;
+        text-decoration: underline;
+        text-decoration-thickness: 0.2em;
+    }
+
+}
+    
