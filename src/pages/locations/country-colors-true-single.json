@@ -43,7 +43,7 @@
         "#ed2939",
         "#3f9c35"
     ],
-    "Bahamas": [
+    "The Bahamas": [
         "#fae042",
         "#00abc9"
     ],
@@ -155,6 +155,14 @@
         "#fff",
         "#002b7f"
     ],
+    "Taiwan": [
+        "#000095",
+        "#fe0000"
+    ],
+    "Puerto Rico": [
+        "#0050f0",
+        "#ffffff"
+    ],
     "Croatia": [
         "#fff",
         "#171796"
@@ -163,11 +171,15 @@
         "#fff",
         "#002a8f"
     ],
+    "Curaçao": [
+        "#f9e814",
+        "#002b7f"
+    ],
     "Cyprus": [
         "#435125",
         "#fff"
     ],
-    "Czech Republic": [
+    "Czechia": [
         "#fff",
         "#d7141a"
     ],
@@ -175,9 +187,13 @@
         "#fff",
         "#009e60"
     ],
-    "Democratic Republic of the Congo": [
-        "#f7d618",
-        "#007fff"
+    "Congo (Brazzaville)": [
+        "#fbde4a",
+        "#009543"
+    ],
+    "Martinique": [
+        "#ef1923",
+        "#231f1e"
     ],
     "Denmark": [
         "#fff",
@@ -251,6 +267,10 @@
         "#ff0000",
         "#fff"
     ],
+    "Gibraltar": [
+        "#f8d80e",
+        "#da000c"
+    ],
     "Germany": [
         "#d00",
         "#000"
@@ -266,6 +286,10 @@
     "Grenada": [
         "#ce1126",
         "#fcd116"
+    ],
+    "Greenland": [
+        "#c8102e",
+        "#FFFFFF"
     ],
     "Guatemala": [
         "#fff",
@@ -290,6 +314,10 @@
     "Honduras": [
         "#fff",
         "#0073cf"
+    ],
+    "Hong Kong": [
+        "#ee1c25",
+        "#ffffff"
     ],
     "Hungary": [
         "#fff",
@@ -511,6 +539,54 @@
         "#01411c",
         "#fff"
     ],
+    "American Samoa": [
+        "#371e0d",
+        "#ffffff"
+    ],
+    "Turks and Caicos Islands": [
+        "#57a532",
+        "#002868"
+    ],
+    "Northern Mariana Islands": [
+        "#0033a1",
+        "#c06b13"
+    ],
+    "Guam": [
+        "#00297b",
+        "#92dbfc"
+    ],
+    "Saint Martin": [
+        "#ce1126",
+        "#002654"
+    ],
+    "Saint Barthélemy": [
+        "#ce1126",
+        "#002654"
+    ],
+    "Kosovo": [
+        "#d0a650",
+        "#244aa5"
+    ],
+    "Montserrat": [
+        "#00a2bd",
+        "#a53d08"
+    ],
+    "Niue": [
+        "#fedd00",
+        "#c8102e"
+    ],
+    "Guadeloupe": [
+        "#000000",
+        "#fcdd09"
+    ],
+    "Cook Islands": [
+        "#ffffff",
+        "#012169"
+    ],
+    "Faroe Islands": [
+        "#ef3340",
+        "#FFFFFF"
+    ],
     "Palau": [
         "#ffde00",
         "#4aadd6"
@@ -551,13 +627,37 @@
         "#fff",
         "#8d1b3d"
     ],
-    "Republic of Macedonia": [
+    "Macedonia": [
         "#ffe600",
         "#d20000"
     ],
-    "Republic of the Congo": [
-        "#fbde4a",
-        "#009543"
+    "French Polynesia": [
+        "#ce1126",
+        "#ff9c10"
+    ],
+    "French Guiana": [
+        "#fcdd09",
+        "#078930"
+    ],
+    "Jersey": [
+        "#ffffff",
+        "#cf142b"
+    ],
+    "Mayotte": [
+        "#d42e12",
+        "#dfdfdf"
+    ],
+    "New Caledonia": [
+        "#009543",
+        "#ed4135"
+    ],
+    "The Gambia": [
+        "#0c1c8c",
+        "#ce1126"
+    ],
+    "Congo (Kinshasa)": [
+        "#ce1021",
+        "#007fff"
     ],
     "Romania": [
         "#fcd116",
@@ -575,6 +675,14 @@
         "#ce1126",
         "#009e49"
     ],
+    "British Virgin Islands": [
+        "#006129",
+        "#012169"
+    ],
+    "Anguilla": [
+        "#ff9900",
+        "#012169"
+    ],
     "Saint Lucia": [
         "#fff",
         "#6cf"
@@ -591,7 +699,7 @@
         "#fff",
         "#5eb6e4"
     ],
-    "Sao Tome and Principe": [
+    "São Tomé and Príncipe": [
         "#ffce00",
         "#12ad2b"
     ],
@@ -666,6 +774,42 @@
     "Swaziland": [
         "#ffd900",
         "#3e5eb9"
+    ],
+    "Wallis and Futuna": [
+        "#ce1126",
+        "#002654"
+    ],
+    "Svalbard and Jan Mayen": [
+        "#fff",
+        "#ef2b2d"
+    ],
+    "Pitcairn Islands": [
+        "#FFFFFF",
+        "#006ec7"
+    ],
+    "South Georgia and South Sandwich Islands": [
+        "#012169",
+        "#dda100"
+    ],
+    "Aruba": [
+        "#418fde",
+        "#ffd100"
+    ],
+    "Saint Helena, Ascension, and Tristan da Cunha": [
+        "#fff",
+        "#00247d"
+    ],
+    "Isle of Man": [
+        "#cf142b",
+        "#e7cd15"
+    ],
+    "U.S. Virgin Islands": [
+        "#162667",
+        "#f4c53d"
+    ],
+    "Christmas Island": [
+        "#0db02b",
+        "#f7d116"
     ],
     "Sweden": [
         "#fecc00",

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from "./Layout";
 import './Locations.css';
+import './countryCards.css';
 import { useParams } from 'react-router-dom';
 import { Outlet, Link } from 'react-router-dom';
 const stringSimilarity = require("string-similarity");
@@ -37,25 +38,51 @@ const Locations = () => {
         let maxCitiesDisplayed = 0;
         let iterator = 0
         for (let property in cities) {
-            if (maxCitiesDisplayed > maxCitiesAvailable + interval) {
+            if (maxCitiesDisplayed > 200) {
                 break;
             }
-            else if (maxCitiesDisplayed > maxCitiesAvailable) {
+            else if (maxCitiesDisplayed > 0) {
                 let bg;
                 let txtColor;
+                let countryLinkClass;
+                let countryTextClass;
+                let countryDistClass;
                 let color = countryColors[cities[property]["country"]]
                 if (color == undefined) {
                     bg = "#FFFFFF"
                     txtColor = "black"
+                    countryLinkClass = "generalCountry"
+                    countryTextClass = "generalCountryText"
+                    countryDistClass = "generalDist"
+                    
                 }
                 else {
                     bg = color[0]
                     txtColor = color[1]
+                    countryLinkClass = `${cities[property]["country"]}-country`
+                    countryLinkClass = countryLinkClass.replace(" ", '');
+                    countryLinkClass = countryLinkClass.replace("(", '');
+                    countryLinkClass = countryLinkClass.replace(")", '');
+                    countryLinkClass = countryLinkClass.replace("'", '');
+                    
+    
+                    countryTextClass = `${cities[property]["country"]}-text`
+                    countryTextClass = countryTextClass.replace(" ", '')
+                    countryTextClass = countryTextClass.replace("(", '');
+                    countryTextClass = countryTextClass.replace(")", '');
+                    countryTextClass = countryTextClass.replace("'", '');
+
+                    countryDistClass = `${cities[property]["country"]}-dist`
+                    countryDistClass = countryDistClass.replace(" ", '')
+                    countryDistClass = countryDistClass.replace("(", '');
+                    countryDistClass = countryDistClass.replace(")", '');
+                    countryDistClass = countryDistClass.replace("'", '');
+                    
                 }
                     
                     //let txt = countryColors[cities[property]["country"]][1]
                     // const txt = countryColors[cities[property]["country"]][1]
-                    allCitiesReturn.push(<Link style={{backgroundColor: bg}} className="cityLink" to={`/location/${property}`}> <div style={{color: returnRGB(getDistanceFromLatLonInKm(userLocationCoords[0], userLocationCoords[1], cities[property]["lat"], cities[property]["lng"]))}} className='distanceFromHome'>{getDistanceFromLatLonInKm(userLocationCoords[0], userLocationCoords[1], cities[property]["lat"], cities[property]['lng'])} km</div><div className='loc-link' style={{color: txtColor}}>{property}, <br /> {cities[property]["country"]}</div> <img className="flag" src={cityFlags[cities[property]["country"]]} alt='NOT HERE'></img> </Link>);
+                    allCitiesReturn.push(<Link className={`cityLink ${countryLinkClass}`} to={`/location/${property}`}> <div style={{color: returnRGB(getDistanceFromLatLonInKm(userLocationCoords[0], userLocationCoords[1], cities[property]["lat"], cities[property]["lng"]))}} className={`distanceFromHome ${countryDistClass}`}>{getDistanceFromLatLonInKm(userLocationCoords[0], userLocationCoords[1], cities[property]["lat"], cities[property]['lng'])} km</div><div className={`loc-link ${countryTextClass}`}>{property}, <br /> {cities[property]["country"]}</div> <img className="flag" src={cityFlags[cities[property]["country"]]} alt='NOT HERE'></img> </Link>);
                 
               
 
@@ -67,21 +94,49 @@ const Locations = () => {
     })
 
     const [stringPercentArray, setStringPercentArray] = useState(() => {
+        let listOfCountries = []
         let allStringPercentReturn = []
         for (let property in cities) {
             let dist = getDistanceFromLatLonInKm(userLocationCoords[0], userLocationCoords[1], cities[property]["lat"], cities[property]["lng"])
             let bg;
             let txtColor;
+            let countryLinkClass;
+            let countryTextClass;
+            let countryDistClass;
+
             let color = countryColors[cities[property]["country"]]
             if (color == undefined) {
                 bg = "#FFFFFF"
                 txtColor = "black"
+                countryLinkClass = "generalCountry"
+                countryTextClass = "generalCountryText"
+                countryDistClass = "generalDist"
+                
             }
             else {
                 bg = color[0]
                 txtColor = color[1]
+                countryLinkClass = `${cities[property]["country"]}-country`
+                countryLinkClass = countryLinkClass.replace(" ", '');
+                countryLinkClass = countryLinkClass.replace("(", '');
+                countryLinkClass = countryLinkClass.replace(")", '');
+                countryLinkClass = countryLinkClass.replace("'", '');
+                
+
+                countryTextClass = `${cities[property]["country"]}-text`
+                countryTextClass = countryTextClass.replace(" ", '')
+                countryTextClass = countryTextClass.replace("(", '');
+                countryTextClass = countryTextClass.replace(")", '');
+                countryTextClass = countryTextClass.replace("'", '');
+
+                countryDistClass = `${cities[property]["country"]}-dist`
+                countryDistClass = countryDistClass.replace(" ", '')
+                countryDistClass = countryDistClass.replace("(", '');
+                countryDistClass = countryDistClass.replace(")", '');
+                countryDistClass = countryDistClass.replace("'", '');
+                
             }
-            allStringPercentReturn.push([property, 0, cities[property]["country"], dist, returnRGB(dist), bg, txtColor]);
+            allStringPercentReturn.push([property, 0, cities[property]["country"], dist, returnRGB(dist), countryLinkClass, countryTextClass, countryDistClass]);
         }
         return allStringPercentReturn;
     })
@@ -157,13 +212,13 @@ const Locations = () => {
 
 
                             setStringPercentArray(stringPercentArray.map(item => {
-                                return [item[0], stringSimilarity.compareTwoStrings(e.target.value.toLowerCase(), item[0].toLowerCase()), item[2], item[3], item[4], item[5], item[6]];
+                                return [item[0], stringSimilarity.compareTwoStrings(e.target.value.toLowerCase(), item[0].toLowerCase()), item[2], item[3], item[4], item[5], item[6], item[7]];
                             }).sort((a, b) => {
                                 return b[1] - a[1]
                             }))
                             setAllCities(allCities.map(item => {
                                 
-                                return <Link style={{backgroundColor: stringPercentArray[allCities.indexOf(item)][5]}} className="cityLink" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div style={{color: stringPercentArray[allCities.indexOf(item)][4]}} className='distanceFromHome'> {stringPercentArray[allCities.indexOf(item)][3]} km</div><div style={{color: stringPercentArray[allCities.indexOf(item)][6]}} className='loc-link'>{stringPercentArray[allCities.indexOf(item)][0]}, <br /> {stringPercentArray[allCities.indexOf(item)][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[allCities.indexOf(item)][2]]} alt='NOT HERE'></img></Link>
+                                return <Link className={`cityLink ${stringPercentArray[allCities.indexOf(item)][5]}`} to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div style={{color: stringPercentArray[allCities.indexOf(item)][4]}} className={`distanceFromHome ${stringPercentArray[allCities.indexOf(item)][7]}`}> {stringPercentArray[allCities.indexOf(item)][3]} km</div><div className={`loc-link ${stringPercentArray[allCities.indexOf(item)][6]}`}>{stringPercentArray[allCities.indexOf(item)][0]}, <br /> {stringPercentArray[allCities.indexOf(item)][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[allCities.indexOf(item)][2]]} alt='Flag Unavailable'></img></Link>
                                
                             }))
 
@@ -186,13 +241,13 @@ const Locations = () => {
 
                             setStringPercentArray(stringPercentArray.map(item => {
 
-                                return [item[0], stringSimilarity.compareTwoStrings(e.target.value.toLowerCase(), item[2].toLowerCase()), item[2], item[3], item[4], item[5], item[6]];
+                                return [item[0], stringSimilarity.compareTwoStrings(e.target.value.toLowerCase(), item[2].toLowerCase()), item[2], item[3], item[4], item[5], item[6], item[7]];
                             }).sort((a, b) => {
                                 return b[1] - a[1]
                             }))
                             setAllCities(allCities.map(item => {
                                 
-                                return <Link style={{backgroundColor: stringPercentArray[allCities.indexOf(item)][5]}} className="cityLink" to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div style={{color: stringPercentArray[allCities.indexOf(item)][4]}} className='distanceFromHome'> {stringPercentArray[allCities.indexOf(item)][3]} km</div><div style={{color: stringPercentArray[allCities.indexOf(item)][6]}} className='loc-link'>{stringPercentArray[allCities.indexOf(item)][0]}, <br /> {stringPercentArray[allCities.indexOf(item)][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[allCities.indexOf(item)][2]]} alt='NOT HERE'></img></Link>
+                                return <Link className={`cityLink ${stringPercentArray[allCities.indexOf(item)][5]}`} to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div style={{color: stringPercentArray[allCities.indexOf(item)][4]}} className={`distanceFromHome ${stringPercentArray[allCities.indexOf(item)][7]}`}> {stringPercentArray[allCities.indexOf(item)][3]} km</div><div className={`loc-link ${stringPercentArray[allCities.indexOf(item)][6]}`}>{stringPercentArray[allCities.indexOf(item)][0]}, <br /> {stringPercentArray[allCities.indexOf(item)][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[allCities.indexOf(item)][2]]} alt='Flag Unavailable'></img></Link>
                                 
                                
                         }))}}>
