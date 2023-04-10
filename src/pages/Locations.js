@@ -38,10 +38,10 @@ const Locations = () => {
         let maxCitiesDisplayed = 0;
         let iterator = 0
         for (let property in cities) {
-            if (maxCitiesDisplayed > 200) {
+            if (maxCitiesDisplayed > availableValue + 200) {
                 break;
             }
-            else if (maxCitiesDisplayed > 0) {
+            else if (maxCitiesDisplayed > availableValue) {
                 let bg;
                 let txtColor;
                 let countryLinkClass;
