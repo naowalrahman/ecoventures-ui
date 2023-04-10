@@ -1,0 +1,5082 @@
+.Afghanistan-country {
+	background-color: #bf0000;
+}
+.Afghanistan-text {
+	color:#090;
+}
+.Afghanistan-dist {
+	background-color: #090;
+}
+.Afghanistan-country:hover {
+	background-color: #090;
+	transition: 0.3s;
+}
+.Afghanistan-country:hover .Afghanistan-text {
+	color:#bf0000;
+	transition: 0.3s;
+}
+
+.Afghanistan-country:hover .Afghanistan-dist {
+	background-color: #bf0000;
+	transition:0.3s;
+}
+.Albania-country {
+	background-color: #000;
+}
+.Albania-text {
+	color:#e41e20;
+}
+.Albania-dist {
+	background-color: #e41e20;
+}
+.Albania-country:hover {
+	background-color: #e41e20;
+	transition: 0.3s;
+}
+.Albania-country:hover .Albania-text {
+	color:#000;
+	transition: 0.3s;
+}
+
+.Albania-country:hover .Albania-dist {
+	background-color: #000;
+	transition:0.3s;
+}
+.Algeria-country {
+	background-color: #006233;
+}
+.Algeria-text {
+	color:#fff;
+}
+.Algeria-dist {
+	background-color: #fff;
+}
+.Algeria-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Algeria-country:hover .Algeria-text {
+	color:#006233;
+	transition: 0.3s;
+}
+
+.Algeria-country:hover .Algeria-dist {
+	background-color: #006233;
+	transition:0.3s;
+}
+.Andorra-country {
+	background-color: #fedf00;
+}
+.Andorra-text {
+	color:#d0103a;
+}
+.Andorra-dist {
+	background-color: #d0103a;
+}
+.Andorra-country:hover {
+	background-color: #d0103a;
+	transition: 0.3s;
+}
+.Andorra-country:hover .Andorra-text {
+	color:#fedf00;
+	transition: 0.3s;
+}
+
+.Andorra-country:hover .Andorra-dist {
+	background-color: #fedf00;
+	transition:0.3s;
+}
+.Angola-country {
+	background-color: #ce1126;
+}
+.Angola-text {
+	color:#000;
+}
+.Angola-dist {
+	background-color: #000;
+}
+.Angola-country:hover {
+	background-color: #000;
+	transition: 0.3s;
+}
+.Angola-country:hover .Angola-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Angola-country:hover .Angola-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.AntiguaandBarbuda-country {
+	background-color: #000;
+}
+.AntiguaandBarbuda-text {
+	color:#fff;
+}
+.AntiguaandBarbuda-dist {
+	background-color: #fff;
+}
+.AntiguaandBarbuda-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.AntiguaandBarbuda-country:hover .AntiguaandBarbuda-text {
+	color:#000;
+	transition: 0.3s;
+}
+
+.AntiguaandBarbuda-country:hover .AntiguaandBarbuda-dist {
+	background-color: #000;
+	transition:0.3s;
+}
+.Argentina-country {
+	background-color: #fff;
+}
+.Argentina-text {
+	color:#74acdf;
+}
+.Argentina-dist {
+	background-color: #74acdf;
+}
+.Argentina-country:hover {
+	background-color: #74acdf;
+	transition: 0.3s;
+}
+.Argentina-country:hover .Argentina-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Argentina-country:hover .Argentina-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Armenia-country {
+	background-color: #0033a0;
+}
+.Armenia-text {
+	color:#f2a800;
+}
+.Armenia-dist {
+	background-color: #f2a800;
+}
+.Armenia-country:hover {
+	background-color: #f2a800;
+	transition: 0.3s;
+}
+.Armenia-country:hover .Armenia-text {
+	color:#0033a0;
+	transition: 0.3s;
+}
+
+.Armenia-country:hover .Armenia-dist {
+	background-color: #0033a0;
+	transition:0.3s;
+}
+.Australia-country {
+	background-color: #fff;
+}
+.Australia-text {
+	color:#00008b;
+}
+.Australia-dist {
+	background-color: #00008b;
+}
+.Australia-country:hover {
+	background-color: #00008b;
+	transition: 0.3s;
+}
+.Australia-country:hover .Australia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Australia-country:hover .Australia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Austria-country {
+	background-color: #fff;
+}
+.Austria-text {
+	color:#ed2939;
+}
+.Austria-dist {
+	background-color: #ed2939;
+}
+.Austria-country:hover {
+	background-color: #ed2939;
+	transition: 0.3s;
+}
+.Austria-country:hover .Austria-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Austria-country:hover .Austria-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Azerbaijan-country {
+	background-color: #ed2939;
+}
+.Azerbaijan-text {
+	color:#3f9c35;
+}
+.Azerbaijan-dist {
+	background-color: #3f9c35;
+}
+.Azerbaijan-country:hover {
+	background-color: #3f9c35;
+	transition: 0.3s;
+}
+.Azerbaijan-country:hover .Azerbaijan-text {
+	color:#ed2939;
+	transition: 0.3s;
+}
+
+.Azerbaijan-country:hover .Azerbaijan-dist {
+	background-color: #ed2939;
+	transition:0.3s;
+}
+.TheBahamas-country {
+	background-color: #fae042;
+}
+.TheBahamas-text {
+	color:#00abc9;
+}
+.TheBahamas-dist {
+	background-color: #00abc9;
+}
+.TheBahamas-country:hover {
+	background-color: #00abc9;
+	transition: 0.3s;
+}
+.TheBahamas-country:hover .TheBahamas-text {
+	color:#fae042;
+	transition: 0.3s;
+}
+
+.TheBahamas-country:hover .TheBahamas-dist {
+	background-color: #fae042;
+	transition:0.3s;
+}
+.Bahrain-country {
+	background-color: #ce1126;
+}
+.Bahrain-text {
+	color:#fff;
+}
+.Bahrain-dist {
+	background-color: #fff;
+}
+.Bahrain-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Bahrain-country:hover .Bahrain-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Bahrain-country:hover .Bahrain-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.Bangladesh-country {
+	background-color: #f42a41;
+}
+.Bangladesh-text {
+	color:#006a4e;
+}
+.Bangladesh-dist {
+	background-color: #006a4e;
+}
+.Bangladesh-country:hover {
+	background-color: #006a4e;
+	transition: 0.3s;
+}
+.Bangladesh-country:hover .Bangladesh-text {
+	color:#f42a41;
+	transition: 0.3s;
+}
+
+.Bangladesh-country:hover .Bangladesh-dist {
+	background-color: #f42a41;
+	transition:0.3s;
+}
+.Barbados-country {
+	background-color: #ffc726;
+}
+.Barbados-text {
+	color:#00267f;
+}
+.Barbados-dist {
+	background-color: #00267f;
+}
+.Barbados-country:hover {
+	background-color: #00267f;
+	transition: 0.3s;
+}
+.Barbados-country:hover .Barbados-text {
+	color:#ffc726;
+	transition: 0.3s;
+}
+
+.Barbados-country:hover .Barbados-dist {
+	background-color: #ffc726;
+	transition:0.3s;
+}
+.Belarus-country {
+	background-color: #4aa657;
+}
+.Belarus-text {
+	color:#c8313e;
+}
+.Belarus-dist {
+	background-color: #c8313e;
+}
+.Belarus-country:hover {
+	background-color: #c8313e;
+	transition: 0.3s;
+}
+.Belarus-country:hover .Belarus-text {
+	color:#4aa657;
+	transition: 0.3s;
+}
+
+.Belarus-country:hover .Belarus-dist {
+	background-color: #4aa657;
+	transition:0.3s;
+}
+.Belgium-country {
+	background-color: #fae042;
+}
+.Belgium-text {
+	color:#ed2939;
+}
+.Belgium-dist {
+	background-color: #ed2939;
+}
+.Belgium-country:hover {
+	background-color: #ed2939;
+	transition: 0.3s;
+}
+.Belgium-country:hover .Belgium-text {
+	color:#fae042;
+	transition: 0.3s;
+}
+
+.Belgium-country:hover .Belgium-dist {
+	background-color: #fae042;
+	transition:0.3s;
+}
+.Belize-country {
+	background-color: #003f87;
+}
+.Belize-text {
+	color:#ce1126;
+}
+.Belize-dist {
+	background-color: #ce1126;
+}
+.Belize-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.Belize-country:hover .Belize-text {
+	color:#003f87;
+	transition: 0.3s;
+}
+
+.Belize-country:hover .Belize-dist {
+	background-color: #003f87;
+	transition:0.3s;
+}
+.Benin-country {
+	background-color: #fcd116;
+}
+.Benin-text {
+	color:#e8112d;
+}
+.Benin-dist {
+	background-color: #e8112d;
+}
+.Benin-country:hover {
+	background-color: #e8112d;
+	transition: 0.3s;
+}
+.Benin-country:hover .Benin-text {
+	color:#fcd116;
+	transition: 0.3s;
+}
+
+.Benin-country:hover .Benin-dist {
+	background-color: #fcd116;
+	transition:0.3s;
+}
+.Bhutan-country {
+	background-color: #e23d28;
+}
+.Bhutan-text {
+	color:#efb22d;
+}
+.Bhutan-dist {
+	background-color: #efb22d;
+}
+.Bhutan-country:hover {
+	background-color: #efb22d;
+	transition: 0.3s;
+}
+.Bhutan-country:hover .Bhutan-text {
+	color:#e23d28;
+	transition: 0.3s;
+}
+
+.Bhutan-country:hover .Bhutan-dist {
+	background-color: #e23d28;
+	transition:0.3s;
+}
+.Bolivia-country {
+	background-color: #f9e300;
+}
+.Bolivia-text {
+	color:#007934;
+}
+.Bolivia-dist {
+	background-color: #007934;
+}
+.Bolivia-country:hover {
+	background-color: #007934;
+	transition: 0.3s;
+}
+.Bolivia-country:hover .Bolivia-text {
+	color:#f9e300;
+	transition: 0.3s;
+}
+
+.Bolivia-country:hover .Bolivia-dist {
+	background-color: #f9e300;
+	transition:0.3s;
+}
+.BosniaandHerzegovina-country {
+	background-color: #fecb00;
+}
+.BosniaandHerzegovina-text {
+	color:#002395;
+}
+.BosniaandHerzegovina-dist {
+	background-color: #002395;
+}
+.BosniaandHerzegovina-country:hover {
+	background-color: #002395;
+	transition: 0.3s;
+}
+.BosniaandHerzegovina-country:hover .BosniaandHerzegovina-text {
+	color:#fecb00;
+	transition: 0.3s;
+}
+
+.BosniaandHerzegovina-country:hover .BosniaandHerzegovina-dist {
+	background-color: #fecb00;
+	transition:0.3s;
+}
+.Botswana-country {
+	background-color: #fff;
+}
+.Botswana-text {
+	color:#75aadb;
+}
+.Botswana-dist {
+	background-color: #75aadb;
+}
+.Botswana-country:hover {
+	background-color: #75aadb;
+	transition: 0.3s;
+}
+.Botswana-country:hover .Botswana-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Botswana-country:hover .Botswana-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Brazil-country {
+	background-color: #009b3a;
+}
+.Brazil-text {
+	color:#fff;
+}
+.Brazil-dist {
+	background-color: #fff;
+}
+.Brazil-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Brazil-country:hover .Brazil-text {
+	color:#009b3a;
+	transition: 0.3s;
+}
+
+.Brazil-country:hover .Brazil-dist {
+	background-color: #009b3a;
+	transition:0.3s;
+}
+.Brunei-country {
+	background-color: #fff;
+}
+.Brunei-text {
+	color:#f7e017;
+}
+.Brunei-dist {
+	background-color: #f7e017;
+}
+.Brunei-country:hover {
+	background-color: #f7e017;
+	transition: 0.3s;
+}
+.Brunei-country:hover .Brunei-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Brunei-country:hover .Brunei-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Bulgaria-country {
+	background-color: #00966e;
+}
+.Bulgaria-text {
+	color:#fff;
+}
+.Bulgaria-dist {
+	background-color: #fff;
+}
+.Bulgaria-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Bulgaria-country:hover .Bulgaria-text {
+	color:#00966e;
+	transition: 0.3s;
+}
+
+.Bulgaria-country:hover .Bulgaria-dist {
+	background-color: #00966e;
+	transition:0.3s;
+}
+.BurkinaFaso-country {
+	background-color: #ef2b2d;
+}
+.BurkinaFaso-text {
+	color:#009e49;
+}
+.BurkinaFaso-dist {
+	background-color: #009e49;
+}
+.BurkinaFaso-country:hover {
+	background-color: #009e49;
+	transition: 0.3s;
+}
+.BurkinaFaso-country:hover .BurkinaFaso-text {
+	color:#ef2b2d;
+	transition: 0.3s;
+}
+
+.BurkinaFaso-country:hover .BurkinaFaso-dist {
+	background-color: #ef2b2d;
+	transition:0.3s;
+}
+.Burundi-country {
+	background-color: #ce1126;
+}
+.Burundi-text {
+	color:#1eb53a;
+}
+.Burundi-dist {
+	background-color: #1eb53a;
+}
+.Burundi-country:hover {
+	background-color: #1eb53a;
+	transition: 0.3s;
+}
+.Burundi-country:hover .Burundi-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Burundi-country:hover .Burundi-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.CaboVerde-country {
+	background-color: #fff;
+}
+.CaboVerde-text {
+	color:#003893;
+}
+.CaboVerde-dist {
+	background-color: #003893;
+}
+.CaboVerde-country:hover {
+	background-color: #003893;
+	transition: 0.3s;
+}
+.CaboVerde-country:hover .CaboVerde-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.CaboVerde-country:hover .CaboVerde-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Cambodia-country {
+	background-color: #e00025;
+}
+.Cambodia-text {
+	color:#032ea1;
+}
+.Cambodia-dist {
+	background-color: #032ea1;
+}
+.Cambodia-country:hover {
+	background-color: #032ea1;
+	transition: 0.3s;
+}
+.Cambodia-country:hover .Cambodia-text {
+	color:#e00025;
+	transition: 0.3s;
+}
+
+.Cambodia-country:hover .Cambodia-dist {
+	background-color: #e00025;
+	transition:0.3s;
+}
+.Cameroon-country {
+	background-color: #ce1126;
+}
+.Cameroon-text {
+	color:#007a5e;
+}
+.Cameroon-dist {
+	background-color: #007a5e;
+}
+.Cameroon-country:hover {
+	background-color: #007a5e;
+	transition: 0.3s;
+}
+.Cameroon-country:hover .Cameroon-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Cameroon-country:hover .Cameroon-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.Canada-country {
+	background-color: #fff;
+}
+.Canada-text {
+	color:#f00;
+}
+.Canada-dist {
+	background-color: #f00;
+}
+.Canada-country:hover {
+	background-color: #f00;
+	transition: 0.3s;
+}
+.Canada-country:hover .Canada-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Canada-country:hover .Canada-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.CentralAfricanRepublic-country {
+	background-color: #289728;
+}
+.CentralAfricanRepublic-text {
+	color:#ffce00;
+}
+.CentralAfricanRepublic-dist {
+	background-color: #ffce00;
+}
+.CentralAfricanRepublic-country:hover {
+	background-color: #ffce00;
+	transition: 0.3s;
+}
+.CentralAfricanRepublic-country:hover .CentralAfricanRepublic-text {
+	color:#289728;
+	transition: 0.3s;
+}
+
+.CentralAfricanRepublic-country:hover .CentralAfricanRepublic-dist {
+	background-color: #289728;
+	transition:0.3s;
+}
+.Chad-country {
+	background-color: #fecb00;
+}
+.Chad-text {
+	color:#c60c30;
+}
+.Chad-dist {
+	background-color: #c60c30;
+}
+.Chad-country:hover {
+	background-color: #c60c30;
+	transition: 0.3s;
+}
+.Chad-country:hover .Chad-text {
+	color:#fecb00;
+	transition: 0.3s;
+}
+
+.Chad-country:hover .Chad-dist {
+	background-color: #fecb00;
+	transition:0.3s;
+}
+.Chile-country {
+	background-color: #fff;
+}
+.Chile-text {
+	color:#d52b1e;
+}
+.Chile-dist {
+	background-color: #d52b1e;
+}
+.Chile-country:hover {
+	background-color: #d52b1e;
+	transition: 0.3s;
+}
+.Chile-country:hover .Chile-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Chile-country:hover .Chile-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.China-country {
+	background-color: #de2910;
+}
+.China-text {
+	color:#ffde00;
+}
+.China-dist {
+	background-color: #ffde00;
+}
+.China-country:hover {
+	background-color: #ffde00;
+	transition: 0.3s;
+}
+.China-country:hover .China-text {
+	color:#de2910;
+	transition: 0.3s;
+}
+
+.China-country:hover .China-dist {
+	background-color: #de2910;
+	transition:0.3s;
+}
+.Colombia-country {
+	background-color: #003893;
+}
+.Colombia-text {
+	color:#ce1126;
+}
+.Colombia-dist {
+	background-color: #ce1126;
+}
+.Colombia-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.Colombia-country:hover .Colombia-text {
+	color:#003893;
+	transition: 0.3s;
+}
+
+.Colombia-country:hover .Colombia-dist {
+	background-color: #003893;
+	transition:0.3s;
+}
+.Comoros-country {
+	background-color: #ce1126;
+}
+.Comoros-text {
+	color:#3a75c4;
+}
+.Comoros-dist {
+	background-color: #3a75c4;
+}
+.Comoros-country:hover {
+	background-color: #3a75c4;
+	transition: 0.3s;
+}
+.Comoros-country:hover .Comoros-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Comoros-country:hover .Comoros-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.CostaRica-country {
+	background-color: #fff;
+}
+.CostaRica-text {
+	color:#002b7f;
+}
+.CostaRica-dist {
+	background-color: #002b7f;
+}
+.CostaRica-country:hover {
+	background-color: #002b7f;
+	transition: 0.3s;
+}
+.CostaRica-country:hover .CostaRica-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.CostaRica-country:hover .CostaRica-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Taiwan-country {
+	background-color: #000095;
+}
+.Taiwan-text {
+	color:#fe0000;
+}
+.Taiwan-dist {
+	background-color: #fe0000;
+}
+.Taiwan-country:hover {
+	background-color: #fe0000;
+	transition: 0.3s;
+}
+.Taiwan-country:hover .Taiwan-text {
+	color:#000095;
+	transition: 0.3s;
+}
+
+.Taiwan-country:hover .Taiwan-dist {
+	background-color: #000095;
+	transition:0.3s;
+}
+.PuertoRico-country {
+	background-color: #0050f0;
+}
+.PuertoRico-text {
+	color:#ffffff;
+}
+.PuertoRico-dist {
+	background-color: #ffffff;
+}
+.PuertoRico-country:hover {
+	background-color: #ffffff;
+	transition: 0.3s;
+}
+.PuertoRico-country:hover .PuertoRico-text {
+	color:#0050f0;
+	transition: 0.3s;
+}
+
+.PuertoRico-country:hover .PuertoRico-dist {
+	background-color: #0050f0;
+	transition:0.3s;
+}
+.Croatia-country {
+	background-color: #fff;
+}
+.Croatia-text {
+	color:#171796;
+}
+.Croatia-dist {
+	background-color: #171796;
+}
+.Croatia-country:hover {
+	background-color: #171796;
+	transition: 0.3s;
+}
+.Croatia-country:hover .Croatia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Croatia-country:hover .Croatia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Cuba-country {
+	background-color: #fff;
+}
+.Cuba-text {
+	color:#002a8f;
+}
+.Cuba-dist {
+	background-color: #002a8f;
+}
+.Cuba-country:hover {
+	background-color: #002a8f;
+	transition: 0.3s;
+}
+.Cuba-country:hover .Cuba-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Cuba-country:hover .Cuba-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Curaçao-country {
+	background-color: #f9e814;
+}
+.Curaçao-text {
+	color:#002b7f;
+}
+.Curaçao-dist {
+	background-color: #002b7f;
+}
+.Curaçao-country:hover {
+	background-color: #002b7f;
+	transition: 0.3s;
+}
+.Curaçao-country:hover .Curaçao-text {
+	color:#f9e814;
+	transition: 0.3s;
+}
+
+.Curaçao-country:hover .Curaçao-dist {
+	background-color: #f9e814;
+	transition:0.3s;
+}
+.Cyprus-country {
+	background-color: #435125;
+}
+.Cyprus-text {
+	color:#fff;
+}
+.Cyprus-dist {
+	background-color: #fff;
+}
+.Cyprus-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Cyprus-country:hover .Cyprus-text {
+	color:#435125;
+	transition: 0.3s;
+}
+
+.Cyprus-country:hover .Cyprus-dist {
+	background-color: #435125;
+	transition:0.3s;
+}
+.Czechia-country {
+	background-color: #fff;
+}
+.Czechia-text {
+	color:#d7141a;
+}
+.Czechia-dist {
+	background-color: #d7141a;
+}
+.Czechia-country:hover {
+	background-color: #d7141a;
+	transition: 0.3s;
+}
+.Czechia-country:hover .Czechia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Czechia-country:hover .Czechia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.CôtedIvoire-country {
+	background-color: #fff;
+}
+.CôtedIvoire-text {
+	color:#009e60;
+}
+.CôtedIvoire-dist {
+	background-color: #009e60;
+}
+.CôtedIvoire-country:hover {
+	background-color: #009e60;
+	transition: 0.3s;
+}
+.CôtedIvoire-country:hover .CôtedIvoire-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.CôtedIvoire-country:hover .CôtedIvoire-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.CongoBrazzaville-country {
+	background-color: #fbde4a;
+}
+.CongoBrazzaville-text {
+	color:#009543;
+}
+.CongoBrazzaville-dist {
+	background-color: #009543;
+}
+.CongoBrazzaville-country:hover {
+	background-color: #009543;
+	transition: 0.3s;
+}
+.CongoBrazzaville-country:hover .CongoBrazzaville-text {
+	color:#fbde4a;
+	transition: 0.3s;
+}
+
+.CongoBrazzaville-country:hover .CongoBrazzaville-dist {
+	background-color: #fbde4a;
+	transition:0.3s;
+}
+.Martinique-country {
+	background-color: #ef1923;
+}
+.Martinique-text {
+	color:#231f1e;
+}
+.Martinique-dist {
+	background-color: #231f1e;
+}
+.Martinique-country:hover {
+	background-color: #231f1e;
+	transition: 0.3s;
+}
+.Martinique-country:hover .Martinique-text {
+	color:#ef1923;
+	transition: 0.3s;
+}
+
+.Martinique-country:hover .Martinique-dist {
+	background-color: #ef1923;
+	transition:0.3s;
+}
+.Denmark-country {
+	background-color: #fff;
+}
+.Denmark-text {
+	color:#c60c30;
+}
+.Denmark-dist {
+	background-color: #c60c30;
+}
+.Denmark-country:hover {
+	background-color: #c60c30;
+	transition: 0.3s;
+}
+.Denmark-country:hover .Denmark-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Denmark-country:hover .Denmark-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Djibouti-country {
+	background-color: #12ad2b;
+}
+.Djibouti-text {
+	color:#6ab2e7;
+}
+.Djibouti-dist {
+	background-color: #6ab2e7;
+}
+.Djibouti-country:hover {
+	background-color: #6ab2e7;
+	transition: 0.3s;
+}
+.Djibouti-country:hover .Djibouti-text {
+	color:#12ad2b;
+	transition: 0.3s;
+}
+
+.Djibouti-country:hover .Djibouti-dist {
+	background-color: #12ad2b;
+	transition:0.3s;
+}
+.Dominica-country {
+	background-color: #fcd116;
+}
+.Dominica-text {
+	color:#006b3f;
+}
+.Dominica-dist {
+	background-color: #006b3f;
+}
+.Dominica-country:hover {
+	background-color: #006b3f;
+	transition: 0.3s;
+}
+.Dominica-country:hover .Dominica-text {
+	color:#fcd116;
+	transition: 0.3s;
+}
+
+.Dominica-country:hover .Dominica-dist {
+	background-color: #fcd116;
+	transition:0.3s;
+}
+.DominicanRepublic-country {
+	background-color: #002d62;
+}
+.DominicanRepublic-text {
+	color:#fff;
+}
+.DominicanRepublic-dist {
+	background-color: #fff;
+}
+.DominicanRepublic-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.DominicanRepublic-country:hover .DominicanRepublic-text {
+	color:#002d62;
+	transition: 0.3s;
+}
+
+.DominicanRepublic-country:hover .DominicanRepublic-dist {
+	background-color: #002d62;
+	transition:0.3s;
+}
+.Ecuador-country {
+	background-color: #034ea2;
+}
+.Ecuador-text {
+	color:#ed1c24;
+}
+.Ecuador-dist {
+	background-color: #ed1c24;
+}
+.Ecuador-country:hover {
+	background-color: #ed1c24;
+	transition: 0.3s;
+}
+.Ecuador-country:hover .Ecuador-text {
+	color:#034ea2;
+	transition: 0.3s;
+}
+
+.Ecuador-country:hover .Ecuador-dist {
+	background-color: #034ea2;
+	transition:0.3s;
+}
+.Egypt-country {
+	background-color: #fff;
+}
+.Egypt-text {
+	color:#000;
+}
+.Egypt-dist {
+	background-color: #000;
+}
+.Egypt-country:hover {
+	background-color: #000;
+	transition: 0.3s;
+}
+.Egypt-country:hover .Egypt-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Egypt-country:hover .Egypt-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.ElSalvador-country {
+	background-color: #fff;
+}
+.ElSalvador-text {
+	color:#0f47af;
+}
+.ElSalvador-dist {
+	background-color: #0f47af;
+}
+.ElSalvador-country:hover {
+	background-color: #0f47af;
+	transition: 0.3s;
+}
+.ElSalvador-country:hover .ElSalvador-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.ElSalvador-country:hover .ElSalvador-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.EquatorialGuinea-country {
+	background-color: #fff;
+}
+.EquatorialGuinea-text {
+	color:#e32118;
+}
+.EquatorialGuinea-dist {
+	background-color: #e32118;
+}
+.EquatorialGuinea-country:hover {
+	background-color: #e32118;
+	transition: 0.3s;
+}
+.EquatorialGuinea-country:hover .EquatorialGuinea-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.EquatorialGuinea-country:hover .EquatorialGuinea-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Eritrea-country {
+	background-color: #4189dd;
+}
+.Eritrea-text {
+	color:#ea0437;
+}
+.Eritrea-dist {
+	background-color: #ea0437;
+}
+.Eritrea-country:hover {
+	background-color: #ea0437;
+	transition: 0.3s;
+}
+.Eritrea-country:hover .Eritrea-text {
+	color:#4189dd;
+	transition: 0.3s;
+}
+
+.Eritrea-country:hover .Eritrea-dist {
+	background-color: #4189dd;
+	transition:0.3s;
+}
+.Estonia-country {
+	background-color: #000;
+}
+.Estonia-text {
+	color:#4891d9;
+}
+.Estonia-dist {
+	background-color: #4891d9;
+}
+.Estonia-country:hover {
+	background-color: #4891d9;
+	transition: 0.3s;
+}
+.Estonia-country:hover .Estonia-text {
+	color:#000;
+	transition: 0.3s;
+}
+
+.Estonia-country:hover .Estonia-dist {
+	background-color: #000;
+	transition:0.3s;
+}
+.Ethiopia-country {
+	background-color: #fcdd09;
+}
+.Ethiopia-text {
+	color:#da121a;
+}
+.Ethiopia-dist {
+	background-color: #da121a;
+}
+.Ethiopia-country:hover {
+	background-color: #da121a;
+	transition: 0.3s;
+}
+.Ethiopia-country:hover .Ethiopia-text {
+	color:#fcdd09;
+	transition: 0.3s;
+}
+
+.Ethiopia-country:hover .Ethiopia-dist {
+	background-color: #fcdd09;
+	transition:0.3s;
+}
+.FederatedStatesofMicronesia-country {
+	background-color: #fff;
+}
+.FederatedStatesofMicronesia-text {
+	color:#75b2dd;
+}
+.FederatedStatesofMicronesia-dist {
+	background-color: #75b2dd;
+}
+.FederatedStatesofMicronesia-country:hover {
+	background-color: #75b2dd;
+	transition: 0.3s;
+}
+.FederatedStatesofMicronesia-country:hover .FederatedStatesofMicronesia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.FederatedStatesofMicronesia-country:hover .FederatedStatesofMicronesia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Fiji-country {
+	background-color: #fff;
+}
+.Fiji-text {
+	color:#002868;
+}
+.Fiji-dist {
+	background-color: #002868;
+}
+.Fiji-country:hover {
+	background-color: #002868;
+	transition: 0.3s;
+}
+.Fiji-country:hover .Fiji-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Fiji-country:hover .Fiji-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Finland-country {
+	background-color: #003580;
+}
+.Finland-text {
+	color:#fff;
+}
+.Finland-dist {
+	background-color: #fff;
+}
+.Finland-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Finland-country:hover .Finland-text {
+	color:#003580;
+	transition: 0.3s;
+}
+
+.Finland-country:hover .Finland-dist {
+	background-color: #003580;
+	transition:0.3s;
+}
+.France-country {
+	background-color: #fff;
+}
+.France-text {
+	color:#ed2939;
+}
+.France-dist {
+	background-color: #ed2939;
+}
+.France-country:hover {
+	background-color: #ed2939;
+	transition: 0.3s;
+}
+.France-country:hover .France-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.France-country:hover .France-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Gabon-country {
+	background-color: #fcd116;
+}
+.Gabon-text {
+	color:#009e60;
+}
+.Gabon-dist {
+	background-color: #009e60;
+}
+.Gabon-country:hover {
+	background-color: #009e60;
+	transition: 0.3s;
+}
+.Gabon-country:hover .Gabon-text {
+	color:#fcd116;
+	transition: 0.3s;
+}
+
+.Gabon-country:hover .Gabon-dist {
+	background-color: #fcd116;
+	transition:0.3s;
+}
+.Gambia-country {
+	background-color: #0c1c8c;
+}
+.Gambia-text {
+	color:#3a7728;
+}
+.Gambia-dist {
+	background-color: #3a7728;
+}
+.Gambia-country:hover {
+	background-color: #3a7728;
+	transition: 0.3s;
+}
+.Gambia-country:hover .Gambia-text {
+	color:#0c1c8c;
+	transition: 0.3s;
+}
+
+.Gambia-country:hover .Gambia-dist {
+	background-color: #0c1c8c;
+	transition:0.3s;
+}
+.Georgia-country {
+	background-color: #ff0000;
+}
+.Georgia-text {
+	color:#fff;
+}
+.Georgia-dist {
+	background-color: #fff;
+}
+.Georgia-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Georgia-country:hover .Georgia-text {
+	color:#ff0000;
+	transition: 0.3s;
+}
+
+.Georgia-country:hover .Georgia-dist {
+	background-color: #ff0000;
+	transition:0.3s;
+}
+.Gibraltar-country {
+	background-color: #f8d80e;
+}
+.Gibraltar-text {
+	color:#da000c;
+}
+.Gibraltar-dist {
+	background-color: #da000c;
+}
+.Gibraltar-country:hover {
+	background-color: #da000c;
+	transition: 0.3s;
+}
+.Gibraltar-country:hover .Gibraltar-text {
+	color:#f8d80e;
+	transition: 0.3s;
+}
+
+.Gibraltar-country:hover .Gibraltar-dist {
+	background-color: #f8d80e;
+	transition:0.3s;
+}
+.Germany-country {
+	background-color: #d00;
+}
+.Germany-text {
+	color:#000;
+}
+.Germany-dist {
+	background-color: #000;
+}
+.Germany-country:hover {
+	background-color: #000;
+	transition: 0.3s;
+}
+.Germany-country:hover .Germany-text {
+	color:#d00;
+	transition: 0.3s;
+}
+
+.Germany-country:hover .Germany-dist {
+	background-color: #d00;
+	transition:0.3s;
+}
+.Ghana-country {
+	background-color: #fcd116;
+}
+.Ghana-text {
+	color:#006b3f;
+}
+.Ghana-dist {
+	background-color: #006b3f;
+}
+.Ghana-country:hover {
+	background-color: #006b3f;
+	transition: 0.3s;
+}
+.Ghana-country:hover .Ghana-text {
+	color:#fcd116;
+	transition: 0.3s;
+}
+
+.Ghana-country:hover .Ghana-dist {
+	background-color: #fcd116;
+	transition:0.3s;
+}
+.Greece-country {
+	background-color: #fff;
+}
+.Greece-text {
+	color:#0d5eaf;
+}
+.Greece-dist {
+	background-color: #0d5eaf;
+}
+.Greece-country:hover {
+	background-color: #0d5eaf;
+	transition: 0.3s;
+}
+.Greece-country:hover .Greece-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Greece-country:hover .Greece-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Grenada-country {
+	background-color: #ce1126;
+}
+.Grenada-text {
+	color:#fcd116;
+}
+.Grenada-dist {
+	background-color: #fcd116;
+}
+.Grenada-country:hover {
+	background-color: #fcd116;
+	transition: 0.3s;
+}
+.Grenada-country:hover .Grenada-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Grenada-country:hover .Grenada-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.Greenland-country {
+	background-color: #c8102e;
+}
+.Greenland-text {
+	color:#FFFFFF;
+}
+.Greenland-dist {
+	background-color: #FFFFFF;
+}
+.Greenland-country:hover {
+	background-color: #FFFFFF;
+	transition: 0.3s;
+}
+.Greenland-country:hover .Greenland-text {
+	color:#c8102e;
+	transition: 0.3s;
+}
+
+.Greenland-country:hover .Greenland-dist {
+	background-color: #c8102e;
+	transition:0.3s;
+}
+.Guatemala-country {
+	background-color: #fff;
+}
+.Guatemala-text {
+	color:#4997d0;
+}
+.Guatemala-dist {
+	background-color: #4997d0;
+}
+.Guatemala-country:hover {
+	background-color: #4997d0;
+	transition: 0.3s;
+}
+.Guatemala-country:hover .Guatemala-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Guatemala-country:hover .Guatemala-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Guinea-country {
+	background-color: #fcd116;
+}
+.Guinea-text {
+	color:#ce1126;
+}
+.Guinea-dist {
+	background-color: #ce1126;
+}
+.Guinea-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.Guinea-country:hover .Guinea-text {
+	color:#fcd116;
+	transition: 0.3s;
+}
+
+.Guinea-country:hover .Guinea-dist {
+	background-color: #fcd116;
+	transition:0.3s;
+}
+.Guinea-Bissau-country {
+	background-color: #fcd116;
+}
+.Guinea-Bissau-text {
+	color:#ce1126;
+}
+.Guinea-Bissau-dist {
+	background-color: #ce1126;
+}
+.Guinea-Bissau-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.Guinea-Bissau-country:hover .Guinea-Bissau-text {
+	color:#fcd116;
+	transition: 0.3s;
+}
+
+.Guinea-Bissau-country:hover .Guinea-Bissau-dist {
+	background-color: #fcd116;
+	transition:0.3s;
+}
+.Guyana-country {
+	background-color: #fff;
+}
+.Guyana-text {
+	color:#009e49;
+}
+.Guyana-dist {
+	background-color: #009e49;
+}
+.Guyana-country:hover {
+	background-color: #009e49;
+	transition: 0.3s;
+}
+.Guyana-country:hover .Guyana-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Guyana-country:hover .Guyana-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Haiti-country {
+	background-color: #00209f;
+}
+.Haiti-text {
+	color:#d21034;
+}
+.Haiti-dist {
+	background-color: #d21034;
+}
+.Haiti-country:hover {
+	background-color: #d21034;
+	transition: 0.3s;
+}
+.Haiti-country:hover .Haiti-text {
+	color:#00209f;
+	transition: 0.3s;
+}
+
+.Haiti-country:hover .Haiti-dist {
+	background-color: #00209f;
+	transition:0.3s;
+}
+.Honduras-country {
+	background-color: #fff;
+}
+.Honduras-text {
+	color:#0073cf;
+}
+.Honduras-dist {
+	background-color: #0073cf;
+}
+.Honduras-country:hover {
+	background-color: #0073cf;
+	transition: 0.3s;
+}
+.Honduras-country:hover .Honduras-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Honduras-country:hover .Honduras-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.HongKong-country {
+	background-color: #ee1c25;
+}
+.HongKong-text {
+	color:#ffffff;
+}
+.HongKong-dist {
+	background-color: #ffffff;
+}
+.HongKong-country:hover {
+	background-color: #ffffff;
+	transition: 0.3s;
+}
+.HongKong-country:hover .HongKong-text {
+	color:#ee1c25;
+	transition: 0.3s;
+}
+
+.HongKong-country:hover .HongKong-dist {
+	background-color: #ee1c25;
+	transition:0.3s;
+}
+.Hungary-country {
+	background-color: #fff;
+}
+.Hungary-text {
+	color:#436f4d;
+}
+.Hungary-dist {
+	background-color: #436f4d;
+}
+.Hungary-country:hover {
+	background-color: #436f4d;
+	transition: 0.3s;
+}
+.Hungary-country:hover .Hungary-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Hungary-country:hover .Hungary-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Iceland-country {
+	background-color: #fff;
+}
+.Iceland-text {
+	color:#003897;
+}
+.Iceland-dist {
+	background-color: #003897;
+}
+.Iceland-country:hover {
+	background-color: #003897;
+	transition: 0.3s;
+}
+.Iceland-country:hover .Iceland-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Iceland-country:hover .Iceland-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.India-country {
+	background-color: #fff;
+}
+.India-text {
+	color:#f93;
+}
+.India-dist {
+	background-color: #f93;
+}
+.India-country:hover {
+	background-color: #f93;
+	transition: 0.3s;
+}
+.India-country:hover .India-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.India-country:hover .India-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Indonesia-country {
+	background-color: #ce1126;
+}
+.Indonesia-text {
+	color:#fff;
+}
+.Indonesia-dist {
+	background-color: #fff;
+}
+.Indonesia-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Indonesia-country:hover .Indonesia-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Indonesia-country:hover .Indonesia-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.Iran-country {
+	background-color: #fff;
+}
+.Iran-text {
+	color:#da0000;
+}
+.Iran-dist {
+	background-color: #da0000;
+}
+.Iran-country:hover {
+	background-color: #da0000;
+	transition: 0.3s;
+}
+.Iran-country:hover .Iran-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Iran-country:hover .Iran-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Iraq-country {
+	background-color: #cf2029;
+}
+.Iraq-text {
+	color:#ffffff;
+}
+.Iraq-dist {
+	background-color: #ffffff;
+}
+.Iraq-country:hover {
+	background-color: #ffffff;
+	transition: 0.3s;
+}
+.Iraq-country:hover .Iraq-text {
+	color:#cf2029;
+	transition: 0.3s;
+}
+
+.Iraq-country:hover .Iraq-dist {
+	background-color: #cf2029;
+	transition:0.3s;
+}
+.Ireland-country {
+	background-color: #ffffff;
+}
+.Ireland-text {
+	color:#169b62;
+}
+.Ireland-dist {
+	background-color: #169b62;
+}
+.Ireland-country:hover {
+	background-color: #169b62;
+	transition: 0.3s;
+}
+.Ireland-country:hover .Ireland-text {
+	color:#ffffff;
+	transition: 0.3s;
+}
+
+.Ireland-country:hover .Ireland-dist {
+	background-color: #ffffff;
+	transition:0.3s;
+}
+.Israel-country {
+	background-color: white;
+}
+.Israel-text {
+	color:#0038b8;
+}
+.Israel-dist {
+	background-color: #0038b8;
+}
+.Israel-country:hover {
+	background-color: #0038b8;
+	transition: 0.3s;
+}
+.Israel-country:hover .Israel-text {
+	color:white;
+	transition: 0.3s;
+}
+
+.Israel-country:hover .Israel-dist {
+	background-color: white;
+	transition:0.3s;
+}
+.Italy-country {
+	background-color: #fff;
+}
+.Italy-text {
+	color:#009246;
+}
+.Italy-dist {
+	background-color: #009246;
+}
+.Italy-country:hover {
+	background-color: #009246;
+	transition: 0.3s;
+}
+.Italy-country:hover .Italy-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Italy-country:hover .Italy-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Jamaica-country {
+	background-color: #fed100;
+}
+.Jamaica-text {
+	color:#009b3a;
+}
+.Jamaica-dist {
+	background-color: #009b3a;
+}
+.Jamaica-country:hover {
+	background-color: #009b3a;
+	transition: 0.3s;
+}
+.Jamaica-country:hover .Jamaica-text {
+	color:#fed100;
+	transition: 0.3s;
+}
+
+.Jamaica-country:hover .Jamaica-dist {
+	background-color: #fed100;
+	transition:0.3s;
+}
+.Japan-country {
+	background-color: #bc002d;
+}
+.Japan-text {
+	color:#fff;
+}
+.Japan-dist {
+	background-color: #fff;
+}
+.Japan-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Japan-country:hover .Japan-text {
+	color:#bc002d;
+	transition: 0.3s;
+}
+
+.Japan-country:hover .Japan-dist {
+	background-color: #bc002d;
+	transition:0.3s;
+}
+.Jordan-country {
+	background-color: #fff;
+}
+.Jordan-text {
+	color:#007a3d;
+}
+.Jordan-dist {
+	background-color: #007a3d;
+}
+.Jordan-country:hover {
+	background-color: #007a3d;
+	transition: 0.3s;
+}
+.Jordan-country:hover .Jordan-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Jordan-country:hover .Jordan-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Kazakhstan-country {
+	background-color: #fec50c;
+}
+.Kazakhstan-text {
+	color:#00afca;
+}
+.Kazakhstan-dist {
+	background-color: #00afca;
+}
+.Kazakhstan-country:hover {
+	background-color: #00afca;
+	transition: 0.3s;
+}
+.Kazakhstan-country:hover .Kazakhstan-text {
+	color:#fec50c;
+	transition: 0.3s;
+}
+
+.Kazakhstan-country:hover .Kazakhstan-dist {
+	background-color: #fec50c;
+	transition:0.3s;
+}
+.Kenya-country {
+	background-color: #006600;
+}
+.Kenya-text {
+	color:#fff;
+}
+.Kenya-dist {
+	background-color: #fff;
+}
+.Kenya-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Kenya-country:hover .Kenya-text {
+	color:#006600;
+	transition: 0.3s;
+}
+
+.Kenya-country:hover .Kenya-dist {
+	background-color: #006600;
+	transition:0.3s;
+}
+.Kiribati-country {
+	background-color: #fcd116;
+}
+.Kiribati-text {
+	color:#ce1126;
+}
+.Kiribati-dist {
+	background-color: #ce1126;
+}
+.Kiribati-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.Kiribati-country:hover .Kiribati-text {
+	color:#fcd116;
+	transition: 0.3s;
+}
+
+.Kiribati-country:hover .Kiribati-dist {
+	background-color: #fcd116;
+	transition:0.3s;
+}
+.Kuwait-country {
+	background-color: #fff;
+}
+.Kuwait-text {
+	color:#007a3d;
+}
+.Kuwait-dist {
+	background-color: #007a3d;
+}
+.Kuwait-country:hover {
+	background-color: #007a3d;
+	transition: 0.3s;
+}
+.Kuwait-country:hover .Kuwait-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Kuwait-country:hover .Kuwait-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Kyrgyzstan-country {
+	background-color: #ffef00;
+}
+.Kyrgyzstan-text {
+	color:#e8112d;
+}
+.Kyrgyzstan-dist {
+	background-color: #e8112d;
+}
+.Kyrgyzstan-country:hover {
+	background-color: #e8112d;
+	transition: 0.3s;
+}
+.Kyrgyzstan-country:hover .Kyrgyzstan-text {
+	color:#ffef00;
+	transition: 0.3s;
+}
+
+.Kyrgyzstan-country:hover .Kyrgyzstan-dist {
+	background-color: #ffef00;
+	transition:0.3s;
+}
+.Laos-country {
+	background-color: #002868;
+}
+.Laos-text {
+	color:#ce1126;
+}
+.Laos-dist {
+	background-color: #ce1126;
+}
+.Laos-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.Laos-country:hover .Laos-text {
+	color:#002868;
+	transition: 0.3s;
+}
+
+.Laos-country:hover .Laos-dist {
+	background-color: #002868;
+	transition:0.3s;
+}
+.Latvia-country {
+	background-color: #fff;
+}
+.Latvia-text {
+	color:#9e3039;
+}
+.Latvia-dist {
+	background-color: #9e3039;
+}
+.Latvia-country:hover {
+	background-color: #9e3039;
+	transition: 0.3s;
+}
+.Latvia-country:hover .Latvia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Latvia-country:hover .Latvia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Lebanon-country {
+	background-color: #fff;
+}
+.Lebanon-text {
+	color:#ed1c24;
+}
+.Lebanon-dist {
+	background-color: #ed1c24;
+}
+.Lebanon-country:hover {
+	background-color: #ed1c24;
+	transition: 0.3s;
+}
+.Lebanon-country:hover .Lebanon-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Lebanon-country:hover .Lebanon-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Lesotho-country {
+	background-color: #fff;
+}
+.Lesotho-text {
+	color:#009543;
+}
+.Lesotho-dist {
+	background-color: #009543;
+}
+.Lesotho-country:hover {
+	background-color: #009543;
+	transition: 0.3s;
+}
+.Lesotho-country:hover .Lesotho-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Lesotho-country:hover .Lesotho-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Liberia-country {
+	background-color: #fff;
+}
+.Liberia-text {
+	color:#bf0a30;
+}
+.Liberia-dist {
+	background-color: #bf0a30;
+}
+.Liberia-country:hover {
+	background-color: #bf0a30;
+	transition: 0.3s;
+}
+.Liberia-country:hover .Liberia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Liberia-country:hover .Liberia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Libya-country {
+	background-color: #000;
+}
+.Libya-text {
+	color:#239e46;
+}
+.Libya-dist {
+	background-color: #239e46;
+}
+.Libya-country:hover {
+	background-color: #239e46;
+	transition: 0.3s;
+}
+.Libya-country:hover .Libya-text {
+	color:#000;
+	transition: 0.3s;
+}
+
+.Libya-country:hover .Libya-dist {
+	background-color: #000;
+	transition:0.3s;
+}
+.Liechtenstein-country {
+	background-color: #ce1126;
+}
+.Liechtenstein-text {
+	color:#002b7f;
+}
+.Liechtenstein-dist {
+	background-color: #002b7f;
+}
+.Liechtenstein-country:hover {
+	background-color: #002b7f;
+	transition: 0.3s;
+}
+.Liechtenstein-country:hover .Liechtenstein-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Liechtenstein-country:hover .Liechtenstein-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.Lithuania-country {
+	background-color: #006a44;
+}
+.Lithuania-text {
+	color:#c1272d;
+}
+.Lithuania-dist {
+	background-color: #c1272d;
+}
+.Lithuania-country:hover {
+	background-color: #c1272d;
+	transition: 0.3s;
+}
+.Lithuania-country:hover .Lithuania-text {
+	color:#006a44;
+	transition: 0.3s;
+}
+
+.Lithuania-country:hover .Lithuania-dist {
+	background-color: #006a44;
+	transition:0.3s;
+}
+.Luxembourg-country {
+	background-color: #ed2939;
+}
+.Luxembourg-text {
+	color:#00a1de;
+}
+.Luxembourg-dist {
+	background-color: #00a1de;
+}
+.Luxembourg-country:hover {
+	background-color: #00a1de;
+	transition: 0.3s;
+}
+.Luxembourg-country:hover .Luxembourg-text {
+	color:#ed2939;
+	transition: 0.3s;
+}
+
+.Luxembourg-country:hover .Luxembourg-dist {
+	background-color: #ed2939;
+	transition:0.3s;
+}
+.Madagascar-country {
+	background-color: #fc3d32;
+}
+.Madagascar-text {
+	color:#007e3a;
+}
+.Madagascar-dist {
+	background-color: #007e3a;
+}
+.Madagascar-country:hover {
+	background-color: #007e3a;
+	transition: 0.3s;
+}
+.Madagascar-country:hover .Madagascar-text {
+	color:#fc3d32;
+	transition: 0.3s;
+}
+
+.Madagascar-country:hover .Madagascar-dist {
+	background-color: #fc3d32;
+	transition:0.3s;
+}
+.Malawi-country {
+	background-color: #339e35;
+}
+.Malawi-text {
+	color:#ce1126;
+}
+.Malawi-dist {
+	background-color: #ce1126;
+}
+.Malawi-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.Malawi-country:hover .Malawi-text {
+	color:#339e35;
+	transition: 0.3s;
+}
+
+.Malawi-country:hover .Malawi-dist {
+	background-color: #339e35;
+	transition:0.3s;
+}
+.Malaysia-country {
+	background-color: #fff;
+}
+.Malaysia-text {
+	color:#cc0001;
+}
+.Malaysia-dist {
+	background-color: #cc0001;
+}
+.Malaysia-country:hover {
+	background-color: #cc0001;
+	transition: 0.3s;
+}
+.Malaysia-country:hover .Malaysia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Malaysia-country:hover .Malaysia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Maldives-country {
+	background-color: #007e3a;
+}
+.Maldives-text {
+	color:#d21034;
+}
+.Maldives-dist {
+	background-color: #d21034;
+}
+.Maldives-country:hover {
+	background-color: #d21034;
+	transition: 0.3s;
+}
+.Maldives-country:hover .Maldives-text {
+	color:#007e3a;
+	transition: 0.3s;
+}
+
+.Maldives-country:hover .Maldives-dist {
+	background-color: #007e3a;
+	transition:0.3s;
+}
+.Mali-country {
+	background-color: #fcd116;
+}
+.Mali-text {
+	color:#ce1126;
+}
+.Mali-dist {
+	background-color: #ce1126;
+}
+.Mali-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.Mali-country:hover .Mali-text {
+	color:#fcd116;
+	transition: 0.3s;
+}
+
+.Mali-country:hover .Mali-dist {
+	background-color: #fcd116;
+	transition:0.3s;
+}
+.Malta-country {
+	background-color: #fff;
+}
+.Malta-text {
+	color:#cf142b;
+}
+.Malta-dist {
+	background-color: #cf142b;
+}
+.Malta-country:hover {
+	background-color: #cf142b;
+	transition: 0.3s;
+}
+.Malta-country:hover .Malta-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Malta-country:hover .Malta-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.MarshallIslands-country {
+	background-color: #fff;
+}
+.MarshallIslands-text {
+	color:#003893;
+}
+.MarshallIslands-dist {
+	background-color: #003893;
+}
+.MarshallIslands-country:hover {
+	background-color: #003893;
+	transition: 0.3s;
+}
+.MarshallIslands-country:hover .MarshallIslands-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.MarshallIslands-country:hover .MarshallIslands-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Mauritania-country {
+	background-color: #ffc400;
+}
+.Mauritania-text {
+	color:#006233;
+}
+.Mauritania-dist {
+	background-color: #006233;
+}
+.Mauritania-country:hover {
+	background-color: #006233;
+	transition: 0.3s;
+}
+.Mauritania-country:hover .Mauritania-text {
+	color:#ffc400;
+	transition: 0.3s;
+}
+
+.Mauritania-country:hover .Mauritania-dist {
+	background-color: #ffc400;
+	transition:0.3s;
+}
+.Mauritius-country {
+	background-color: #ffd500;
+}
+.Mauritius-text {
+	color:#00a551;
+}
+.Mauritius-dist {
+	background-color: #00a551;
+}
+.Mauritius-country:hover {
+	background-color: #00a551;
+	transition: 0.3s;
+}
+.Mauritius-country:hover .Mauritius-text {
+	color:#ffd500;
+	transition: 0.3s;
+}
+
+.Mauritius-country:hover .Mauritius-dist {
+	background-color: #ffd500;
+	transition:0.3s;
+}
+.Mexico-country {
+	background-color: #fff;
+}
+.Mexico-text {
+	color:#ce1126;
+}
+.Mexico-dist {
+	background-color: #ce1126;
+}
+.Mexico-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.Mexico-country:hover .Mexico-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Mexico-country:hover .Mexico-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Moldova-country {
+	background-color: #ffd200;
+}
+.Moldova-text {
+	color:#cc092f;
+}
+.Moldova-dist {
+	background-color: #cc092f;
+}
+.Moldova-country:hover {
+	background-color: #cc092f;
+	transition: 0.3s;
+}
+.Moldova-country:hover .Moldova-text {
+	color:#ffd200;
+	transition: 0.3s;
+}
+
+.Moldova-country:hover .Moldova-dist {
+	background-color: #ffd200;
+	transition:0.3s;
+}
+.Monaco-country {
+	background-color: #ce1126;
+}
+.Monaco-text {
+	color:#fff;
+}
+.Monaco-dist {
+	background-color: #fff;
+}
+.Monaco-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Monaco-country:hover .Monaco-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Monaco-country:hover .Monaco-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.Mongolia-country {
+	background-color: #015197;
+}
+.Mongolia-text {
+	color:#c4272f;
+}
+.Mongolia-dist {
+	background-color: #c4272f;
+}
+.Mongolia-country:hover {
+	background-color: #c4272f;
+	transition: 0.3s;
+}
+.Mongolia-country:hover .Mongolia-text {
+	color:#015197;
+	transition: 0.3s;
+}
+
+.Mongolia-country:hover .Mongolia-dist {
+	background-color: #015197;
+	transition:0.3s;
+}
+.Montenegro-country {
+	background-color: #c40308;
+}
+.Montenegro-text {
+	color:#d3ae3b;
+}
+.Montenegro-dist {
+	background-color: #d3ae3b;
+}
+.Montenegro-country:hover {
+	background-color: #d3ae3b;
+	transition: 0.3s;
+}
+.Montenegro-country:hover .Montenegro-text {
+	color:#c40308;
+	transition: 0.3s;
+}
+
+.Montenegro-country:hover .Montenegro-dist {
+	background-color: #c40308;
+	transition:0.3s;
+}
+.Morocco-country {
+	background-color: #006233;
+}
+.Morocco-text {
+	color:#c1272d;
+}
+.Morocco-dist {
+	background-color: #c1272d;
+}
+.Morocco-country:hover {
+	background-color: #c1272d;
+	transition: 0.3s;
+}
+.Morocco-country:hover .Morocco-text {
+	color:#006233;
+	transition: 0.3s;
+}
+
+.Morocco-country:hover .Morocco-dist {
+	background-color: #006233;
+	transition:0.3s;
+}
+.Mozambique-country {
+	background-color: #fff;
+}
+.Mozambique-text {
+	color:#000;
+}
+.Mozambique-dist {
+	background-color: #000;
+}
+.Mozambique-country:hover {
+	background-color: #000;
+	transition: 0.3s;
+}
+.Mozambique-country:hover .Mozambique-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Mozambique-country:hover .Mozambique-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Myanmar-country {
+	background-color: #ea2839;
+}
+.Myanmar-text {
+	color:#fecb00;
+}
+.Myanmar-dist {
+	background-color: #fecb00;
+}
+.Myanmar-country:hover {
+	background-color: #fecb00;
+	transition: 0.3s;
+}
+.Myanmar-country:hover .Myanmar-text {
+	color:#ea2839;
+	transition: 0.3s;
+}
+
+.Myanmar-country:hover .Myanmar-dist {
+	background-color: #ea2839;
+	transition:0.3s;
+}
+.Namibia-country {
+	background-color: #009543;
+}
+.Namibia-text {
+	color:#003580;
+}
+.Namibia-dist {
+	background-color: #003580;
+}
+.Namibia-country:hover {
+	background-color: #003580;
+	transition: 0.3s;
+}
+.Namibia-country:hover .Namibia-text {
+	color:#009543;
+	transition: 0.3s;
+}
+
+.Namibia-country:hover .Namibia-dist {
+	background-color: #009543;
+	transition:0.3s;
+}
+.Nauru-country {
+	background-color: #ffc61e;
+}
+.Nauru-text {
+	color:#002b7f;
+}
+.Nauru-dist {
+	background-color: #002b7f;
+}
+.Nauru-country:hover {
+	background-color: #002b7f;
+	transition: 0.3s;
+}
+.Nauru-country:hover .Nauru-text {
+	color:#ffc61e;
+	transition: 0.3s;
+}
+
+.Nauru-country:hover .Nauru-dist {
+	background-color: #ffc61e;
+	transition:0.3s;
+}
+.Nepal-country {
+	background-color: #dc143c;
+}
+.Nepal-text {
+	color:#003893;
+}
+.Nepal-dist {
+	background-color: #003893;
+}
+.Nepal-country:hover {
+	background-color: #003893;
+	transition: 0.3s;
+}
+.Nepal-country:hover .Nepal-text {
+	color:#dc143c;
+	transition: 0.3s;
+}
+
+.Nepal-country:hover .Nepal-dist {
+	background-color: #dc143c;
+	transition:0.3s;
+}
+.Netherlands-country {
+	background-color: #fff;
+}
+.Netherlands-text {
+	color:#21468b;
+}
+.Netherlands-dist {
+	background-color: #21468b;
+}
+.Netherlands-country:hover {
+	background-color: #21468b;
+	transition: 0.3s;
+}
+.Netherlands-country:hover .Netherlands-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Netherlands-country:hover .Netherlands-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.NewZealand-country {
+	background-color: #ffffff;
+}
+.NewZealand-text {
+	color:#00247d;
+}
+.NewZealand-dist {
+	background-color: #00247d;
+}
+.NewZealand-country:hover {
+	background-color: #00247d;
+	transition: 0.3s;
+}
+.NewZealand-country:hover .NewZealand-text {
+	color:#ffffff;
+	transition: 0.3s;
+}
+
+.NewZealand-country:hover .NewZealand-dist {
+	background-color: #ffffff;
+	transition:0.3s;
+}
+.Nicaragua-country {
+	background-color: #0067c6;
+}
+.Nicaragua-text {
+	color:#000;
+}
+.Nicaragua-dist {
+	background-color: #000;
+}
+.Nicaragua-country:hover {
+	background-color: #000;
+	transition: 0.3s;
+}
+.Nicaragua-country:hover .Nicaragua-text {
+	color:#0067c6;
+	transition: 0.3s;
+}
+
+.Nicaragua-country:hover .Nicaragua-dist {
+	background-color: #0067c6;
+	transition:0.3s;
+}
+.Niger-country {
+	background-color: #fff;
+}
+.Niger-text {
+	color:#0db02b;
+}
+.Niger-dist {
+	background-color: #0db02b;
+}
+.Niger-country:hover {
+	background-color: #0db02b;
+	transition: 0.3s;
+}
+.Niger-country:hover .Niger-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Niger-country:hover .Niger-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Nigeria-country {
+	background-color: #fff;
+}
+.Nigeria-text {
+	color:#008751;
+}
+.Nigeria-dist {
+	background-color: #008751;
+}
+.Nigeria-country:hover {
+	background-color: #008751;
+	transition: 0.3s;
+}
+.Nigeria-country:hover .Nigeria-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Nigeria-country:hover .Nigeria-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.NorthKorea-country {
+	background-color: #fff;
+}
+.NorthKorea-text {
+	color:#024fa2;
+}
+.NorthKorea-dist {
+	background-color: #024fa2;
+}
+.NorthKorea-country:hover {
+	background-color: #024fa2;
+	transition: 0.3s;
+}
+.NorthKorea-country:hover .NorthKorea-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.NorthKorea-country:hover .NorthKorea-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Norway-country {
+	background-color: #fff;
+}
+.Norway-text {
+	color:#ef2b2d;
+}
+.Norway-dist {
+	background-color: #ef2b2d;
+}
+.Norway-country:hover {
+	background-color: #ef2b2d;
+	transition: 0.3s;
+}
+.Norway-country:hover .Norway-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Norway-country:hover .Norway-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Oman-country {
+	background-color: #fff;
+}
+.Oman-text {
+	color:#db161b;
+}
+.Oman-dist {
+	background-color: #db161b;
+}
+.Oman-country:hover {
+	background-color: #db161b;
+	transition: 0.3s;
+}
+.Oman-country:hover .Oman-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Oman-country:hover .Oman-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Pakistan-country {
+	background-color: #01411c;
+}
+.Pakistan-text {
+	color:#fff;
+}
+.Pakistan-dist {
+	background-color: #fff;
+}
+.Pakistan-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Pakistan-country:hover .Pakistan-text {
+	color:#01411c;
+	transition: 0.3s;
+}
+
+.Pakistan-country:hover .Pakistan-dist {
+	background-color: #01411c;
+	transition:0.3s;
+}
+.AmericanSamoa-country {
+	background-color: #371e0d;
+}
+.AmericanSamoa-text {
+	color:#ffffff;
+}
+.AmericanSamoa-dist {
+	background-color: #ffffff;
+}
+.AmericanSamoa-country:hover {
+	background-color: #ffffff;
+	transition: 0.3s;
+}
+.AmericanSamoa-country:hover .AmericanSamoa-text {
+	color:#371e0d;
+	transition: 0.3s;
+}
+
+.AmericanSamoa-country:hover .AmericanSamoa-dist {
+	background-color: #371e0d;
+	transition:0.3s;
+}
+.TurksandCaicosIslands-country {
+	background-color: #57a532;
+}
+.TurksandCaicosIslands-text {
+	color:#002868;
+}
+.TurksandCaicosIslands-dist {
+	background-color: #002868;
+}
+.TurksandCaicosIslands-country:hover {
+	background-color: #002868;
+	transition: 0.3s;
+}
+.TurksandCaicosIslands-country:hover .TurksandCaicosIslands-text {
+	color:#57a532;
+	transition: 0.3s;
+}
+
+.TurksandCaicosIslands-country:hover .TurksandCaicosIslands-dist {
+	background-color: #57a532;
+	transition:0.3s;
+}
+.NorthernMarianaIslands-country {
+	background-color: #0033a1;
+}
+.NorthernMarianaIslands-text {
+	color:#c06b13;
+}
+.NorthernMarianaIslands-dist {
+	background-color: #c06b13;
+}
+.NorthernMarianaIslands-country:hover {
+	background-color: #c06b13;
+	transition: 0.3s;
+}
+.NorthernMarianaIslands-country:hover .NorthernMarianaIslands-text {
+	color:#0033a1;
+	transition: 0.3s;
+}
+
+.NorthernMarianaIslands-country:hover .NorthernMarianaIslands-dist {
+	background-color: #0033a1;
+	transition:0.3s;
+}
+.Guam-country {
+	background-color: #00297b;
+}
+.Guam-text {
+	color:#92dbfc;
+}
+.Guam-dist {
+	background-color: #92dbfc;
+}
+.Guam-country:hover {
+	background-color: #92dbfc;
+	transition: 0.3s;
+}
+.Guam-country:hover .Guam-text {
+	color:#00297b;
+	transition: 0.3s;
+}
+
+.Guam-country:hover .Guam-dist {
+	background-color: #00297b;
+	transition:0.3s;
+}
+.SaintMartin-country {
+	background-color: #ce1126;
+}
+.SaintMartin-text {
+	color:#002654;
+}
+.SaintMartin-dist {
+	background-color: #002654;
+}
+.SaintMartin-country:hover {
+	background-color: #002654;
+	transition: 0.3s;
+}
+.SaintMartin-country:hover .SaintMartin-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.SaintMartin-country:hover .SaintMartin-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.SaintBarthélemy-country {
+	background-color: #ce1126;
+}
+.SaintBarthélemy-text {
+	color:#002654;
+}
+.SaintBarthélemy-dist {
+	background-color: #002654;
+}
+.SaintBarthélemy-country:hover {
+	background-color: #002654;
+	transition: 0.3s;
+}
+.SaintBarthélemy-country:hover .SaintBarthélemy-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.SaintBarthélemy-country:hover .SaintBarthélemy-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.Kosovo-country {
+	background-color: #d0a650;
+}
+.Kosovo-text {
+	color:#244aa5;
+}
+.Kosovo-dist {
+	background-color: #244aa5;
+}
+.Kosovo-country:hover {
+	background-color: #244aa5;
+	transition: 0.3s;
+}
+.Kosovo-country:hover .Kosovo-text {
+	color:#d0a650;
+	transition: 0.3s;
+}
+
+.Kosovo-country:hover .Kosovo-dist {
+	background-color: #d0a650;
+	transition:0.3s;
+}
+.Montserrat-country {
+	background-color: #00a2bd;
+}
+.Montserrat-text {
+	color:#a53d08;
+}
+.Montserrat-dist {
+	background-color: #a53d08;
+}
+.Montserrat-country:hover {
+	background-color: #a53d08;
+	transition: 0.3s;
+}
+.Montserrat-country:hover .Montserrat-text {
+	color:#00a2bd;
+	transition: 0.3s;
+}
+
+.Montserrat-country:hover .Montserrat-dist {
+	background-color: #00a2bd;
+	transition:0.3s;
+}
+.Niue-country {
+	background-color: #fedd00;
+}
+.Niue-text {
+	color:#c8102e;
+}
+.Niue-dist {
+	background-color: #c8102e;
+}
+.Niue-country:hover {
+	background-color: #c8102e;
+	transition: 0.3s;
+}
+.Niue-country:hover .Niue-text {
+	color:#fedd00;
+	transition: 0.3s;
+}
+
+.Niue-country:hover .Niue-dist {
+	background-color: #fedd00;
+	transition:0.3s;
+}
+.Guadeloupe-country {
+	background-color: #000000;
+}
+.Guadeloupe-text {
+	color:#fcdd09;
+}
+.Guadeloupe-dist {
+	background-color: #fcdd09;
+}
+.Guadeloupe-country:hover {
+	background-color: #fcdd09;
+	transition: 0.3s;
+}
+.Guadeloupe-country:hover .Guadeloupe-text {
+	color:#000000;
+	transition: 0.3s;
+}
+
+.Guadeloupe-country:hover .Guadeloupe-dist {
+	background-color: #000000;
+	transition:0.3s;
+}
+.CookIslands-country {
+	background-color: #ffffff;
+}
+.CookIslands-text {
+	color:#012169;
+}
+.CookIslands-dist {
+	background-color: #012169;
+}
+.CookIslands-country:hover {
+	background-color: #012169;
+	transition: 0.3s;
+}
+.CookIslands-country:hover .CookIslands-text {
+	color:#ffffff;
+	transition: 0.3s;
+}
+
+.CookIslands-country:hover .CookIslands-dist {
+	background-color: #ffffff;
+	transition:0.3s;
+}
+.FaroeIslands-country {
+	background-color: #ef3340;
+}
+.FaroeIslands-text {
+	color:#FFFFFF;
+}
+.FaroeIslands-dist {
+	background-color: #FFFFFF;
+}
+.FaroeIslands-country:hover {
+	background-color: #FFFFFF;
+	transition: 0.3s;
+}
+.FaroeIslands-country:hover .FaroeIslands-text {
+	color:#ef3340;
+	transition: 0.3s;
+}
+
+.FaroeIslands-country:hover .FaroeIslands-dist {
+	background-color: #ef3340;
+	transition:0.3s;
+}
+.Palau-country {
+	background-color: #ffde00;
+}
+.Palau-text {
+	color:#4aadd6;
+}
+.Palau-dist {
+	background-color: #4aadd6;
+}
+.Palau-country:hover {
+	background-color: #4aadd6;
+	transition: 0.3s;
+}
+.Palau-country:hover .Palau-text {
+	color:#ffde00;
+	transition: 0.3s;
+}
+
+.Palau-country:hover .Palau-dist {
+	background-color: #ffde00;
+	transition:0.3s;
+}
+.Palestine-country {
+	background-color: #fff;
+}
+.Palestine-text {
+	color:#007a3d;
+}
+.Palestine-dist {
+	background-color: #007a3d;
+}
+.Palestine-country:hover {
+	background-color: #007a3d;
+	transition: 0.3s;
+}
+.Palestine-country:hover .Palestine-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Palestine-country:hover .Palestine-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Panama-country {
+	background-color: #005293;
+}
+.Panama-text {
+	color:#fff;
+}
+.Panama-dist {
+	background-color: #fff;
+}
+.Panama-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Panama-country:hover .Panama-text {
+	color:#005293;
+	transition: 0.3s;
+}
+
+.Panama-country:hover .Panama-dist {
+	background-color: #005293;
+	transition:0.3s;
+}
+.PapuaNewGuinea-country {
+	background-color: #ce1126;
+}
+.PapuaNewGuinea-text {
+	color:#000;
+}
+.PapuaNewGuinea-dist {
+	background-color: #000;
+}
+.PapuaNewGuinea-country:hover {
+	background-color: #000;
+	transition: 0.3s;
+}
+.PapuaNewGuinea-country:hover .PapuaNewGuinea-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.PapuaNewGuinea-country:hover .PapuaNewGuinea-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.Paraguay-country {
+	background-color: #fff;
+}
+.Paraguay-text {
+	color:#0038a8;
+}
+.Paraguay-dist {
+	background-color: #0038a8;
+}
+.Paraguay-country:hover {
+	background-color: #0038a8;
+	transition: 0.3s;
+}
+.Paraguay-country:hover .Paraguay-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Paraguay-country:hover .Paraguay-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Peru-country {
+	background-color: white;
+}
+.Peru-text {
+	color:#d91023;
+}
+.Peru-dist {
+	background-color: #d91023;
+}
+.Peru-country:hover {
+	background-color: #d91023;
+	transition: 0.3s;
+}
+.Peru-country:hover .Peru-text {
+	color:white;
+	transition: 0.3s;
+}
+
+.Peru-country:hover .Peru-dist {
+	background-color: white;
+	transition:0.3s;
+}
+.Philippines-country {
+	background-color: #ce1126;
+}
+.Philippines-text {
+	color:#0038a8;
+}
+.Philippines-dist {
+	background-color: #0038a8;
+}
+.Philippines-country:hover {
+	background-color: #0038a8;
+	transition: 0.3s;
+}
+.Philippines-country:hover .Philippines-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Philippines-country:hover .Philippines-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.Poland-country {
+	background-color: #dc143c;
+}
+.Poland-text {
+	color:#fff;
+}
+.Poland-dist {
+	background-color: #fff;
+}
+.Poland-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Poland-country:hover .Poland-text {
+	color:#dc143c;
+	transition: 0.3s;
+}
+
+.Poland-country:hover .Poland-dist {
+	background-color: #dc143c;
+	transition:0.3s;
+}
+.Portugal-country {
+	background-color: #060;
+}
+.Portugal-text {
+	color:#f00;
+}
+.Portugal-dist {
+	background-color: #f00;
+}
+.Portugal-country:hover {
+	background-color: #f00;
+	transition: 0.3s;
+}
+.Portugal-country:hover .Portugal-text {
+	color:#060;
+	transition: 0.3s;
+}
+
+.Portugal-country:hover .Portugal-dist {
+	background-color: #060;
+	transition:0.3s;
+}
+.Qatar-country {
+	background-color: #fff;
+}
+.Qatar-text {
+	color:#8d1b3d;
+}
+.Qatar-dist {
+	background-color: #8d1b3d;
+}
+.Qatar-country:hover {
+	background-color: #8d1b3d;
+	transition: 0.3s;
+}
+.Qatar-country:hover .Qatar-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Qatar-country:hover .Qatar-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Macedonia-country {
+	background-color: #ffe600;
+}
+.Macedonia-text {
+	color:#d20000;
+}
+.Macedonia-dist {
+	background-color: #d20000;
+}
+.Macedonia-country:hover {
+	background-color: #d20000;
+	transition: 0.3s;
+}
+.Macedonia-country:hover .Macedonia-text {
+	color:#ffe600;
+	transition: 0.3s;
+}
+
+.Macedonia-country:hover .Macedonia-dist {
+	background-color: #ffe600;
+	transition:0.3s;
+}
+.FrenchPolynesia-country {
+	background-color: #ce1126;
+}
+.FrenchPolynesia-text {
+	color:#ff9c10;
+}
+.FrenchPolynesia-dist {
+	background-color: #ff9c10;
+}
+.FrenchPolynesia-country:hover {
+	background-color: #ff9c10;
+	transition: 0.3s;
+}
+.FrenchPolynesia-country:hover .FrenchPolynesia-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.FrenchPolynesia-country:hover .FrenchPolynesia-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.FrenchGuiana-country {
+	background-color: #fcdd09;
+}
+.FrenchGuiana-text {
+	color:#078930;
+}
+.FrenchGuiana-dist {
+	background-color: #078930;
+}
+.FrenchGuiana-country:hover {
+	background-color: #078930;
+	transition: 0.3s;
+}
+.FrenchGuiana-country:hover .FrenchGuiana-text {
+	color:#fcdd09;
+	transition: 0.3s;
+}
+
+.FrenchGuiana-country:hover .FrenchGuiana-dist {
+	background-color: #fcdd09;
+	transition:0.3s;
+}
+.Jersey-country {
+	background-color: #ffffff;
+}
+.Jersey-text {
+	color:#cf142b;
+}
+.Jersey-dist {
+	background-color: #cf142b;
+}
+.Jersey-country:hover {
+	background-color: #cf142b;
+	transition: 0.3s;
+}
+.Jersey-country:hover .Jersey-text {
+	color:#ffffff;
+	transition: 0.3s;
+}
+
+.Jersey-country:hover .Jersey-dist {
+	background-color: #ffffff;
+	transition:0.3s;
+}
+.Mayotte-country {
+	background-color: #d42e12;
+}
+.Mayotte-text {
+	color:#dfdfdf;
+}
+.Mayotte-dist {
+	background-color: #dfdfdf;
+}
+.Mayotte-country:hover {
+	background-color: #dfdfdf;
+	transition: 0.3s;
+}
+.Mayotte-country:hover .Mayotte-text {
+	color:#d42e12;
+	transition: 0.3s;
+}
+
+.Mayotte-country:hover .Mayotte-dist {
+	background-color: #d42e12;
+	transition:0.3s;
+}
+.NewCaledonia-country {
+	background-color: #009543;
+}
+.NewCaledonia-text {
+	color:#ed4135;
+}
+.NewCaledonia-dist {
+	background-color: #ed4135;
+}
+.NewCaledonia-country:hover {
+	background-color: #ed4135;
+	transition: 0.3s;
+}
+.NewCaledonia-country:hover .NewCaledonia-text {
+	color:#009543;
+	transition: 0.3s;
+}
+
+.NewCaledonia-country:hover .NewCaledonia-dist {
+	background-color: #009543;
+	transition:0.3s;
+}
+.TheGambia-country {
+	background-color: #0c1c8c;
+}
+.TheGambia-text {
+	color:#ce1126;
+}
+.TheGambia-dist {
+	background-color: #ce1126;
+}
+.TheGambia-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.TheGambia-country:hover .TheGambia-text {
+	color:#0c1c8c;
+	transition: 0.3s;
+}
+
+.TheGambia-country:hover .TheGambia-dist {
+	background-color: #0c1c8c;
+	transition:0.3s;
+}
+.CongoKinshasa-country {
+	background-color: #ce1021;
+}
+.CongoKinshasa-text {
+	color:#007fff;
+}
+.CongoKinshasa-dist {
+	background-color: #007fff;
+}
+.CongoKinshasa-country:hover {
+	background-color: #007fff;
+	transition: 0.3s;
+}
+.CongoKinshasa-country:hover .CongoKinshasa-text {
+	color:#ce1021;
+	transition: 0.3s;
+}
+
+.CongoKinshasa-country:hover .CongoKinshasa-dist {
+	background-color: #ce1021;
+	transition:0.3s;
+}
+.Romania-country {
+	background-color: #fcd116;
+}
+.Romania-text {
+	color:#002b7f;
+}
+.Romania-dist {
+	background-color: #002b7f;
+}
+.Romania-country:hover {
+	background-color: #002b7f;
+	transition: 0.3s;
+}
+.Romania-country:hover .Romania-text {
+	color:#fcd116;
+	transition: 0.3s;
+}
+
+.Romania-country:hover .Romania-dist {
+	background-color: #fcd116;
+	transition:0.3s;
+}
+.Russia-country {
+	background-color: #d52b1e;
+}
+.Russia-text {
+	color:#fff;
+}
+.Russia-dist {
+	background-color: #fff;
+}
+.Russia-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Russia-country:hover .Russia-text {
+	color:#d52b1e;
+	transition: 0.3s;
+}
+
+.Russia-country:hover .Russia-dist {
+	background-color: #d52b1e;
+	transition:0.3s;
+}
+.Rwanda-country {
+	background-color: #fad201;
+}
+.Rwanda-text {
+	color:#20603d;
+}
+.Rwanda-dist {
+	background-color: #20603d;
+}
+.Rwanda-country:hover {
+	background-color: #20603d;
+	transition: 0.3s;
+}
+.Rwanda-country:hover .Rwanda-text {
+	color:#fad201;
+	transition: 0.3s;
+}
+
+.Rwanda-country:hover .Rwanda-dist {
+	background-color: #fad201;
+	transition:0.3s;
+}
+.SaintKittsandNevis-country {
+	background-color: #ce1126;
+}
+.SaintKittsandNevis-text {
+	color:#009e49;
+}
+.SaintKittsandNevis-dist {
+	background-color: #009e49;
+}
+.SaintKittsandNevis-country:hover {
+	background-color: #009e49;
+	transition: 0.3s;
+}
+.SaintKittsandNevis-country:hover .SaintKittsandNevis-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.SaintKittsandNevis-country:hover .SaintKittsandNevis-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.BritishVirginIslands-country {
+	background-color: #006129;
+}
+.BritishVirginIslands-text {
+	color:#012169;
+}
+.BritishVirginIslands-dist {
+	background-color: #012169;
+}
+.BritishVirginIslands-country:hover {
+	background-color: #012169;
+	transition: 0.3s;
+}
+.BritishVirginIslands-country:hover .BritishVirginIslands-text {
+	color:#006129;
+	transition: 0.3s;
+}
+
+.BritishVirginIslands-country:hover .BritishVirginIslands-dist {
+	background-color: #006129;
+	transition:0.3s;
+}
+.Anguilla-country {
+	background-color: #ff9900;
+}
+.Anguilla-text {
+	color:#012169;
+}
+.Anguilla-dist {
+	background-color: #012169;
+}
+.Anguilla-country:hover {
+	background-color: #012169;
+	transition: 0.3s;
+}
+.Anguilla-country:hover .Anguilla-text {
+	color:#ff9900;
+	transition: 0.3s;
+}
+
+.Anguilla-country:hover .Anguilla-dist {
+	background-color: #ff9900;
+	transition:0.3s;
+}
+.SaintLucia-country {
+	background-color: #fff;
+}
+.SaintLucia-text {
+	color:#6cf;
+}
+.SaintLucia-dist {
+	background-color: #6cf;
+}
+.SaintLucia-country:hover {
+	background-color: #6cf;
+	transition: 0.3s;
+}
+.SaintLucia-country:hover .SaintLucia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.SaintLucia-country:hover .SaintLucia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.SaintVincentandtheGrenadines-country {
+	background-color: #fcd116;
+}
+.SaintVincentandtheGrenadines-text {
+	color:#009e60;
+}
+.SaintVincentandtheGrenadines-dist {
+	background-color: #009e60;
+}
+.SaintVincentandtheGrenadines-country:hover {
+	background-color: #009e60;
+	transition: 0.3s;
+}
+.SaintVincentandtheGrenadines-country:hover .SaintVincentandtheGrenadines-text {
+	color:#fcd116;
+	transition: 0.3s;
+}
+
+.SaintVincentandtheGrenadines-country:hover .SaintVincentandtheGrenadines-dist {
+	background-color: #fcd116;
+	transition:0.3s;
+}
+.Samoa-country {
+	background-color: #002b7f;
+}
+.Samoa-text {
+	color:#ce1126;
+}
+.Samoa-dist {
+	background-color: #ce1126;
+}
+.Samoa-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.Samoa-country:hover .Samoa-text {
+	color:#002b7f;
+	transition: 0.3s;
+}
+
+.Samoa-country:hover .Samoa-dist {
+	background-color: #002b7f;
+	transition:0.3s;
+}
+.SanMarino-country {
+	background-color: #fff;
+}
+.SanMarino-text {
+	color:#5eb6e4;
+}
+.SanMarino-dist {
+	background-color: #5eb6e4;
+}
+.SanMarino-country:hover {
+	background-color: #5eb6e4;
+	transition: 0.3s;
+}
+.SanMarino-country:hover .SanMarino-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.SanMarino-country:hover .SanMarino-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.SãoToméandPríncipe-country {
+	background-color: #ffce00;
+}
+.SãoToméandPríncipe-text {
+	color:#12ad2b;
+}
+.SãoToméandPríncipe-dist {
+	background-color: #12ad2b;
+}
+.SãoToméandPríncipe-country:hover {
+	background-color: #12ad2b;
+	transition: 0.3s;
+}
+.SãoToméandPríncipe-country:hover .SãoToméandPríncipe-text {
+	color:#ffce00;
+	transition: 0.3s;
+}
+
+.SãoToméandPríncipe-country:hover .SãoToméandPríncipe-dist {
+	background-color: #ffce00;
+	transition:0.3s;
+}
+.SaudiArabia-country {
+	background-color: #fff;
+}
+.SaudiArabia-text {
+	color:#006c35;
+}
+.SaudiArabia-dist {
+	background-color: #006c35;
+}
+.SaudiArabia-country:hover {
+	background-color: #006c35;
+	transition: 0.3s;
+}
+.SaudiArabia-country:hover .SaudiArabia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.SaudiArabia-country:hover .SaudiArabia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Senegal-country {
+	background-color: #fdef42;
+}
+.Senegal-text {
+	color:#00853f;
+}
+.Senegal-dist {
+	background-color: #00853f;
+}
+.Senegal-country:hover {
+	background-color: #00853f;
+	transition: 0.3s;
+}
+.Senegal-country:hover .Senegal-text {
+	color:#fdef42;
+	transition: 0.3s;
+}
+
+.Senegal-country:hover .Senegal-dist {
+	background-color: #fdef42;
+	transition:0.3s;
+}
+.Serbia-country {
+	background-color: #0c4076;
+}
+.Serbia-text {
+	color:#fff;
+}
+.Serbia-dist {
+	background-color: #fff;
+}
+.Serbia-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Serbia-country:hover .Serbia-text {
+	color:#0c4076;
+	transition: 0.3s;
+}
+
+.Serbia-country:hover .Serbia-dist {
+	background-color: #0c4076;
+	transition:0.3s;
+}
+.Seychelles-country {
+	background-color: #fcd856;
+}
+.Seychelles-text {
+	color:#d62828;
+}
+.Seychelles-dist {
+	background-color: #d62828;
+}
+.Seychelles-country:hover {
+	background-color: #d62828;
+	transition: 0.3s;
+}
+.Seychelles-country:hover .Seychelles-text {
+	color:#fcd856;
+	transition: 0.3s;
+}
+
+.Seychelles-country:hover .Seychelles-dist {
+	background-color: #fcd856;
+	transition:0.3s;
+}
+.SierraLeone-country {
+	background-color: #fff;
+}
+.SierraLeone-text {
+	color:#0072c6;
+}
+.SierraLeone-dist {
+	background-color: #0072c6;
+}
+.SierraLeone-country:hover {
+	background-color: #0072c6;
+	transition: 0.3s;
+}
+.SierraLeone-country:hover .SierraLeone-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.SierraLeone-country:hover .SierraLeone-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Singapore-country {
+	background-color: #fff;
+}
+.Singapore-text {
+	color:#ed2939;
+}
+.Singapore-dist {
+	background-color: #ed2939;
+}
+.Singapore-country:hover {
+	background-color: #ed2939;
+	transition: 0.3s;
+}
+.Singapore-country:hover .Singapore-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Singapore-country:hover .Singapore-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Slovakia-country {
+	background-color: #0b4ea2;
+}
+.Slovakia-text {
+	color:#ee1c25;
+}
+.Slovakia-dist {
+	background-color: #ee1c25;
+}
+.Slovakia-country:hover {
+	background-color: #ee1c25;
+	transition: 0.3s;
+}
+.Slovakia-country:hover .Slovakia-text {
+	color:#0b4ea2;
+	transition: 0.3s;
+}
+
+.Slovakia-country:hover .Slovakia-dist {
+	background-color: #0b4ea2;
+	transition:0.3s;
+}
+.Slovenia-country {
+	background-color: #ed1c24;
+}
+.Slovenia-text {
+	color:#fff;
+}
+.Slovenia-dist {
+	background-color: #fff;
+}
+.Slovenia-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Slovenia-country:hover .Slovenia-text {
+	color:#ed1c24;
+	transition: 0.3s;
+}
+
+.Slovenia-country:hover .Slovenia-dist {
+	background-color: #ed1c24;
+	transition:0.3s;
+}
+.SolomonIslands-country {
+	background-color: #215b33;
+}
+.SolomonIslands-text {
+	color:#0051ba;
+}
+.SolomonIslands-dist {
+	background-color: #0051ba;
+}
+.SolomonIslands-country:hover {
+	background-color: #0051ba;
+	transition: 0.3s;
+}
+.SolomonIslands-country:hover .SolomonIslands-text {
+	color:#215b33;
+	transition: 0.3s;
+}
+
+.SolomonIslands-country:hover .SolomonIslands-dist {
+	background-color: #215b33;
+	transition:0.3s;
+}
+.Somalia-country {
+	background-color: #fff;
+}
+.Somalia-text {
+	color:#4189dd;
+}
+.Somalia-dist {
+	background-color: #4189dd;
+}
+.Somalia-country:hover {
+	background-color: #4189dd;
+	transition: 0.3s;
+}
+.Somalia-country:hover .Somalia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Somalia-country:hover .Somalia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.SouthAfrica-country {
+	background-color: #de3831;
+}
+.SouthAfrica-text {
+	color:#002395;
+}
+.SouthAfrica-dist {
+	background-color: #002395;
+}
+.SouthAfrica-country:hover {
+	background-color: #002395;
+	transition: 0.3s;
+}
+.SouthAfrica-country:hover .SouthAfrica-text {
+	color:#de3831;
+	transition: 0.3s;
+}
+
+.SouthAfrica-country:hover .SouthAfrica-dist {
+	background-color: #de3831;
+	transition:0.3s;
+}
+.SouthKorea-country {
+	background-color: #000;
+}
+.SouthKorea-text {
+	color:#fff;
+}
+.SouthKorea-dist {
+	background-color: #fff;
+}
+.SouthKorea-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.SouthKorea-country:hover .SouthKorea-text {
+	color:#000;
+	transition: 0.3s;
+}
+
+.SouthKorea-country:hover .SouthKorea-dist {
+	background-color: #000;
+	transition:0.3s;
+}
+.SouthSudan-country {
+	background-color: #fff;
+}
+.SouthSudan-text {
+	color:#078930;
+}
+.SouthSudan-dist {
+	background-color: #078930;
+}
+.SouthSudan-country:hover {
+	background-color: #078930;
+	transition: 0.3s;
+}
+.SouthSudan-country:hover .SouthSudan-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.SouthSudan-country:hover .SouthSudan-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Spain-country {
+	background-color: #ffc400;
+}
+.Spain-text {
+	color:#c60b1e;
+}
+.Spain-dist {
+	background-color: #c60b1e;
+}
+.Spain-country:hover {
+	background-color: #c60b1e;
+	transition: 0.3s;
+}
+.Spain-country:hover .Spain-text {
+	color:#ffc400;
+	transition: 0.3s;
+}
+
+.Spain-country:hover .Spain-dist {
+	background-color: #ffc400;
+	transition:0.3s;
+}
+.SriLanka-country {
+	background-color: #ff5b00;
+}
+.SriLanka-text {
+	color:#ffb700;
+}
+.SriLanka-dist {
+	background-color: #ffb700;
+}
+.SriLanka-country:hover {
+	background-color: #ffb700;
+	transition: 0.3s;
+}
+.SriLanka-country:hover .SriLanka-text {
+	color:#ff5b00;
+	transition: 0.3s;
+}
+
+.SriLanka-country:hover .SriLanka-dist {
+	background-color: #ff5b00;
+	transition:0.3s;
+}
+.Sudan-country {
+	background-color: #d21034;
+}
+.Sudan-text {
+	color:#fff;
+}
+.Sudan-dist {
+	background-color: #fff;
+}
+.Sudan-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Sudan-country:hover .Sudan-text {
+	color:#d21034;
+	transition: 0.3s;
+}
+
+.Sudan-country:hover .Sudan-dist {
+	background-color: #d21034;
+	transition:0.3s;
+}
+.Suriname-country {
+	background-color: #fff;
+}
+.Suriname-text {
+	color:#377e3f;
+}
+.Suriname-dist {
+	background-color: #377e3f;
+}
+.Suriname-country:hover {
+	background-color: #377e3f;
+	transition: 0.3s;
+}
+.Suriname-country:hover .Suriname-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Suriname-country:hover .Suriname-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Swaziland-country {
+	background-color: #ffd900;
+}
+.Swaziland-text {
+	color:#3e5eb9;
+}
+.Swaziland-dist {
+	background-color: #3e5eb9;
+}
+.Swaziland-country:hover {
+	background-color: #3e5eb9;
+	transition: 0.3s;
+}
+.Swaziland-country:hover .Swaziland-text {
+	color:#ffd900;
+	transition: 0.3s;
+}
+
+.Swaziland-country:hover .Swaziland-dist {
+	background-color: #ffd900;
+	transition:0.3s;
+}
+.WallisandFutuna-country {
+	background-color: #ce1126;
+}
+.WallisandFutuna-text {
+	color:#002654;
+}
+.WallisandFutuna-dist {
+	background-color: #002654;
+}
+.WallisandFutuna-country:hover {
+	background-color: #002654;
+	transition: 0.3s;
+}
+.WallisandFutuna-country:hover .WallisandFutuna-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.WallisandFutuna-country:hover .WallisandFutuna-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.SvalbardandJanMayen-country {
+	background-color: #fff;
+}
+.SvalbardandJanMayen-text {
+	color:#ef2b2d;
+}
+.SvalbardandJanMayen-dist {
+	background-color: #ef2b2d;
+}
+.SvalbardandJanMayen-country:hover {
+	background-color: #ef2b2d;
+	transition: 0.3s;
+}
+.SvalbardandJanMayen-country:hover .SvalbardandJanMayen-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.SvalbardandJanMayen-country:hover .SvalbardandJanMayen-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.PitcairnIslands-country {
+	background-color: #FFFFFF;
+}
+.PitcairnIslands-text {
+	color:#006ec7;
+}
+.PitcairnIslands-dist {
+	background-color: #006ec7;
+}
+.PitcairnIslands-country:hover {
+	background-color: #006ec7;
+	transition: 0.3s;
+}
+.PitcairnIslands-country:hover .PitcairnIslands-text {
+	color:#FFFFFF;
+	transition: 0.3s;
+}
+
+.PitcairnIslands-country:hover .PitcairnIslands-dist {
+	background-color: #FFFFFF;
+	transition:0.3s;
+}
+.SouthGeorgiaandSouthSandwichIslands-country {
+	background-color: #012169;
+}
+.SouthGeorgiaandSouthSandwichIslands-text {
+	color:#dda100;
+}
+.SouthGeorgiaandSouthSandwichIslands-dist {
+	background-color: #dda100;
+}
+.SouthGeorgiaandSouthSandwichIslands-country:hover {
+	background-color: #dda100;
+	transition: 0.3s;
+}
+.SouthGeorgiaandSouthSandwichIslands-country:hover .SouthGeorgiaandSouthSandwichIslands-text {
+	color:#012169;
+	transition: 0.3s;
+}
+
+.SouthGeorgiaandSouthSandwichIslands-country:hover .SouthGeorgiaandSouthSandwichIslands-dist {
+	background-color: #012169;
+	transition:0.3s;
+}
+.Aruba-country {
+	background-color: #418fde;
+}
+.Aruba-text {
+	color:#ffd100;
+}
+.Aruba-dist {
+	background-color: #ffd100;
+}
+.Aruba-country:hover {
+	background-color: #ffd100;
+	transition: 0.3s;
+}
+.Aruba-country:hover .Aruba-text {
+	color:#418fde;
+	transition: 0.3s;
+}
+
+.Aruba-country:hover .Aruba-dist {
+	background-color: #418fde;
+	transition:0.3s;
+}
+.SaintHelena,Ascension,andTristandaCunha-country {
+	background-color: #fff;
+}
+.SaintHelena,Ascension,andTristandaCunha-text {
+	color:#00247d;
+}
+.SaintHelena,Ascension,andTristandaCunha-dist {
+	background-color: #00247d;
+}
+.SaintHelena,Ascension,andTristandaCunha-country:hover {
+	background-color: #00247d;
+	transition: 0.3s;
+}
+.SaintHelena,Ascension,andTristandaCunha-country:hover .SaintHelena,Ascension,andTristandaCunha-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.SaintHelena,Ascension,andTristandaCunha-country:hover .SaintHelena,Ascension,andTristandaCunha-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.IsleofMan-country {
+	background-color: #cf142b;
+}
+.IsleofMan-text {
+	color:#e7cd15;
+}
+.IsleofMan-dist {
+	background-color: #e7cd15;
+}
+.IsleofMan-country:hover {
+	background-color: #e7cd15;
+	transition: 0.3s;
+}
+.IsleofMan-country:hover .IsleofMan-text {
+	color:#cf142b;
+	transition: 0.3s;
+}
+
+.IsleofMan-country:hover .IsleofMan-dist {
+	background-color: #cf142b;
+	transition:0.3s;
+}
+.U.S.VirginIslands-country {
+	background-color: #162667;
+}
+.U.S.VirginIslands-text {
+	color:#f4c53d;
+}
+.U.S.VirginIslands-dist {
+	background-color: #f4c53d;
+}
+.U.S.VirginIslands-country:hover {
+	background-color: #f4c53d;
+	transition: 0.3s;
+}
+.U.S.VirginIslands-country:hover .U.S.VirginIslands-text {
+	color:#162667;
+	transition: 0.3s;
+}
+
+.U.S.VirginIslands-country:hover .U.S.VirginIslands-dist {
+	background-color: #162667;
+	transition:0.3s;
+}
+.ChristmasIsland-country {
+	background-color: #0db02b;
+}
+.ChristmasIsland-text {
+	color:#f7d116;
+}
+.ChristmasIsland-dist {
+	background-color: #f7d116;
+}
+.ChristmasIsland-country:hover {
+	background-color: #f7d116;
+	transition: 0.3s;
+}
+.ChristmasIsland-country:hover .ChristmasIsland-text {
+	color:#0db02b;
+	transition: 0.3s;
+}
+
+.ChristmasIsland-country:hover .ChristmasIsland-dist {
+	background-color: #0db02b;
+	transition:0.3s;
+}
+.Sweden-country {
+	background-color: #fecc00;
+}
+.Sweden-text {
+	color:#006aa7;
+}
+.Sweden-dist {
+	background-color: #006aa7;
+}
+.Sweden-country:hover {
+	background-color: #006aa7;
+	transition: 0.3s;
+}
+.Sweden-country:hover .Sweden-text {
+	color:#fecc00;
+	transition: 0.3s;
+}
+
+.Sweden-country:hover .Sweden-dist {
+	background-color: #fecc00;
+	transition:0.3s;
+}
+.Switzerland-country {
+	background-color: #fff;
+}
+.Switzerland-text {
+	color:#f00;
+}
+.Switzerland-dist {
+	background-color: #f00;
+}
+.Switzerland-country:hover {
+	background-color: #f00;
+	transition: 0.3s;
+}
+.Switzerland-country:hover .Switzerland-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Switzerland-country:hover .Switzerland-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Syria-country {
+	background-color: #fff;
+}
+.Syria-text {
+	color:#000;
+}
+.Syria-dist {
+	background-color: #000;
+}
+.Syria-country:hover {
+	background-color: #000;
+	transition: 0.3s;
+}
+.Syria-country:hover .Syria-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Syria-country:hover .Syria-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Tajikistan-country {
+	background-color: #fff;
+}
+.Tajikistan-text {
+	color:#060;
+}
+.Tajikistan-dist {
+	background-color: #060;
+}
+.Tajikistan-country:hover {
+	background-color: #060;
+	transition: 0.3s;
+}
+.Tajikistan-country:hover .Tajikistan-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Tajikistan-country:hover .Tajikistan-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Tanzania-country {
+	background-color: #00a3dd;
+}
+.Tanzania-text {
+	color:#1eb53a;
+}
+.Tanzania-dist {
+	background-color: #1eb53a;
+}
+.Tanzania-country:hover {
+	background-color: #1eb53a;
+	transition: 0.3s;
+}
+.Tanzania-country:hover .Tanzania-text {
+	color:#00a3dd;
+	transition: 0.3s;
+}
+
+.Tanzania-country:hover .Tanzania-dist {
+	background-color: #00a3dd;
+	transition:0.3s;
+}
+.Thailand-country {
+	background-color: #fff;
+}
+.Thailand-text {
+	color:#ed1c24;
+}
+.Thailand-dist {
+	background-color: #ed1c24;
+}
+.Thailand-country:hover {
+	background-color: #ed1c24;
+	transition: 0.3s;
+}
+.Thailand-country:hover .Thailand-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Thailand-country:hover .Thailand-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Timor-Leste-country {
+	background-color: #ffc726;
+}
+.Timor-Leste-text {
+	color:#dc241f;
+}
+.Timor-Leste-dist {
+	background-color: #dc241f;
+}
+.Timor-Leste-country:hover {
+	background-color: #dc241f;
+	transition: 0.3s;
+}
+.Timor-Leste-country:hover .Timor-Leste-text {
+	color:#ffc726;
+	transition: 0.3s;
+}
+
+.Timor-Leste-country:hover .Timor-Leste-dist {
+	background-color: #ffc726;
+	transition:0.3s;
+}
+.Togo-country {
+	background-color: #ffce00;
+}
+.Togo-text {
+	color:#006a4e;
+}
+.Togo-dist {
+	background-color: #006a4e;
+}
+.Togo-country:hover {
+	background-color: #006a4e;
+	transition: 0.3s;
+}
+.Togo-country:hover .Togo-text {
+	color:#ffce00;
+	transition: 0.3s;
+}
+
+.Togo-country:hover .Togo-dist {
+	background-color: #ffce00;
+	transition:0.3s;
+}
+.Tonga-country {
+	background-color: #fff;
+}
+.Tonga-text {
+	color:#c10000;
+}
+.Tonga-dist {
+	background-color: #c10000;
+}
+.Tonga-country:hover {
+	background-color: #c10000;
+	transition: 0.3s;
+}
+.Tonga-country:hover .Tonga-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Tonga-country:hover .Tonga-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.TrinidadandTobago-country {
+	background-color: #fff;
+}
+.TrinidadandTobago-text {
+	color:#ce1126;
+}
+.TrinidadandTobago-dist {
+	background-color: #ce1126;
+}
+.TrinidadandTobago-country:hover {
+	background-color: #ce1126;
+	transition: 0.3s;
+}
+.TrinidadandTobago-country:hover .TrinidadandTobago-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.TrinidadandTobago-country:hover .TrinidadandTobago-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Tunisia-country {
+	background-color: #fff;
+}
+.Tunisia-text {
+	color:#e70013;
+}
+.Tunisia-dist {
+	background-color: #e70013;
+}
+.Tunisia-country:hover {
+	background-color: #e70013;
+	transition: 0.3s;
+}
+.Tunisia-country:hover .Tunisia-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Tunisia-country:hover .Tunisia-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Turkey-country {
+	background-color: #ffffff;
+}
+.Turkey-text {
+	color:#e30a17;
+}
+.Turkey-dist {
+	background-color: #e30a17;
+}
+.Turkey-country:hover {
+	background-color: #e30a17;
+	transition: 0.3s;
+}
+.Turkey-country:hover .Turkey-text {
+	color:#ffffff;
+	transition: 0.3s;
+}
+
+.Turkey-country:hover .Turkey-dist {
+	background-color: #ffffff;
+	transition:0.3s;
+}
+.Turkmenistan-country {
+	background-color: #fff;
+}
+.Turkmenistan-text {
+	color:#28ae66;
+}
+.Turkmenistan-dist {
+	background-color: #28ae66;
+}
+.Turkmenistan-country:hover {
+	background-color: #28ae66;
+	transition: 0.3s;
+}
+.Turkmenistan-country:hover .Turkmenistan-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.Turkmenistan-country:hover .Turkmenistan-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Tuvalu-country {
+	background-color: #00247d;
+}
+.Tuvalu-text {
+	color:#ffce00;
+}
+.Tuvalu-dist {
+	background-color: #ffce00;
+}
+.Tuvalu-country:hover {
+	background-color: #ffce00;
+	transition: 0.3s;
+}
+.Tuvalu-country:hover .Tuvalu-text {
+	color:#00247d;
+	transition: 0.3s;
+}
+
+.Tuvalu-country:hover .Tuvalu-dist {
+	background-color: #00247d;
+	transition:0.3s;
+}
+.Uganda-country {
+	background-color: #d90000;
+}
+.Uganda-text {
+	color:#fcdc04;
+}
+.Uganda-dist {
+	background-color: #fcdc04;
+}
+.Uganda-country:hover {
+	background-color: #fcdc04;
+	transition: 0.3s;
+}
+.Uganda-country:hover .Uganda-text {
+	color:#d90000;
+	transition: 0.3s;
+}
+
+.Uganda-country:hover .Uganda-dist {
+	background-color: #d90000;
+	transition:0.3s;
+}
+.Ukraine-country {
+	background-color: #ffd500;
+}
+.Ukraine-text {
+	color:#005bbb;
+}
+.Ukraine-dist {
+	background-color: #005bbb;
+}
+.Ukraine-country:hover {
+	background-color: #005bbb;
+	transition: 0.3s;
+}
+.Ukraine-country:hover .Ukraine-text {
+	color:#ffd500;
+	transition: 0.3s;
+}
+
+.Ukraine-country:hover .Ukraine-dist {
+	background-color: #ffd500;
+	transition:0.3s;
+}
+.UnitedArabEmirates-country {
+	background-color: #fff;
+}
+.UnitedArabEmirates-text {
+	color:#00732f;
+}
+.UnitedArabEmirates-dist {
+	background-color: #00732f;
+}
+.UnitedArabEmirates-country:hover {
+	background-color: #00732f;
+	transition: 0.3s;
+}
+.UnitedArabEmirates-country:hover .UnitedArabEmirates-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.UnitedArabEmirates-country:hover .UnitedArabEmirates-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.UnitedKingdom-country {
+	background-color: #fff;
+}
+.UnitedKingdom-text {
+	color:#00247d;
+}
+.UnitedKingdom-dist {
+	background-color: #00247d;
+}
+.UnitedKingdom-country:hover {
+	background-color: #00247d;
+	transition: 0.3s;
+}
+.UnitedKingdom-country:hover .UnitedKingdom-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.UnitedKingdom-country:hover .UnitedKingdom-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.UnitedStates-country {
+	background-color: #fff;
+}
+.UnitedStates-text {
+	color:#b22234;
+}
+.UnitedStates-dist {
+	background-color: #b22234;
+}
+.UnitedStates-country:hover {
+	background-color: #b22234;
+	transition: 0.3s;
+}
+.UnitedStates-country:hover .UnitedStates-text {
+	color:#fff;
+	transition: 0.3s;
+}
+
+.UnitedStates-country:hover .UnitedStates-dist {
+	background-color: #fff;
+	transition:0.3s;
+}
+.Uruguay-country {
+	background-color: #0038a8;
+}
+.Uruguay-text {
+	color:#fff;
+}
+.Uruguay-dist {
+	background-color: #fff;
+}
+.Uruguay-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Uruguay-country:hover .Uruguay-text {
+	color:#0038a8;
+	transition: 0.3s;
+}
+
+.Uruguay-country:hover .Uruguay-dist {
+	background-color: #0038a8;
+	transition:0.3s;
+}
+.Uzbekistan-country {
+	background-color: #0099b5;
+}
+.Uzbekistan-text {
+	color:#1eb53a;
+}
+.Uzbekistan-dist {
+	background-color: #1eb53a;
+}
+.Uzbekistan-country:hover {
+	background-color: #1eb53a;
+	transition: 0.3s;
+}
+.Uzbekistan-country:hover .Uzbekistan-text {
+	color:#0099b5;
+	transition: 0.3s;
+}
+
+.Uzbekistan-country:hover .Uzbekistan-dist {
+	background-color: #0099b5;
+	transition:0.3s;
+}
+.Vanuatu-country {
+	background-color: #009543;
+}
+.Vanuatu-text {
+	color:#d21034;
+}
+.Vanuatu-dist {
+	background-color: #d21034;
+}
+.Vanuatu-country:hover {
+	background-color: #d21034;
+	transition: 0.3s;
+}
+.Vanuatu-country:hover .Vanuatu-text {
+	color:#009543;
+	transition: 0.3s;
+}
+
+.Vanuatu-country:hover .Vanuatu-dist {
+	background-color: #009543;
+	transition:0.3s;
+}
+.VaticanCity-country {
+	background-color: #ffe000;
+}
+.VaticanCity-text {
+	color:#fff;
+}
+.VaticanCity-dist {
+	background-color: #fff;
+}
+.VaticanCity-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.VaticanCity-country:hover .VaticanCity-text {
+	color:#ffe000;
+	transition: 0.3s;
+}
+
+.VaticanCity-country:hover .VaticanCity-dist {
+	background-color: #ffe000;
+	transition:0.3s;
+}
+.Venezuela-country {
+	background-color: #00247d;
+}
+.Venezuela-text {
+	color:#cf142b;
+}
+.Venezuela-dist {
+	background-color: #cf142b;
+}
+.Venezuela-country:hover {
+	background-color: #cf142b;
+	transition: 0.3s;
+}
+.Venezuela-country:hover .Venezuela-text {
+	color:#00247d;
+	transition: 0.3s;
+}
+
+.Venezuela-country:hover .Venezuela-dist {
+	background-color: #00247d;
+	transition:0.3s;
+}
+.Vietnam-country {
+	background-color: #ff0;
+}
+.Vietnam-text {
+	color:#da251d;
+}
+.Vietnam-dist {
+	background-color: #da251d;
+}
+.Vietnam-country:hover {
+	background-color: #da251d;
+	transition: 0.3s;
+}
+.Vietnam-country:hover .Vietnam-text {
+	color:#ff0;
+	transition: 0.3s;
+}
+
+.Vietnam-country:hover .Vietnam-dist {
+	background-color: #ff0;
+	transition:0.3s;
+}
+.Yemen-country {
+	background-color: #ce1126;
+}
+.Yemen-text {
+	color:#fff;
+}
+.Yemen-dist {
+	background-color: #fff;
+}
+.Yemen-country:hover {
+	background-color: #fff;
+	transition: 0.3s;
+}
+.Yemen-country:hover .Yemen-text {
+	color:#ce1126;
+	transition: 0.3s;
+}
+
+.Yemen-country:hover .Yemen-dist {
+	background-color: #ce1126;
+	transition:0.3s;
+}
+.Zambia-country {
+	background-color: #ef7d00;
+}
+.Zambia-text {
+	color:#198a00;
+}
+.Zambia-dist {
+	background-color: #198a00;
+}
+.Zambia-country:hover {
+	background-color: #198a00;
+	transition: 0.3s;
+}
+.Zambia-country:hover .Zambia-text {
+	color:#ef7d00;
+	transition: 0.3s;
+}
+
+.Zambia-country:hover .Zambia-dist {
+	background-color: #ef7d00;
+	transition:0.3s;
+}
+.Zimbabwe-country {
+	background-color: #ffd200;
+}
+.Zimbabwe-text {
+	color:#319208;
+}
+.Zimbabwe-dist {
+	background-color: #319208;
+}
+.Zimbabwe-country:hover {
+	background-color: #319208;
+	transition: 0.3s;
+}
+.Zimbabwe-country:hover .Zimbabwe-text {
+	color:#ffd200;
+	transition: 0.3s;
+}
+
+.Zimbabwe-country:hover .Zimbabwe-dist {
+	background-color: #ffd200;
+	transition:0.3s;
+}
