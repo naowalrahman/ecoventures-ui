@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import AboutUs from './pages/AboutUs';
+import Review from './pages/Review';
 import Locations from './pages/Locations';
 import ContactUs from './pages/ContactUs';
 import SingleLocation from './pages/SingleLocation';
@@ -23,8 +23,8 @@ root.render(
           
         </Route>
         <Route path="locations/:userLocation" element={<Locations />} />
-        <Route path="aboutus" element={<AboutUs />} />
-        <Route path="contactus" element={<ContactUs />} />
+        <Route path="review/:userLocation" element={<Review />} />
+        <Route path="contactus/:userLocation" element={<ContactUs />} />
         <Route path="location/:city" element={<SingleLocation />}/>
       </Routes>
     </BrowserRouter>
