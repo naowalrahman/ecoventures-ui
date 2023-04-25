@@ -3,14 +3,47 @@
     #city-info-wrapper {
         width: 60%;
         margin: 0 auto;
+        font-family: 'Playfair Display';
     }
 
     h1 {
         text-align: center;
         font-family: 'Abril Fatface';
-        font-size: 5em;
+        font-size: 10em;
         text-decoration: underline;
         text-decoration-thickness: 0.2em;
+    }
+
+    p {
+        font-size: 2em;
+        line-height: 5em;
+    }
+
+    .city-info{
+        font-size: 3em;
+        font-weight: 500;
+        background: linear-gradient(90deg, rgba(26,175,156,1) 21%, rgba(26,107,175,1) 50%, rgba(26,81,175,1) 77%, rgba(0,146,255,1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+    }
+
+    sup, sub {
+        vertical-align: bottom;
+    }
+
+    .city-info-descriptor {
+        font-size: 0.4em;
+    }
+
+    #aqi-desc, th, td {
+        font-size: 1.3em;
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+    td, th {
+        padding: 0.3em;
     }
 
 }
