@@ -20,10 +20,9 @@ const SingleLocation = () => {
             });
     };
 
-    // only call this in production deployment
     useEffect(() => {
         getData();
-    });
+    }, []);
 
     window.addEventListener("beforeunload", (event) => { getData(); });
 
