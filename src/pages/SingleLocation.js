@@ -24,9 +24,6 @@ const SingleLocation = () => {
         getData();
     }, []);
 
-    window.addEventListener("beforeunload", (event) => { getData(); });
-
-
     return (
         <div id="city-info-wrapper">
             <h1>{city}</h1>
