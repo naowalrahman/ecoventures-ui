@@ -4376,25 +4376,25 @@
 	background-color: #418fde;
 	transition:0.3s;
 }
-.SaintHelena,Ascension,andTristandaCunha-country {
+.SaintHelenaAscensionandTristandaCunha-country {
 	background-color: #fff;
 }
-.SaintHelena,Ascension,andTristandaCunha-text {
+.SaintHelenaAscensionandTristandaCunha-text {
 	color:#00247d;
 }
-.SaintHelena,Ascension,andTristandaCunha-dist {
+.SaintHelenaAscensionandTristandaCunha-dist {
 	background-color: #00247d;
 }
-.SaintHelena,Ascension,andTristandaCunha-country:hover {
+.SaintHelenaAscensionandTristandaCunha-country:hover {
 	background-color: #00247d;
 	transition: 0.3s;
 }
-.SaintHelena,Ascension,andTristandaCunha-country:hover .SaintHelena,Ascension,andTristandaCunha-text {
+.SaintHelenaAscensionandTristandaCunha-country:hover .SaintHelenaAscensionandTristandaCunha-text {
 	color:#fff;
 	transition: 0.3s;
 }
 
-.SaintHelena,Ascension,andTristandaCunha-country:hover .SaintHelena,Ascension,andTristandaCunha-dist {
+.SaintHelenaAscensionandTristandaCunha-country:hover .SaintHelenaAscensionandTristandaCunha-dist {
 	background-color: #fff;
 	transition:0.3s;
 }
@@ -4420,25 +4420,25 @@
 	background-color: #cf142b;
 	transition:0.3s;
 }
-.U.S.VirginIslands-country {
+.USVirginIslands-country {
 	background-color: #162667;
 }
-.U.S.VirginIslands-text {
+.USVirginIslands-text {
 	color:#f4c53d;
 }
-.U.S.VirginIslands-dist {
+.USVirginIslands-dist {
 	background-color: #f4c53d;
 }
-.U.S.VirginIslands-country:hover {
+.USVirginIslands-country:hover {
 	background-color: #f4c53d;
 	transition: 0.3s;
 }
-.U.S.VirginIslands-country:hover .U.S.VirginIslands-text {
+.USVirginIslands-country:hover .USVirginIslands-text {
 	color:#162667;
 	transition: 0.3s;
 }
 
-.U.S.VirginIslands-country:hover .U.S.VirginIslands-dist {
+.USVirginIslands-country:hover .USVirginIslands-dist {
 	background-color: #162667;
 	transition:0.3s;
 }

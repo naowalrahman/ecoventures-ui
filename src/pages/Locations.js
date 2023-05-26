@@ -11,91 +11,49 @@ const countryColors = require("./locations/country-colors-true-single.json")
 
 const Locations = () => {
     
+    
 
     const {userLocation} = useParams();
-    //const [showDist, setShowDist] = useState(true);
 
-    const userLocationCoords = (() => {
+    // const userLocationCoords = (() => {
         
-            const endIndex = userLocation.indexOf(',')
-            return [cities[userLocation.substring(0, endIndex)]["lat"], cities[userLocation.substring(0, endIndex)]["lng"]]
+    //         const endIndex = userLocation.indexOf(',')
+    //         return [cities[userLocation.substring(0, endIndex)]["lat"], cities[userLocation.substring(0, endIndex)]["lng"]]
         
-    })()
-
+    // })()
+    const interval = 200
+    const start = Math.floor(Math.random() * (39000-interval));
     
     const [inputValue, setInputValue] = useState('')
     const [countryValue, setCountryValue] = useState('')
-    
-    const [allCities, setAllCities] = useState(() => {
-        const interval = 200
-        const availableValue = Math.random() * (39000-interval);
-        const maxCitiesAvailable = availableValue;
-        let allCitiesReturn = []
-        let maxCitiesDisplayed = 0;
-        let iterator = 0
-        for (let property in cities) {
-            if (maxCitiesDisplayed > availableValue + 200) {
-                break;
-            }
-            else if (maxCitiesDisplayed > availableValue) {
-                let bg;
-                let txtColor;
-                let countryLinkClass;
-                let countryTextClass;
-                let color = countryColors[cities[property]["country"]]
-                if (color == undefined) {
-                    bg = "#FFFFFF"
-                    txtColor = "black"
-                    countryLinkClass = "generalCountry"
-                    countryTextClass = "generalCountryText"
-                    
-                }
-                else {
-                    bg = color[0]
-                    txtColor = color[1]
-                    countryLinkClass = `${cities[property]["country"]}-country`
-                    countryLinkClass = countryLinkClass.replace(" ", '');
-                    countryLinkClass = countryLinkClass.replace("(", '');
-                    countryLinkClass = countryLinkClass.replace(")", '');
-                    countryLinkClass = countryLinkClass.replace("'", '');
-                    
-    
-                    countryTextClass = `${cities[property]["country"]}-text`
-                    countryTextClass = countryTextClass.replace(" ", '')
-                    countryTextClass = countryTextClass.replace("(", '');
-                    countryTextClass = countryTextClass.replace(")", '');
-                    countryTextClass = countryTextClass.replace("'", '');
-
-                   
-                    
-                }
-                    
-                    //let txt = countryColors[cities[property]["country"]][1]
-                    // const txt = countryColors[cities[property]["country"]][1]
-                    allCitiesReturn.push(
-                    <Link className={`cityLink ${countryLinkClass}`} to={`/location/${property}`}> 
-                        <div style={{color: returnRGB(getDistanceFromLatLonInKm(userLocationCoords[0], userLocationCoords[1], cities[property]["lat"], cities[property]["lng"])), fontWeight: "bolder"}} className={`distanceFromHome`}>{getDistanceFromLatLonInKm(userLocationCoords[0], userLocationCoords[1], cities[property]["lat"], cities[property]['lng'])} km</div>
-                        
-                        <div className={`loc-link ${countryTextClass}`}>{property}, 
-                        <br /> {cities[property]["country"]}</div> 
-                        
-                        <img className="flag" src={cityFlags[cities[property]["country"]]} alt='NOT HERE'></img> 
-                    </Link>);
-                
-              
-
-            }
-            maxCitiesDisplayed++;
-
-        }
-        return allCitiesReturn;
-    })
-
     const [stringPercentArray, setStringPercentArray] = useState(() => {
-        let listOfCountries = []
+        
+        fetch(`https://ecoventures-server.vercel.app/allDistance/${userLocation.substring(0, userLocation.indexOf(','))}`)
+            .then(data => data.json())
+            .catch(e => console.error(e.message))
+            .then(json => {
+                console.log(json)
+                
+                let iteratorVal = -1;
+                setStringPercentArray(stringPercentArray.map((item) => {
+                    iteratorVal++;
+                    return [item[0], item[1], item[2], json["dcList"][iteratorVal][1], json["dcList"][iteratorVal][2], item[5], item[6]];
+                    
+                }))
+                iteratorVal = start-1
+
+                setAllCities(allCities.map(item => {
+                    
+                    iteratorVal++;
+                    return <Link className={`cityLink ${stringPercentArray[iteratorVal][5]}`} to={`/location/${stringPercentArray[iteratorVal][0]}`}><div style={{color: json["dcList"][iteratorVal][2], fontWeight: "bolder"}} className={`distanceFromHome`}> {json["dcList"][iteratorVal][1]} km</div><div className={`loc-link ${stringPercentArray[iteratorVal][6]}`}>{stringPercentArray[iteratorVal][0]}, <br /> {stringPercentArray[iteratorVal][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[iteratorVal][2]]} alt='Flag Unavailable'></img></Link>
+                   
+                }))                
+            });
+        
+        
         let allStringPercentReturn = []
         for (let property in cities) {
-            let dist = getDistanceFromLatLonInKm(userLocationCoords[0], userLocationCoords[1], cities[property]["lat"], cities[property]["lng"])
+            let dist = 0
             let bg;
             let txtColor;
             let countryLinkClass;
@@ -103,35 +61,52 @@ const Locations = () => {
             
 
             let color = countryColors[cities[property]["country"]]
-            if (color == undefined) {
-                bg = "#FFFFFF"
-                txtColor = "black"
-                countryLinkClass = "generalCountry"
-                countryTextClass = "generalCountryText"
+            // if (color == undefined) {
+            //     bg = "#FFFFFF"
+            //     txtColor = "black"
+            //     countryLinkClass = "generalCountry"
+            //     countryTextClass = "generalCountryText"
                 
                 
-            }
-            else {
+            // }
+            // else {
                 bg = color[0]
                 txtColor = color[1]
                 countryLinkClass = `${cities[property]["country"]}-country`
-                countryLinkClass = countryLinkClass.replace(" ", '');
-                countryLinkClass = countryLinkClass.replace("(", '');
-                countryLinkClass = countryLinkClass.replace(")", '');
-                countryLinkClass = countryLinkClass.replace("'", '');
-                
+                countryLinkClass = countryLinkClass.replace(/ /g, '');
+                countryLinkClass = countryLinkClass.replace(/\(/g, '');
+                countryLinkClass = countryLinkClass.replace(/\)/g, '');
+                countryLinkClass = countryLinkClass.replace(/'/g, '');
+                countryLinkClass = countryLinkClass.replace(/\./g, '');
+                countryLinkClass = countryLinkClass.replace(/,/g, '');
 
                 countryTextClass = `${cities[property]["country"]}-text`
-                countryTextClass = countryTextClass.replace(" ", '')
-                countryTextClass = countryTextClass.replace("(", '');
-                countryTextClass = countryTextClass.replace(")", '');
-                countryTextClass = countryTextClass.replace("'", '');
-                
-            }
-            allStringPercentReturn.push([property, 0, cities[property]["country"], dist, returnRGB(dist), countryLinkClass, countryTextClass]);
+                countryTextClass = countryTextClass.replace(/ /g, '');
+                countryTextClass = countryTextClass.replace(/\(/g, '');
+                countryTextClass = countryTextClass.replace(/\)/g, '');
+                countryTextClass = countryTextClass.replace(/'/g, '');
+                countryTextClass = countryTextClass.replace(/,/g, '');
+            // }
+            allStringPercentReturn.push([property, 0, cities[property]["country"], dist, "rgba(0,0,0,1)", countryLinkClass, countryTextClass]);
         }
+        console.log("finished loop")
         return allStringPercentReturn;
     })
+    const [allCities, setAllCities] = useState(() => {
+        let allCitiesReturn = []
+        let iterator = 0
+        while (iterator < interval) {
+            allCitiesReturn.push(
+                <Link className={`cityLink ${stringPercentArray[iterator+start][5]}`} to={`/location/${stringPercentArray[iterator+start][0]}`}><div style={{color: stringPercentArray[iterator+start][4], fontWeight: "bolder"}} className={`distanceFromHome`}> {stringPercentArray[iterator+start][3]} km</div><div className={`loc-link ${stringPercentArray[iterator+start][6]}`}>{stringPercentArray[iterator+start][0]}, <br /> {stringPercentArray[iterator+start][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[iterator+start][2]]} alt='Flag Unavailable'></img></Link>
+            )
+            iterator++
+        }
+        console.log("finished all cities")
+        return allCitiesReturn;
+        
+    })
+
+    
 
     const [date, setDate] = useState('');
     const [aqi, setAqi] = useState('');

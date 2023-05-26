@@ -9,56 +9,61 @@ function Home() {
     const [isSelected, setIsSelected] = useState(false);
 
     const [userLocation, setUserLocation] = useState('')
-    const [cityVal, setCityVal] = useState('')
-    const [countryVal, setCountryVal] = useState('')
 
 
-
-    const [locationList, setLocationList] = useState(() => {
-        const maxCitiesAvailable = 0;
-        console.log("maxCitiesAvailable is " + maxCitiesAvailable);
-        let allCitiesReturn = []
-        let maxCitiesDisplayed = 0;
-        for (let property in cities) {
-            if (maxCitiesDisplayed > maxCitiesAvailable + 1000) {
-                break;
-            }
-            else if (maxCitiesDisplayed > maxCitiesAvailable) {
-                
-                allCitiesReturn.push(<li onClick={() => {
-                    setUserLocation(`${property}, ${cities[property]["country"]}`)
-                    setIsSelected(true)
-                }
-            }> {property}, {cities[property]["country"]}</li>);
-            // maxCitiesDisplayed++;
-            }
-            maxCitiesDisplayed++;
-
-        }
-        console.log(maxCitiesDisplayed)
-        return allCitiesReturn;
-        }
-    )
-
+    
     const [stringPercentArray, setStringPercentArray] = useState(() => {
         let allStringPercentReturn = []
         for (let property in cities) {
             allStringPercentReturn.push([property, 0, cities[property]["country"]]);
         }
-        console.log(allStringPercentReturn)
         return allStringPercentReturn;
     })
+    const [locationList, setLocationList] = useState(() => {
+        const interval = 200
+        const start = Math.floor(Math.random() * (39000-interval));
+        let allCitiesReturn = []
+        let iterator = 0
+
+        while (iterator < 200) {
+            allCitiesReturn.push(
+                <li onClick={() => {
+                    setUserLocation(`${stringPercentArray[iterator][0]}, ${stringPercentArray[iterator][2]}`)
+                    setIsSelected(true)
+                }}>{stringPercentArray[iterator][0]}, {stringPercentArray[iterator][2]}</li>
+            )
+            iterator++
+        }
+
+        return allCitiesReturn;
+
+        // const maxCitiesAvailable = 0;
+        // console.log("maxCitiesAvailable is " + maxCitiesAvailable);
+        // let allCitiesReturn = []
+        // let maxCitiesDisplayed = 0;
+        // for (let property in cities) {
+        //     if (maxCitiesDisplayed > maxCitiesAvailable + 1000) {
+        //         break;
+        //     }
+        //     else if (maxCitiesDisplayed > maxCitiesAvailable) {
+                
+        //         allCitiesReturn.push(<li onClick={() => {
+        //             setUserLocation(`${property}, ${cities[property]["country"]}`)
+        //             setIsSelected(true)
+        //         }
+        //     }> {property}, {cities[property]["country"]}</li>);
+        //     // maxCitiesDisplayed++;
+        //     }
+        //     maxCitiesDisplayed++;
+
+        // }
+        // console.log(maxCitiesDisplayed)
+        // return allCitiesReturn;
+        }
+    )
 
     return (
-        /*
-        onResize={() => {
-            const resolution = (window.screen.width)/(window.screen.height) 
-            if (resolution < 1) {
-                document.getElementsByClassName("main-search-bar")[0].placeholder = "Enter your city and country";
-            }
-            document.getElementsByClassName("main-search-bar")[0].placeholder = ""
-        }} 
-        */
+        
         <div className="Home">
             <div className="main-search">
                 

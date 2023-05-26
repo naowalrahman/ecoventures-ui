@@ -26,8 +26,8 @@ import json
 with open ("./country-colors-true-single.json", "r", encoding="utf-8") as f:
 	data = json.load(f)
 
-with open ("./country-flag-true.json", "r") as f:
-	dataFlag = json.load(f)
+# with open ("./country-flag-true.json", "r") as f:
+# 	dataFlag = json.load(f)
 
 
 with open ("../countryCards.css", "w") as f:
@@ -41,6 +41,8 @@ with open ("../countryCards.css", "a") as f:
 		i = i.replace(")", "")
 		i = i.replace(" ", "")
 		i = i.replace("'", "")
+		i = i.replace(".", "")
+		i = i.replace(",", "")
 		if "Ivoire" in i:
 			print(i)
 		#print(i + "\n")
