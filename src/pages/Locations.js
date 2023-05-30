@@ -15,7 +15,7 @@ const Locations = () => {
     const interval = 200
     const start = Math.floor(Math.random() * (39000 - interval));
     const server = 'https://ecoventures-server.vercel.app';
-    // const server = ''
+    // const server = 'https://localhost:3001'; // for dev only
 
     const [inputValue, setInputValue] = useState('')
     const [countryValue, setCountryValue] = useState('')

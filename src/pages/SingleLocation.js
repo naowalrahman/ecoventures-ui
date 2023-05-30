@@ -27,7 +27,9 @@ const SingleLocation = () => {
     return (
         <div id="city-info-wrapper">
             <h1>{city}</h1>
-            <p>With an air quality index of <span className='city-info'>{aqi}{/* <sub className='city-info-descriptor'>aqi<sup>*</sup></sub>*/}</span>, and an average gas concentration of <span className='city-info'>X (TBA){/*<sub className='city-info-descriptor'>avg gas<sup>*</sup></sub>*/}</span>, this place is <span className='city-info'>something (TBA){/*<sub className='city-info-descriptor'>rec<sup>*</sup></sub>*/}</span> to visit!</p>
+            <p>
+                With an air quality index of <span className='city-info'>{aqi}{/* <sub className='city-info-descriptor'>aqi<sup>*</sup></sub>*/}</span>, and an average gas concentration of <span className='city-info'>X (TBA){/*<sub className='city-info-descriptor'>avg gas<sup>*</sup></sub>*/}</span>, this place is <span className='city-info'>something (TBA){/*<sub className='city-info-descriptor'>rec<sup>*</sup></sub>*/}</span> to visit!
+            </p>
 
             <table id='aqi-desc'>
                 <thead>
