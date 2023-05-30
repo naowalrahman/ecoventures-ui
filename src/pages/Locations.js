@@ -10,47 +10,47 @@ const cityFlags = require("./locations/country-flag-true.json")
 const countryColors = require("./locations/country-colors-true-single.json")
 
 const Locations = () => {
-    
-    
+    const { userLocation } = useParams();
 
-    const {userLocation} = useParams();
-
-    // const userLocationCoords = (() => {
-        
-    //         const endIndex = userLocation.indexOf(',')
-    //         return [cities[userLocation.substring(0, endIndex)]["lat"], cities[userLocation.substring(0, endIndex)]["lng"]]
-        
-    // })()
     const interval = 200
-    const start = Math.floor(Math.random() * (39000-interval));
-    
+    const start = Math.floor(Math.random() * (39000 - interval));
+    const server = 'https://ecoventures-server.vercel.app';
+    // const server = ''
+
     const [inputValue, setInputValue] = useState('')
     const [countryValue, setCountryValue] = useState('')
     const [stringPercentArray, setStringPercentArray] = useState(() => {
-        
-        fetch(`https://ecoventures-server.vercel.app/allDistance/${userLocation.substring(0, userLocation.indexOf(','))}`)
+        fetch(`${server}/allDistance/${userLocation.substring(0, userLocation.indexOf(','))}`)
             .then(data => data.json())
             .catch(e => console.error(e.message))
             .then(json => {
                 console.log(json)
-                
+
                 let iteratorVal = -1;
                 setStringPercentArray(stringPercentArray.map((item) => {
                     iteratorVal++;
                     return [item[0], item[1], item[2], json["dcList"][iteratorVal][1], json["dcList"][iteratorVal][2], item[5], item[6]];
-                    
+
                 }))
-                iteratorVal = start-1
+                iteratorVal = start - 1
 
                 setAllCities(allCities.map(item => {
-                    
+
                     iteratorVal++;
-                    return <Link className={`cityLink ${stringPercentArray[iteratorVal][5]}`} to={`/location/${stringPercentArray[iteratorVal][0]}`}><div style={{color: json["dcList"][iteratorVal][2], fontWeight: "bolder"}} className={`distanceFromHome`}> {json["dcList"][iteratorVal][1]} km</div><div className={`loc-link ${stringPercentArray[iteratorVal][6]}`}>{stringPercentArray[iteratorVal][0]}, <br /> {stringPercentArray[iteratorVal][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[iteratorVal][2]]} alt='Flag Unavailable'></img></Link>
-                   
-                }))                
+                    return <Link
+                        className={`cityLink ${stringPercentArray[iteratorVal][5]}`}
+                        to={`/location/${stringPercentArray[iteratorVal][0]}`}>
+                        <div style={{ color: json["dcList"][iteratorVal][2], fontWeight: "bolder" }} className={`distanceFromHome`}>
+                            {json["dcList"][iteratorVal][1]} km
+                        </div>
+                        <div className={`loc-link ${stringPercentArray[iteratorVal][6]}`}>
+                            {stringPercentArray[iteratorVal][0]}, <br /> {stringPercentArray[iteratorVal][2]}
+                        </div>
+                        <img className="flag" src={cityFlags[stringPercentArray[iteratorVal][2]]} alt='Flag Unavailable'></img></Link>;
+
+                }))
             });
-        
-        
+
         let allStringPercentReturn = []
         for (let property in cities) {
             let dist = 0
@@ -58,35 +58,26 @@ const Locations = () => {
             let txtColor;
             let countryLinkClass;
             let countryTextClass;
-            
+
 
             let color = countryColors[cities[property]["country"]]
-            // if (color == undefined) {
-            //     bg = "#FFFFFF"
-            //     txtColor = "black"
-            //     countryLinkClass = "generalCountry"
-            //     countryTextClass = "generalCountryText"
-                
-                
-            // }
-            // else {
-                bg = color[0]
-                txtColor = color[1]
-                countryLinkClass = `${cities[property]["country"]}-country`
-                countryLinkClass = countryLinkClass.replace(/ /g, '');
-                countryLinkClass = countryLinkClass.replace(/\(/g, '');
-                countryLinkClass = countryLinkClass.replace(/\)/g, '');
-                countryLinkClass = countryLinkClass.replace(/'/g, '');
-                countryLinkClass = countryLinkClass.replace(/\./g, '');
-                countryLinkClass = countryLinkClass.replace(/,/g, '');
+            bg = color[0]
+            txtColor = color[1]
+            countryLinkClass = `${cities[property]["country"]}-country`
+                .replace(/ /g, '')
+                .replace(/\(/g, '')
+                .replace(/\)/g, '')
+                .replace(/'/g, '')
+                .replace(/\./g, '')
+                .replace(/,/g, '');
 
-                countryTextClass = `${cities[property]["country"]}-text`
-                countryTextClass = countryTextClass.replace(/ /g, '');
-                countryTextClass = countryTextClass.replace(/\(/g, '');
-                countryTextClass = countryTextClass.replace(/\)/g, '');
-                countryTextClass = countryTextClass.replace(/'/g, '');
-                countryTextClass = countryTextClass.replace(/,/g, '');
-            // }
+            countryTextClass = `${cities[property]["country"]}-text`
+                .replace(/ /g, '')
+                .replace(/\(/g, '')
+                .replace(/\)/g, '')
+                .replace(/'/g, '')
+                .replace(/,/g, '');
+
             allStringPercentReturn.push([property, 0, cities[property]["country"], dist, "rgba(0,0,0,1)", countryLinkClass, countryTextClass]);
         }
         console.log("finished loop")
@@ -97,16 +88,13 @@ const Locations = () => {
         let iterator = 0
         while (iterator < interval) {
             allCitiesReturn.push(
-                <Link className={`cityLink ${stringPercentArray[iterator+start][5]}`} to={`/location/${stringPercentArray[iterator+start][0]}`}><div style={{color: stringPercentArray[iterator+start][4], fontWeight: "bolder"}} className={`distanceFromHome`}> {stringPercentArray[iterator+start][3]} km</div><div className={`loc-link ${stringPercentArray[iterator+start][6]}`}>{stringPercentArray[iterator+start][0]}, <br /> {stringPercentArray[iterator+start][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[iterator+start][2]]} alt='Flag Unavailable'></img></Link>
+                <Link className={`cityLink ${stringPercentArray[iterator + start][5]}`} to={`/location/${stringPercentArray[iterator + start][0]}`}><div style={{ color: stringPercentArray[iterator + start][4], fontWeight: "bolder" }} className={`distanceFromHome`}> {stringPercentArray[iterator + start][3]} km</div><div className={`loc-link ${stringPercentArray[iterator + start][6]}`}>{stringPercentArray[iterator + start][0]}, <br /> {stringPercentArray[iterator + start][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[iterator + start][2]]} alt='Flag Unavailable'></img></Link>
             )
             iterator++
         }
         console.log("finished all cities")
         return allCitiesReturn;
-        
     })
-
-    
 
     const [date, setDate] = useState('');
     const [aqi, setAqi] = useState('');
@@ -129,41 +117,11 @@ const Locations = () => {
 
         }, 300)
     }, [])
-    function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
-        var R = 6371; // Radius of the earth in km
-        var dLat = deg2rad(lat2-lat1);  // deg2rad below
-        var dLon = deg2rad(lon2-lon1); 
-        var a = 
-          Math.sin(dLat/2) * Math.sin(dLat/2) +
-          Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
-          Math.sin(dLon/2) * Math.sin(dLon/2)
-          ; 
-        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-        var d = R * c; // Distance in km
-        return Math.round(d);
-      }
-      
-      function deg2rad(deg) {
-        return deg * (Math.PI/180)
-      }
-
-      function returnRGB(distance) {
-        const equatedValue = Math.min(distance/35, 510) 
-        const darkFactor = 0.9;
-        const otherValue = 255 * darkFactor;
-        const blueVal = 96 * darkFactor;
-        if (equatedValue<=255) {
-            return `rgba(${equatedValue * 0.5}, ${otherValue}, ${blueVal}, 1)`
-        }
-        else {
-            return `rgba(${otherValue}, ${(510-equatedValue) * 0.5}, ${blueVal}, 1)`
-        }
-    }
 
     return (
         <div id="locations">
-            <Layout userLoc={userLocation}/>
-            
+            <Layout userLoc={userLocation} />
+
             <div id="inputArea">
                 <div>
                     <label htmlFor="locationInput">City: </label>
@@ -184,9 +142,9 @@ const Locations = () => {
                                 return b[1] - a[1]
                             }))
                             setAllCities(allCities.map(item => {
-                                
-                                return <Link className={`cityLink ${stringPercentArray[allCities.indexOf(item)][5]}`} to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div style={{color: stringPercentArray[allCities.indexOf(item)][4], fontWeight: "bolder"}} className={`distanceFromHome`}> {stringPercentArray[allCities.indexOf(item)][3]} km</div><div className={`loc-link ${stringPercentArray[allCities.indexOf(item)][6]}`}>{stringPercentArray[allCities.indexOf(item)][0]}, <br /> {stringPercentArray[allCities.indexOf(item)][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[allCities.indexOf(item)][2]]} alt='Flag Unavailable'></img></Link>
-                               
+
+                                return <Link className={`cityLink ${stringPercentArray[allCities.indexOf(item)][5]}`} to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div style={{ color: stringPercentArray[allCities.indexOf(item)][4], fontWeight: "bolder" }} className={`distanceFromHome`}> {stringPercentArray[allCities.indexOf(item)][3]} km</div><div className={`loc-link ${stringPercentArray[allCities.indexOf(item)][6]}`}>{stringPercentArray[allCities.indexOf(item)][0]}, <br /> {stringPercentArray[allCities.indexOf(item)][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[allCities.indexOf(item)][2]]} alt='Flag Unavailable'></img></Link>
+
                             }))
 
                         }}>
@@ -213,37 +171,16 @@ const Locations = () => {
                                 return b[1] - a[1]
                             }))
                             setAllCities(allCities.map(item => {
-                                
-                                return <Link className={`cityLink ${stringPercentArray[allCities.indexOf(item)][5]}`} to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div style={{color: stringPercentArray[allCities.indexOf(item)][4], fontWeight: "bolder"}} className={`distanceFromHome`}> {stringPercentArray[allCities.indexOf(item)][3]} km</div><div className={`loc-link ${stringPercentArray[allCities.indexOf(item)][6]}`}>{stringPercentArray[allCities.indexOf(item)][0]}, <br /> {stringPercentArray[allCities.indexOf(item)][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[allCities.indexOf(item)][2]]} alt='Flag Unavailable'></img></Link>
-                                
-                               
-                        }))}}>
+
+                                return <Link className={`cityLink ${stringPercentArray[allCities.indexOf(item)][5]}`} to={`/location/${stringPercentArray[allCities.indexOf(item)][0]}`}><div style={{ color: stringPercentArray[allCities.indexOf(item)][4], fontWeight: "bolder" }} className={`distanceFromHome`}> {stringPercentArray[allCities.indexOf(item)][3]} km</div><div className={`loc-link ${stringPercentArray[allCities.indexOf(item)][6]}`}>{stringPercentArray[allCities.indexOf(item)][0]}, <br /> {stringPercentArray[allCities.indexOf(item)][2]}</div> <img className="flag" src={cityFlags[stringPercentArray[allCities.indexOf(item)][2]]} alt='Flag Unavailable'></img></Link>
+
+
+                            }))
+                        }}>
 
                     </input>
                 </div>
-                <button onClick={() => {
-                    fetch(`https://ecoventures-server.vercel.app/location/${inputValue}`, { method: 'GET' })
-                        .then(data => data.json())
-                        .catch((e) => {
-                            console.error(e.message);
-                        })
-                        .then(json => {
-                            setDate(json.date);
-                            setAqi(JSON.stringify(json.aqi));
-                            setGas(JSON.stringify(json.gas));
-                        })
-                }}>Submit Location</button>
-
-
-
-                {/* <h1>{inputValue}</h1> */}
-
             </div>
-            <h1 className="holder">
-                <span id="date-holder">{date}</span>
-                <span id="aqi-holder">{aqi}</span>
-                <span id="gas-holder">{gas}</span>
-            </h1>
             <Animation isVisible={typing > 0} />
             <div id="locationsContainer">
                 {allCities}
@@ -257,13 +194,11 @@ const Locations = () => {
 
 }
 
-
-
 const Animation = (props) => {
 
     const [opacityState, setOpacity] = useState(0);
     useEffect(() => {
-        
+
         if (props.isVisible) {
             setTimeout(() => {
                 setOpacity(opacityState => Math.min(opacityState + 0.1, 1))
