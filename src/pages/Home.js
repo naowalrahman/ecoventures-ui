@@ -24,19 +24,25 @@ function Home() {
         const start = Math.floor(Math.random() * (39000 - interval));
         let allCitiesReturn = []
         let iterator = 0
+        for (const element of stringPercentArray) {
+            if (iterator > 1000) {
+                break;
+            }
+            let cityCountryPair = `${element[0]}, ${element[2]}`;
+            //console.log(element[0] + " " + element[2])
 
-        while (iterator < 200) {
-            allCitiesReturn.push(
-                <li onClick={() => {
-                    setUserLocation(`${stringPercentArray[iterator][0]}, ${stringPercentArray[iterator][2]}`)
-                    setIsSelected(true)
-                }}>{stringPercentArray[iterator][0]}, {stringPercentArray[iterator][2]}</li>
-            )
-            iterator++
-        }
+                //console.log(cityCountryPair)
+                
 
-        return allCitiesReturn;
-
+                allCitiesReturn.push(<li onClick={() => {
+                    setUserLocation(cityCountryPair)
+                    setIsSelected(true);
+                }}>{cityCountryPair}</li>)
+            }
+            iterator++;
+            return allCitiesReturn;
+        })
+        
         // const maxCitiesAvailable = 0;
         // console.log("maxCitiesAvailable is " + maxCitiesAvailable);
         // let allCitiesReturn = []
@@ -59,7 +65,7 @@ function Home() {
         // }
         // console.log(maxCitiesDisplayed)
         // return allCitiesReturn;
-    })
+    
 
     return (
 
