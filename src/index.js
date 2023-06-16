@@ -25,7 +25,7 @@ root.render(
         <Route path="locations/:userLocation" element={<Locations />} />
         <Route path="review/:userLocation" element={<Review />} />
         <Route path="contactus/:userLocation" element={<ContactUs />} />
-        <Route path="location/:city" element={<SingleLocation />}/>
+        <Route path="location/:userLocation" element={<SingleLocation />}/>
       </Routes>
     </BrowserRouter>
     

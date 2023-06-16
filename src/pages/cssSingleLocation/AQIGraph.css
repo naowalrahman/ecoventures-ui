@@ -1,0 +1,97 @@
+:root {
+    --green: #43e23e;
+    --orange: #ee6d22;
+    --yellow: #ebee22;
+    --red: #ee2121;
+    --pink: #ee36d5;
+}
+
+.aqiGraph {
+    position: absolute;
+    top: 15%;
+    right: 3%;
+}
+
+
+.aqiindex .back, .aqiindex .front {
+    stroke-width: 15;
+}
+
+.aqiindex .back {
+    stroke: #8d99ae;
+}
+
+.aqiindex .front {
+    transition: 0.3s;
+    stroke-linecap:round;
+    transform-origin: center;
+    transform: rotate(-90deg);
+    animation: load 1s ease-in-out;
+}
+
+
+.aqitype1 .front {
+    stroke: var(--green);
+    stroke-dasharray: calc(360 * 3.14 * (1/5)), 10000;
+}
+
+.aqitype2 .front {
+    stroke: var(--orange);
+    stroke-dasharray: calc(360 * 3.14 * (2/5)), 10000;
+}
+
+.aqitype3 .front {
+    stroke: var(--yellow);
+    stroke-dasharray: calc(360 * 3.14 * (3/5)), 10000;
+}
+
+.aqitype4 .front {
+    stroke: var(--red);
+    stroke-dasharray: calc(360 * 3.14 * (4/5)), 10000;
+}
+
+.aqitype5 .front {
+    stroke: var(--pink);
+    stroke-dasharray: calc(360 * 3.14 * (5/5)), 10000;
+}
+
+.aqiText text {
+    stroke-width: 1;
+}
+
+ .aqitext1 text {
+    stroke: var(--green);
+    fill: var(--green);
+}
+
+ .aqitext2 text {
+    stroke: var(--orange);
+    fill: var(--orange);
+
+}
+ .aqitext3 text {
+    stroke: var(--yellow); 
+    fill: var(--yellow);
+
+}
+ .aqitext4 text {
+    stroke: var(--red); 
+    fill: var(--red);
+
+}
+ .aqitext5 text {
+    stroke: var(--pink); 
+    fill: var(--pink);
+
+}
+
+@keyframes load {
+    from {
+        stroke-dasharray: 0, 10000;
+        
+    }
+    to {
+
+
+    }
+}

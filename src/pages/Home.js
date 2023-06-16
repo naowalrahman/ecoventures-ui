@@ -35,7 +35,7 @@ function Home() {
                 
 
                 allCitiesReturn.push(<li onClick={() => {
-                    setUserLocation(cityCountryPair)
+                    setUserLocation(cityCountryPair);
                     setIsSelected(true);
                 }}>{cityCountryPair}</li>)
             }
@@ -114,7 +114,7 @@ function Home() {
                                         newList.push(<li onClick={() => {
                                             setUserLocation(cityCountryPair)
                                             setIsSelected(true);
-                                        }}>{cityCountryPair.substring(0, startIndex)}<span style={{ color: 'darkorchid' }}>{cityCountryPair.substring(startIndex, endIndex)}</span>{cityCountryPair.substring(endIndex)}</li>)
+                                        }}>{cityCountryPair.substring(0, startIndex)}<span style={{ color: 'darkorchid', fontWeight: "bolder" }}>{cityCountryPair.substring(startIndex, endIndex)}</span>{cityCountryPair.substring(endIndex)}</li>)
                                     }
                                     iterator++;
                                 }
