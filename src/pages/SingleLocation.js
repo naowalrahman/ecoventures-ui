@@ -16,22 +16,31 @@ const SingleLocation = () => {
     
 
     
-    
-    const [apiInfo, setApiInfo] = useState(async () => {
-        const data = await fetch(`https://ecoventures-server.vercel.app/location/${city}`)
-        const json = await data.json()
-        return [json.date, json.aqi, json.gas];
+    const [date, setDate] = useState();
+    const [aqi, setAqi] = useState();
+    const [gas, setGas] = useState();
+
+    const getData = () => {
         
-    })
-    
-    const [reviewData, setReviewData] = useState(async () => {
-        return 0; //implement mongodb access, need to npm install this and also npm install styled components
-    })
+        fetch(`https://ecoventures-server.vercel.app/location/${city}`)
+            .then(data => data.json())
+            .catch(e => console.error(e.message))
+            .then(json => {
+                setDate(json.date);
+                setAqi(json.aqi);
+                setGas(json.gas);
+                console.log(json.gas)
+            });
+    };
+
+    useEffect(() => {
+        getData();
+    }, []);
 
     return (
         <div id="singlelocation">
            <Header cityName = {city} countryName = {country}/>
-            <AQIGraph AQI = {apiInfo[1]} />
+            <AQIGraph AQI = {aqi} />
             <GASESGraphs />
             {/* <h1>{city}</h1>
             <p>
@@ -95,7 +104,6 @@ const Header = (props) => {
 }
 const GASESGraphs = (props) => {
     let severity = "gasindex";
-    let gas = props.GAS;
     const barHeight = 20
     const barDisplace = 45
     const initialOffset = 15;
@@ -104,8 +112,9 @@ const GASESGraphs = (props) => {
     const fsize = 30;
     return  (
         <div className='gasGraph'>
-            <svg className="chart" width="420" height={barDisplace * 5}>
-                
+            <svg className="chart" width="420" height={barDisplace * 5} aria-labelledby="title desc" role="img">
+                <title id="title">A bar chart showing information</title>
+                <desc id="desc">4 apples; 8 bananas; 15 kiwis; 16 oranges; 23 lemons</desc>
                     <g className="bar">
                         <rect width="40" height={barHeight}></rect>
                         <text fontSize={fsize} x="45" y={initialOffset} dy={dyOffset} dx={dxOffset}>4 apples</text>
