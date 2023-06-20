@@ -51,7 +51,7 @@ function Home() {
                 if (cityCountryPair.toLowerCase().includes(userLocation.toLowerCase())) {
                     // console.log(element[0] + " " + element[2]);
                     // console.log(cityCountryPair)
-                    console.log(cityCountryPair)
+                    // console.log(cityCountryPair)
                     let startIndex = cityCountryPair.toLowerCase().indexOf(userLocation.toLowerCase());
                     let endIndex = cityCountryPair.toLowerCase().indexOf(userLocation.toLowerCase()) + userLocation.length;
 

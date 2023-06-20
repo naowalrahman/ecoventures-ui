@@ -25,14 +25,14 @@ const Locations = () => {
 
     const interval = 1000
     //const start = Math.floor(Math.random() * (39000 - interval));
-    // const server = 'https://ecoventures-server.vercel.app';
-    const server = 'http://localhost:3001'; // for dev only
+    const server = 'https://ecoventures-server.vercel.app';
+    //const server = 'http://localhost:3001'; // for dev only
 
     const [limit, setLimit] = useState(100);
     const [inputValue, setInputValue] = useState('')
     const [countryValue, setCountryValue] = useState('')
     const [stringPercentArray, setStringPercentArray] = useState(() => {
-        console.log(`${server}/allDistance/${userLocation.substring(0, userLocation.indexOf(','))}&closest&nothing`);
+        // console.log(`${server}/allDistance/${userLocation.substring(0, userLocation.indexOf(','))}&closest&nothing`);
         fetch(`${server}/allDistance/${userLocation.substring(0, userLocation.indexOf(','))}&closest&nothing`)
             .then(data => data.json())
             .catch(e => console.error(e.message))

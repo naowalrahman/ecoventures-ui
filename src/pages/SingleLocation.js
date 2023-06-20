@@ -214,8 +214,8 @@ const GASESGraphs = (props) => {
             )
             iterator++;
         }
-        console.log("done");
-        console.log(bars);
+        // console.log("done");
+        // console.log(bars);
         return  (
         
         <svg className="chart"  viewBox={`0 0 ${svgWidth + 250} ${barDisplace * 8}`}>
