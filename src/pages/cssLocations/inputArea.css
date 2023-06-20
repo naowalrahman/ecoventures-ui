@@ -1,0 +1,14 @@
+
+.MuiTextField-root {
+    width: 100%;
+}
+
+.MuiInputBase-root, .MuiOutlinedInput-input::placeholder {
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+
+}
+
+.MuiInputLabel-outlined {
+    font-size: 1.6rem !important;
+}

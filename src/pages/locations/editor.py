@@ -52,9 +52,7 @@ with open ("../countryCards.css", "a") as f:
 .{i}-text {{
 	color:{data[unchanged][1]};
 }}
-.{i}-dist {{
-	background-color: {data[unchanged][1]};
-}}
+
 .{i}-country:hover {{
 	background-color: {data[unchanged][1]};
 	transition: 0.3s;
@@ -64,9 +62,5 @@ with open ("../countryCards.css", "a") as f:
 	transition: 0.3s;
 }}
 
-.{i}-country:hover .{i}-dist {{
-	background-color: {data[unchanged][0]};
-	transition:0.3s;
-}}
 """)
 		

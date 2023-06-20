@@ -7,7 +7,7 @@ const ContactUs = () => {
   const {userLocation} = useParams();
   return (
     <div>
-    <Layout userLoc={userLocation}/>
+    <Layout userLoc={userLocation} specific = "ContactUs"/>
     
       <h1>ContactUs</h1>
     </div>

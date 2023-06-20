@@ -1,0 +1,66 @@
+@font-face {
+    font-family: alkatra;
+    src: url("../../../public/fonts/Alkatra-VariableFont_wght.ttf");
+}
+#locations {
+    background-color: rgb(180, 250, 199);
+}
+#locationsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5vh;
+    column-gap: 5vw;
+}
+
+.loc-link {
+    line-height: 1.5rem;
+    font-family: alkatra;
+    position:absolute;
+    width:max-content;
+    max-width:70%;
+    top:55%;
+    left:50%;
+    transition: 0.3s;
+    padding: 0.9rem;
+    font-size: 1.5rem;
+    text-align: center;
+    transform:translate(-50%,-50%);
+}
+
+.distanceFromHome {
+    position:absolute;
+    font-size: 1.3rem;
+    bottom: 5%;
+    right: 5%;
+    padding:0.5rem;
+    border-radius: .25rem;
+    transition:0.3s;
+}
+
+.flag {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    border: 2px solid black;
+    border-radius: 0.2rem;
+    height: 3rem;
+    object-fit: contain;
+    font-size: 30px;
+    color:crimson;
+    font-weight: bolder;
+}
+.cityLink {
+    border-radius:.5rem;
+    position:relative;
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid whitesmoke;
+    display: block;
+    transition: 0.3s;
+}
+
+.cityLink:any-link {
+    text-decoration: none;
+}

@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Home.css';
-import { Outlet, Link } from "react-router-dom";
+import {InputLabel, TextField} from '@mui/material'
 const cities = require("./locations/world_cities.json");
 const stringSimilarity = require("string-similarity");
 
@@ -29,11 +29,6 @@ function Home() {
                 break;
             }
             let cityCountryPair = `${element[0]}, ${element[2]}`;
-            //console.log(element[0] + " " + element[2])
-
-                //console.log(cityCountryPair)
-                
-
                 allCitiesReturn.push(<li onClick={() => {
                     setUserLocation(cityCountryPair);
                     setIsSelected(true);
@@ -42,29 +37,35 @@ function Home() {
             iterator++;
             return allCitiesReturn;
         })
-        
-        // const maxCitiesAvailable = 0;
-        // console.log("maxCitiesAvailable is " + maxCitiesAvailable);
-        // let allCitiesReturn = []
-        // let maxCitiesDisplayed = 0;
-        // for (let property in cities) {
-        //     if (maxCitiesDisplayed > maxCitiesAvailable + 1000) {
-        //         break;
-        //     }
-        //     else if (maxCitiesDisplayed > maxCitiesAvailable) {
+    useEffect(() => {
+        setLocationList(() => {
+            let newList = []
+            let iterator = 0
+            for (const element of stringPercentArray) {
+                if (iterator > 1000) {
+                    break;
+                }
+                let cityCountryPair = `${element[0]}, ${element[2]}`;
+                //console.log(element[0] + " " + element[2])
 
-        //         allCitiesReturn.push(<li onClick={() => {
-        //             setUserLocation(`${property}, ${cities[property]["country"]}`)
-        //             setIsSelected(true)
-        //         }
-        //     }> {property}, {cities[property]["country"]}</li>);
-        //     // maxCitiesDisplayed++;
-        //     }
-        //     maxCitiesDisplayed++;
+                if (cityCountryPair.toLowerCase().includes(userLocation.toLowerCase())) {
+                    // console.log(element[0] + " " + element[2]);
+                    // console.log(cityCountryPair)
+                    console.log(cityCountryPair)
+                    let startIndex = cityCountryPair.toLowerCase().indexOf(userLocation.toLowerCase());
+                    let endIndex = cityCountryPair.toLowerCase().indexOf(userLocation.toLowerCase()) + userLocation.length;
 
-        // }
-        // console.log(maxCitiesDisplayed)
-        // return allCitiesReturn;
+                    newList.push(<li onClick={() => {
+                        setUserLocation(cityCountryPair)
+                        setIsSelected(true);
+                    }}>{cityCountryPair.substring(0, startIndex)}<span style={{ color: 'darkorchid', fontWeight: "bolder" }}>{cityCountryPair.substring(startIndex, endIndex)}</span>{cityCountryPair.substring(endIndex)}</li>)
+                }
+                iterator++;
+            }
+            return newList;
+        }
+        )
+    }, [stringPercentArray])
     
 
     return (
@@ -81,50 +82,28 @@ function Home() {
                 </div>
 
                 <div className="main-search-bar">
-                    <textarea
+                    <InputLabel shrink={false} />
+                    <TextField
+                        variant='filled'
+                        color='secondary'
+                        label="Location"
                         className="main-search-bar-input"
-                        placeholder='Enter the city, country you live in'
+                        placeholder='Enter the [city, country] you live in'
                         value={userLocation}
                         onChange={(e) => {
                             setUserLocation(e.target.value)
                             setIsSelected(false)
                             setStringPercentArray(stringPercentArray.map(item => {
                                 //    console.log(`${item[0]}, ${item[2]}`)
-                                return [item[0], stringSimilarity.compareTwoStrings(e.target.value.toLowerCase(), item[0].toLowerCase() + ", " + item[2].toLowerCase()), item[2]];
+                                return [item[0], stringSimilarity.compareTwoStrings(userLocation.toLowerCase(), item[0].toLowerCase() + ", " + item[2].toLowerCase()), item[2]];
                             }).sort((a, b) => {
                                 return b[1] - a[1]
                             }))
-                            setLocationList(() => {
-                                let newList = []
-                                let iterator = 0
-                                for (const element of stringPercentArray) {
-                                    if (iterator > 1000) {
-                                        break;
-                                    }
-                                    let cityCountryPair = `${element[0]}, ${element[2]}`;
-                                    //console.log(element[0] + " " + element[2])
-
-                                    if (cityCountryPair.toLowerCase().includes(e.target.value.toLowerCase())) {
-                                        // console.log(element[0] + " " + element[2]);
-                                        // console.log(cityCountryPair)
-                                        console.log(cityCountryPair)
-                                        let startIndex = cityCountryPair.toLowerCase().indexOf(e.target.value.toLowerCase());
-                                        let endIndex = cityCountryPair.toLowerCase().indexOf(e.target.value.toLowerCase()) + e.target.value.length;
-
-                                        newList.push(<li onClick={() => {
-                                            setUserLocation(cityCountryPair)
-                                            setIsSelected(true);
-                                        }}>{cityCountryPair.substring(0, startIndex)}<span style={{ color: 'darkorchid', fontWeight: "bolder" }}>{cityCountryPair.substring(startIndex, endIndex)}</span>{cityCountryPair.substring(endIndex)}</li>)
-                                    }
-                                    iterator++;
-                                }
-                                return newList;
-                            }
-                            )
+                            
 
                         }}
                     >
-                    </textarea>
+                    </TextField>
                     <ul className='listOfLocations'>
                         {locationList}
                     </ul>

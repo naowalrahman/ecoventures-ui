@@ -3,36 +3,53 @@
     src: url(../../../public/fonts/Jost-VariableFont_wght.ttf);
 }
 
+.loading {
+    letter-spacing: .05rem;
+    font-family: header;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 2.5rem;
+    /* z-index:1; */
+    width:100vw;
+    font-weight:700;
+
+    text-align: center;
+
+    font-style: italic;
+    transform: translateY(20%);
+    opacity: 1;
+    font-weight: 500;
+    
+}
+
+
 .header {
     letter-spacing: .05rem;
     font-family: header;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size: 2.5rem;
-    background-color: aliceblue;
-    /* z-index:1; */
-    width:100vw;
+
     font-weight:700;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    color: #7ed974;
+    /* padding-top: 3vh;
+    padding-bottom: 3vh; */
     text-align: center;
-    position:fixed;
-    top:0;
     font-style: italic;
-    animation: load-in 1s ease-out;
-    animation-fill-mode: forwards;
+    /* transform: translateY(0%);
+    opacity: 1;
+    font-weight: 450; */
     
 }
 
+.finished {
+    animation: load-in 1s linear;
+    animation-fill-mode:forwards;
+}
+
 .flagHeader {
-    position: absolute;
-    right: 1%;
-    top: 6%;
+    
     border: 2px solid black;
     border-radius: 0.2rem;
-    height: 5rem;
+    width: 50%;
     object-fit: contain;
-    position:absolute;
     color:crimson;
     font-weight: bolder;
 }

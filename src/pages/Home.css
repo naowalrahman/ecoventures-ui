@@ -150,3 +150,20 @@
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+
+.main-search-bar-input {
+  background-color: rgb(40, 184, 134);
+  border: 3px solid var(--bs-purple) !important;
+  border-radius: 6px;
+  color: var(--bs-purple) !important;
+}
+
+.MuiInputLabel-root {
+
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+}
+
+.main-search-bar-input .MuiInputBase-input {
+  color: var(--bs-purple) !important;
+}

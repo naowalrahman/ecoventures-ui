@@ -1,0 +1,25 @@
+
+.backLink {
+    position: absolute;
+    height: 4rem;
+    width: 20rem;
+    top: 3%;
+    left: 3%;
+    z-index: 1;
+    border-radius: 20px;
+    transition: 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;    
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.backLink:hover {
+    transition: 0.3s;
+    top: 2.5%;
+    opacity: 0.8;
+}

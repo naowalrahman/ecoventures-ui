@@ -1,0 +1,36 @@
+/* .myGrid {
+    position: fixed;
+    z-index: 2;
+    top:0;
+    width: 100vw;
+    over
+} */
+
+.iconImage {
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 0.2rem;
+    object-fit: contain;
+    color:crimson;
+}
+
+.navbar-fixed-top {
+    top: 0px !important;
+    margin-bottom: 0vh !important;
+    width: 100vw;
+    position: sticky !important;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar-brand {
+    color: green !important;
+    font-size: 2rem !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar-brand:hover {
+    color: rgb(45, 230, 45) !important;
+    transition: 0.3s;
+}

@@ -1,86 +1,116 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //import './cssSingleLocation/SingleLocation.css'
 import styled from 'styled-components';
 import './cssSingleLocation/GASESGraphs.css'
 import './cssSingleLocation/AQIGraph.css'
 import './cssSingleLocation/Header.css';
+import './cssSingleLocation/BackLink.css';
+import './cssSingleLocation/graphs.css'
+import Layout from './Layout';
 const countryColors = require("./locations/country-colors-true-single.json")
 const cityFlags = require("./locations/country-flag-true.json")
+
+const LoadingHeader = styled.div`
+
+    color: #7ed974;
+    background-color: aliceblue;
+    `
 
 const SingleLocation = () => {
 
     const { userLocation } = useParams();
     const [city, setCity] = useState(() => userLocation.substring(0, userLocation.indexOf(',')))
-    const [country, setCountry] = useState(() => userLocation.substring(userLocation.indexOf(',') + 2))
+    const [country, setCountry] = useState(() => userLocation.substring(userLocation.indexOf(',') + 2, userLocation.indexOf('&')))
+    const [userLoc, setUserLoc] = useState(() => userLocation.substring(userLocation.indexOf('&') + 1))
+    const [isFinished, setIsFinished] = useState(false);
     
-
     
-    const [date, setDate] = useState();
-    const [aqi, setAqi] = useState();
-    const [gas, setGas] = useState();
-
-    const getData = () => {
-        
+    
+    const [apiInfo, setApiInfo] = useState(() => {
         fetch(`https://ecoventures-server.vercel.app/location/${city}`)
-            .then(data => data.json())
-            .catch(e => console.error(e.message))
-            .then(json => {
-                setDate(json.date);
-                setAqi(json.aqi);
-                setGas(json.gas);
-                console.log(json.gas)
-            });
-    };
+        .then(data => data.json())
+        .then(json => {
+            setApiInfo([json.date, json.aqi, json.gas])
+            // console.log(json.gas);
+        })
+        return [new Date(), 0, null]
+    })
+    
+    const [reviewData, setReviewData] = useState(async () => {
+        return 0; //implement mongodb access, need to npm install this and also npm install styled components
+    })
 
     useEffect(() => {
-        getData();
-    }, []);
+        // console.log("useEffect Ran and apiInfo[2] is " + apiInfo[2])
+        if (apiInfo[2] != null) {
+            // console.log("notnull");
+            setIsFinished(true)
+        }
+    }, [apiInfo])
+    
 
     return (
-        <div id="singlelocation">
-           <Header cityName = {city} countryName = {country}/>
-            <AQIGraph AQI = {aqi} />
-            <GASESGraphs />
-            {/* <h1>{city}</h1>
-            <p>
-                With an air quality index of <span className='city-info'>{aqi}</span>, and an average gas concentration of <span className='city-info'>X (TBA)</span>, this place is <span className='city-info'>something (TBA)</span> to visit!
-            </p>
 
-            <table id='aqi-desc'>
-                <thead>
-                    <tr>
-                        <th>Qualitative name</th>
-                        <th>Index</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Good</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Fair</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Moderate</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Poor</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>Very Poor</td>
-                        <td>5</td>
-                    </tr>
-                </tbody>
-            </table> */}
+        <div id="singlelocation">
+            <Layout userLocExtra = {userLocation.substring(0, userLocation.indexOf('&'))} userLoc={userLocation.substring(userLocation.indexOf('&') + 1)} specific="Location"/>
+            {/* <BackDiv cityName = {city} countryName = {country} userLoc = {userLoc} /> */}
+            <Header cityName = {city} countryName = {country} finished = {isFinished} />
+            <div className='pt-4 container-fluid'>
+                {apiInfo[2] == null ? (
+                    <div className='row gx-3'>
+                    <div className='gasGraph col-lg-3'>
+                        <GASESGraphs gases = {apiInfo[2]}/>
+                    </div>
+                    <div className='col-lg-6'>
+                    </div>
+                    <div className='aqiGraph col-lg-3'>
+                        <AQIGraph AQI = {apiInfo[1]} />
+
+                    </div>
+                </div>
+                ) : (
+                    <div className='row gx-3'>
+                        <div className='gasGraph col-lg-9'>
+                            <GASESGraphs gases = {apiInfo[2]}/>
+                        </div>
+                        <div className='aqiGraph col-lg-3'>
+                            <AQIGraph AQI = {apiInfo[1]} />
+
+                        </div>
+                    </div>
+                )}
+                
+            </div>
+            
         </div>
     );
 };
 
+const BackDiv = (props) => {
+    const cityColor = countryColors[props.countryName][1]
+    const countryColor = countryColors[props.countryName][0]
+    const BackLink = styled(Link)`
+    background-color: ${cityColor};
+    color: ${countryColor}
+    `
+    /*
+    a {
+        color: ${countryColor};
+    */
+    return (
+        <BackLink to={`/locations/${props.userLoc}`} className="backLink">
+            <div>
+                Back to Locations
+            </div>   
+        </BackLink>
+        
+    )
+    
+
+    
+}
 
 const Header = (props) => {
     // console.log(props.countryName + " is country")
@@ -93,58 +123,178 @@ const Header = (props) => {
     color: ${cityColor};
     background-color: ${countryColor};
     `
+
     
-    
-    return (
-        <SpecialHeader className='header'>
-            <img className='flagHeader' src={flag}></img>
-            Welcome to {props.cityName}, {props.countryName}
-        </SpecialHeader>
-    )
+    if (props.finished) {
+        return (
+            <SpecialHeader className="container-fluid p-4 header finished">
+                
+                <div className='row align-items-center'>
+                    <div className='col-2'>
+                        <img className='flagHeader' src={flag}></img>
+                    </div>
+                    <div className='col'>
+                        Welcome to {props.cityName}, {props.countryName}
+                    </div>
+                    <div className='col-2'>
+                        <img className='flagHeader' src={flag}></img>
+                    </div>
+                </div>
+                
+                
+            </SpecialHeader>
+        )
+    }
+    else {
+        return (
+        <LoadingHeader className='loading'>
+            Loading...
+        </LoadingHeader>)
+    }
+        
 }
 const GASESGraphs = (props) => {
     let severity = "gasindex";
+    let gas = props.GAS;
+    const svgWidth = 1000
     const barHeight = 20
     const barDisplace = 45
     const initialOffset = 15;
     const dxOffset = ".35em";
-    const dyOffset = ".35em";
+    const dyOffset = ".25em";
     const fsize = 30;
-    return  (
-        <div className='gasGraph'>
-            <svg className="chart" width="420" height={barDisplace * 5} aria-labelledby="title desc" role="img">
-                <title id="title">A bar chart showing information</title>
-                <desc id="desc">4 apples; 8 bananas; 15 kiwis; 16 oranges; 23 lemons</desc>
-                    <g className="bar">
-                        <rect width="40" height={barHeight}></rect>
-                        <text fontSize={fsize} x="45" y={initialOffset} dy={dyOffset} dx={dxOffset}>4 apples</text>
+    const g = props.gases
+    if (props.gases == null) {
+        let severity = `aqitype0`
+        let textLabel = `aqiText aqitext0`
+        return (
+            <div className='aqiGraph'>
+                <svg viewBox='0 0 360 360' className={severity}>
+                    <circle cx='180' cy='180' r='170' className='back' fill='none'/>
+                    <circle cx='180' cy='180' r='170' className='front' fill='none'/>
+
+                    <g className={textLabel}>
+                        <text fontSize="50" x='180' y='230' textAnchor="middle" id='percentage'>Loading</text>
                     </g>
-                    <g className="bar">
-                        <rect width="80" height={barHeight} y={barDisplace}></rect>
-                        <text fontSize={fsize} x="85" y={initialOffset + barDisplace} dy={dyOffset} dx={dxOffset}>8 bananas</text>
-                    </g>
-                    <g className="bar">
-                        <rect width="150" height={barHeight} y={barDisplace * 2}></rect>
-                        <text fontSize={fsize} x="150" y={initialOffset + barDisplace * 2} dy={dyOffset} dx={dxOffset}>15 kiwis</text>
-                    </g>
-                    <g className="bar">
-                        <rect width="160" height={barHeight} y={barDisplace * 3}></rect>
-                        <text fontSize={fsize} x="161" y={initialOffset + barDisplace * 3} dy={dyOffset} dx={dxOffset}>16 oranges</text>
-                    </g>
-                    <g className="bar">
-                        <rect width="230" height={barHeight} y={barDisplace * 4}></rect>
-                        <text fontSize={fsize} x="235" y={initialOffset + barDisplace * 4} dy={dyOffset} dx={dxOffset}>23 lemons</text>
-                    </g>
-            </svg>
-        </div>
-    )
+                </svg>
+            </div>
+        )
+        
+    }
+    else {
+        const barMaxs = [15400, 100, 200, 180, 350, 75, 200, 200]
+        const barIntervals = [
+            [4400, 9400, 12400, 15400],
+            [25, 50, 75, 100],
+            [40, 70, 150, 200],
+            [60, 100, 140, 180],
+            [20, 80, 250, 350],
+            [10, 25, 50, 75],
+            [20, 50, 100, 200],
+            [50, 100, 150, 200]
+        ]
+        let bars = []
+        let iterator = 0
+        for (const property in props.gases) {
+            bars.push(
+                <Bar 
+                barInterval = {barIntervals[iterator]}
+                barMax = {barMaxs[iterator]}
+                property = {property}
+                gas = {g[property]} 
+                svgWidth = {svgWidth} 
+                barHeight = {barHeight} 
+                barDisplace = {barDisplace}
+                barDisplaceExtent = {iterator} 
+                fsize = {fsize}
+                initialOffset = {initialOffset}
+                dyOffset = {dyOffset}
+                dxOffset = {dxOffset}
+                />
+            )
+            iterator++;
+        }
+        console.log("done");
+        console.log(bars);
+        return  (
+        
+        <svg className="chart"  viewBox={`0 0 ${svgWidth + 250} ${barDisplace * 8}`}>
+            {bars}
+        </svg>
+
+        )
+    }
     
+    
+}
+
+const Bar = (props) => {
+    
+    const green = "#43e23e"
+    const orange = "#ee6d22"
+    const yellow = "#ebee22"
+    const red = "#ee2121"
+    const pink = "#ee36d5"
+    const colorArray = [green, orange, yellow, red, pink]
+    const intervals = props.barInterval
+    let name;
+    let color;
+
+    switch (props.property) {
+        case 'co':
+            name = 'CO';
+            break;
+        case 'no':
+            name = 'NO';
+            break;
+        case 'no2':
+            name = 'NO₂';
+            break;
+        case 'o3':
+            name = 'O₃';
+            break;
+        case 'so2':
+            name = 'SO₂';
+            break;
+        case 'pm2_5':
+            name = 'PM2.5';
+            break;
+        case 'pm10':
+            name = 'PM₁₀';
+            break;
+        case 'nh3':
+            name = 'NH₃';
+            break;
+    } 
+    let i = 0
+    for (const el of intervals) {
+        if (props.gas < el) {
+            break;
+        }
+        i++;
+    }
+    color = colorArray[i]
+    return (
+        <g className="bar">
+            <rect fill={color} width={props.gas/props.barMax * props.svgWidth} height={props.barHeight} y={props.barDisplace * props.barDisplaceExtent}>
+            <animate attributeName="width" 
+                from="0" 
+                to={props.gas/props.barMax * props.svgWidth}
+                dur="2s" fill='freeze'/>
+            </rect>
+            <text fontSize={props.fsize} x={props.gas/props.barMax * props.svgWidth} y={props.initialOffset + props.barDisplace * props.barDisplaceExtent} dy={props.dyOffset} dx={props.dxOffset}>{name} {props.gas} μg/m³</text>
+        </g>
+    )
 }
 const AQIGraph = (props) => {
     let severity = `aqiindex aqitype${props.AQI}`;
     let textLabel = `aqiText aqitext${props.AQI}`;
     let label;
     switch (props.AQI) {
+        case 0:
+            label = "Loading"
+            severity = `aqitype${props.AQI}`
+            break;
         case 1:
             label = "Good"
             break;
@@ -160,13 +310,11 @@ const AQIGraph = (props) => {
         case 5:
             label = "Very Poor"
             break;
-
-
     }
     // include image api
     return (
         <div className='aqiGraph'>
-        <svg width='360' height='360' className={severity}>
+        <svg  viewBox='0 0 360 360'className={severity}>
 
             <circle cx='180' cy='180' r='170' className='back' fill='none'/>
             <circle cx='180' cy='180' r='170' className='front' fill='none'/>

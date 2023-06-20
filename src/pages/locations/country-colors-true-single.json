@@ -161,7 +161,7 @@
     ],
     "Puerto Rico": [
         "#0050f0",
-        "#ffffff"
+        "#fff"
     ],
     "Croatia": [
         "#fff",
@@ -289,7 +289,7 @@
     ],
     "Greenland": [
         "#c8102e",
-        "#FFFFFF"
+        "#fff"
     ],
     "Guatemala": [
         "#fff",
@@ -317,7 +317,7 @@
     ],
     "Hong Kong": [
         "#ee1c25",
-        "#ffffff"
+        "#fff"
     ],
     "Hungary": [
         "#fff",
@@ -341,10 +341,10 @@
     ],
     "Iraq": [
         "#cf2029",
-        "#ffffff"
+        "#fff"
     ],
     "Ireland": [
-        "#ffffff",
+        "#fff",
         "#169b62"
     ],
     "Israel": [
@@ -508,7 +508,7 @@
         "#21468b"
     ],
     "New Zealand": [
-        "#ffffff",
+        "#fff",
         "#00247d"
     ],
     "Nicaragua": [
@@ -541,7 +541,7 @@
     ],
     "American Samoa": [
         "#371e0d",
-        "#ffffff"
+        "#fff"
     ],
     "Turks and Caicos Islands": [
         "#57a532",
@@ -580,12 +580,12 @@
         "#fcdd09"
     ],
     "Cook Islands": [
-        "#ffffff",
+        "#fff",
         "#012169"
     ],
     "Faroe Islands": [
         "#ef3340",
-        "#FFFFFF"
+        "#fff"
     ],
     "Palau": [
         "#ffde00",
@@ -640,7 +640,7 @@
         "#078930"
     ],
     "Jersey": [
-        "#ffffff",
+        "#fff",
         "#cf142b"
     ],
     "Mayotte": [
@@ -784,7 +784,7 @@
         "#ef2b2d"
     ],
     "Pitcairn Islands": [
-        "#FFFFFF",
+        "#fff",
         "#006ec7"
     ],
     "South Georgia and South Sandwich Islands": [
@@ -829,7 +829,7 @@
     ],
     "Tanzania": [
         "#00a3dd",
-        "#1eb53a"
+        "#fcd116"
     ],
     "Thailand": [
         "#fff",
@@ -856,7 +856,7 @@
         "#e70013"
     ],
     "Turkey": [
-        "#ffffff",
+        "#fff",
         "#e30a17"
     ],
     "Turkmenistan": [
@@ -893,7 +893,7 @@
     ],
     "Uzbekistan": [
         "#0099b5",
-        "#1eb53a"
+        "#fff"
     ],
     "Vanuatu": [
         "#009543",

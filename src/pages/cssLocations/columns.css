@@ -1,0 +1,5 @@
+.loc, .con, .but, .slid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

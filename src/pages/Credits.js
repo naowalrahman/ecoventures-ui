@@ -7,9 +7,9 @@ const AboutUs = () => {
   const {userLocation} = useParams();
   return (
     <div>
-    <Layout userLoc={userLocation}/>
+    <Layout userLoc={userLocation} specific = "Credits"/>
     
-      <h1>Write a Review</h1>
+      <h1>Credits</h1>
     </div>
   );
 };
