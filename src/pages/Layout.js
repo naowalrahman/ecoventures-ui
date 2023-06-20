@@ -22,7 +22,7 @@ const Layout = (props) => {
                 <li className="nav-item">
                 <Link className={`nav-link ${props.specific == urlStrList[0] ? "active" : ""}`} aria-current="page" to="/">Home</Link>
                 </li>
-                {/* <li className="nav-item">
+                <li className="nav-item">
                 <Link className={`nav-link ${props.specific == urlStrList[1] ? "active" : ""}`} aria-current="page" to={`/locations/${props.userLoc}`}>Locations</Link>
                 </li>
                 <li className="nav-item">
@@ -35,9 +35,14 @@ const Layout = (props) => {
                 <Link className={`nav-link ${props.specific == urlStrList[4] ? "active" : "disabled"}`} aria-current="page" to={`/location/${props.userLocExtra}`}>
                     {props.userLocExtra == undefined ? "Location To Be Determined" : props.userLocExtra.substring(props.userLocExtra.indexOf('&') + 1)}
                 </Link>
-                </li> */}
+                </li>
             </ul>
-            
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                    <img className="iconImage" height="50px" src={cityFlags[props.userLoc.substring(props.userLoc.indexOf(',') + 2)]} />
+
+                </li>
+            </ul>
             </div>
             
 
