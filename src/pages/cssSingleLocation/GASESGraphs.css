@@ -11,7 +11,11 @@
     font-family: Helvetica, sans-serif;
 }
 
-
+.bar rect {
+    stroke-width: 1px;
+    stroke: black;
+    stroke-linecap: round;
+}
 
 .bar text {
     color: black;
@@ -28,5 +32,7 @@
 }
 
 .chart {
-    border: 2px solid black
+    padding: 3px;
+    border-radius: 10px;
+    border: 2px solid rgba(224, 224, 224, 0.4)
 }

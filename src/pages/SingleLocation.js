@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import {TextField} from '@mui/material'
 //import './cssSingleLocation/SingleLocation.css'
+import {Button} from '@mui/material'
 import styled from 'styled-components';
 import './cssSingleLocation/GASESGraphs.css'
 import './cssSingleLocation/AQIGraph.css'
 import './cssSingleLocation/Header.css';
-import './cssSingleLocation/BackLink.css';
 import './cssSingleLocation/graphs.css'
+import './cssSingleLocation/submitButton.css'
 import Layout from './Layout';
 const countryColors = require("./locations/country-colors-true-single.json")
 const cityFlags = require("./locations/country-flag-true.json")
@@ -25,11 +27,12 @@ const SingleLocation = () => {
     const [country, setCountry] = useState(() => userLocation.substring(userLocation.indexOf(',') + 2, userLocation.indexOf('&')))
     const [userLoc, setUserLoc] = useState(() => userLocation.substring(userLocation.indexOf('&') + 1))
     const [isFinished, setIsFinished] = useState(false);
-    
+    const server = 'https://ecoventures-server.vercel.app';
+    //const server = 'http://localhost:3001'; // for dev only
     
     
     const [apiInfo, setApiInfo] = useState(() => {
-        fetch(`https://ecoventures-server.vercel.app/location/${city}`)
+        fetch(`${server}/location/${city}`)
         .then(data => data.json())
         .then(json => {
             setApiInfo([json.date, json.aqi, json.gas])
@@ -37,9 +40,14 @@ const SingleLocation = () => {
         })
         return [new Date(), 0, null]
     })
-    
     const [reviewData, setReviewData] = useState(async () => {
-        return 0; //implement mongodb access, need to npm install this and also npm install styled components
+        const variable = await fetch("https://api.github.com/users/xiaotian/repos");
+        const json = await variable.json()
+        console.log(json);
+        
+    })
+    const [userName, setUserName] = useState(async () => {
+        
     })
 
     useEffect(() => {
@@ -56,7 +64,7 @@ const SingleLocation = () => {
         <div id="singlelocation">
             <Layout userLocExtra = {userLocation.substring(0, userLocation.indexOf('&'))} userLoc={userLocation.substring(userLocation.indexOf('&') + 1)} specific="Location"/>
             {/* <BackDiv cityName = {city} countryName = {country} userLoc = {userLoc} /> */}
-            <Header cityName = {city} countryName = {country} finished = {isFinished} />
+            <Header cityName = {city} countryName = {country} finished = {isFinished} Review = {false}/>
             <div className='pt-4 container-fluid'>
                 {apiInfo[2] == null ? (
                     <div className='row gx-3'>
@@ -83,34 +91,60 @@ const SingleLocation = () => {
                 )}
                 
             </div>
-            
+            <div className='container-fluid pt-4'>
+                    <Header cityName = {city} countryName = {country} finished = {isFinished} Review = {true}>
+                        
+                    </Header>
+            </div>
+            <div className='container pt-4'>
+                <div className='row pb-4'>
+                    <div className='col-lg-12'>
+                        <TextField 
+                        value=""
+                        label="Name"
+                        placeholder='Enter your name'
+                        color='primary' 
+                        variant='outlined' 
+                        size='large' 
+                        className='submitButton'></TextField>
+                    </div>
+                </div>
+                <div className='row pb-4'>
+                    <div className='col-lg-12'>
+                        <TextField 
+                        multiline
+                        label="Review"
+                        placeholder='Review this location'
+                        color='primary' 
+                        variant='outlined' 
+                        size='large' 
+                        className='submitButton'></TextField>
+                    </div>
+                </div>
+                <div className='row pb-4'> 
+                    <div className='col-12'>
+                        <Button 
+                        size='large' 
+                        variant="contained" 
+                        className='submitButton'
+                        onClick={() => {
+                            fetch(`https://ecoventures-server.vercel.app/location/${city}`)
+                            .then(data => data.json())
+                            .then(json => {
+                                setApiInfo([json.date, json.aqi, json.gas])
+                                // console.log(json.gas);
+                            })
+                        }}>hello</Button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
 
-const BackDiv = (props) => {
-    const cityColor = countryColors[props.countryName][1]
-    const countryColor = countryColors[props.countryName][0]
-    const BackLink = styled(Link)`
-    background-color: ${cityColor};
-    color: ${countryColor}
-    `
-    /*
-    a {
-        color: ${countryColor};
-    */
-    return (
-        <BackLink to={`/locations/${props.userLoc}`} className="backLink">
-            <div>
-                Back to Locations
-            </div>   
-        </BackLink>
-        
-    )
-    
 
     
-}
+
 
 const Header = (props) => {
     // console.log(props.countryName + " is country")
@@ -126,10 +160,22 @@ const Header = (props) => {
 
     
     if (props.finished) {
+        if (props.Review) {
+            return (
+                <SpecialHeader className="container-fluid p-4 header finished">
+                    
+                    <div className='row align-items-center justify-content-center'>
+                        <div className='col-12 text-start'>
+                            Write a Review
+                        </div>
+                    </div>
+                </SpecialHeader>
+            )
+        }
         return (
             <SpecialHeader className="container-fluid p-4 header finished">
                 
-                <div className='row align-items-center'>
+                <div className='row align-items-center justify-content-center'>
                     <div className='col-2'>
                         <img className='flagHeader' src={flag}></img>
                     </div>

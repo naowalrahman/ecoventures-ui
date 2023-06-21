@@ -13,7 +13,7 @@
 }
 
 
-.MuiButton-contained {
+.selector .MuiButton-contained {
     background-color: var(--green) !important;
     font-size: 1.1rem !important;
     width: 100% !important;
@@ -21,7 +21,7 @@
     border-bottom: 0.5rem solid rgb(26, 133, 49) !important;
 }
 
-.MuiButton-contained:hover {
+.selector .MuiButton-contained:hover {
     background-color: #1e591c !important;
 }
 
