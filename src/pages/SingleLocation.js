@@ -15,7 +15,7 @@ import Layout from './Layout';
 const countryColors = require("./locations/country-colors-true-single.json")
 const cityFlags = require("./locations/country-flag-true.json")
 
-const valid_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:\n "
+const valid_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:/?#[]@!$&'()*+,;=\n "
 
 const LoadingHeader = styled.div`
 
@@ -67,7 +67,7 @@ const SingleLocation = () => {
     return (
 
         <div id="singlelocation">
-            <Layout userLocExtra = {userLocation.substring(0, userLocation.indexOf('&'))} userLoc={userLocation.substring(userLocation.indexOf('&') + 1)} specific="Location"/>
+            <Layout userLocExtra = {userLocation} userLoc={userLoc} specific="Location"/>
             <Header cityName = {city} countryName = {country} finished = {apiInfo[2] != null} Review = {null} userNameEdited = {userNameEdited} reviewSubmissionEdited = {reviewSubmissionEdited}/>
             <div className='p-2 container-fluid'>
                 {apiInfo[2] == null ? (
@@ -148,7 +148,7 @@ const SingleLocation = () => {
                         onClick={() => {
                             const userNameFailure = (userName == '')
                             const reviewSubmissionFailure = (reviewSubmission == '')
-                            const userNameIllegal = (() => {
+                            const userNameIllegal = (() => {    
                                 for (let character of userName) {
                                     if (!valid_chars.includes(character)) {
                                         return true;
@@ -198,7 +198,8 @@ const SingleLocation = () => {
                                 setUserName('')
                                 setReviewSubmission('')
                                 setTimeout(() => {
-                                    fetch(`${mainserver}/submitreview/${process.env.REACT_APP_MONGODB_PASSWORD}/${city}/${userName}/${reviewSubmission}`, { method: 'POST' })
+                                    
+                                    fetch(`${mainserver}/submitreview/${process.env.REACT_APP_MONGODB_PASSWORD}/${city}/${encodeURIComponent(userName)}/${encodeURIComponent(reviewSubmission)}`, { method: 'POST' })
                                     .then(() => {
                                         fetch(`${mainserver}/reviewData/${process.env.REACT_APP_MONGODB_PASSWORD}/${city}`, { method: 'POST' })
                                         .then(data => data.json())

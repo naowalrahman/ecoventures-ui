@@ -33,7 +33,7 @@ const Layout = (props) => {
                 </li>
                 <li className="nav-item">
                 <Link className={`nav-link ${props.specific == urlStrList[4] ? "active" : "disabled"}`} aria-current="page" to={`/location/${props.userLocExtra}`}>
-                    {props.userLocExtra == undefined ? "Location To Be Determined" : props.userLocExtra.substring(props.userLocExtra.indexOf('&') + 1)}
+                    {props.userLocExtra == undefined ? "Location To Be Determined" : props.userLocExtra.substring(0, props.userLocExtra.indexOf('&'))}
                 </Link>
                 </li>
             </ul>

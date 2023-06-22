@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 const cityFlags = require("./locations/country-flag-true.json")
 
 
-const valid_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+const valid_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-' "
 
 const Locations = () => {
     const { userLocation } = useParams();
@@ -51,7 +51,7 @@ const Locations = () => {
                 () => {
                     if (stringPercentArray == null) {
                         return (
-                            <div className='progress-extra container-fluid d-flex align-items-center justify-content-center p-5'>
+                            <div className='progress-extra container-fluid d-flex align-items-center justify-content-center m-5 p-5'>
                                 <CircularProgress />
                             </div> 
                         )
@@ -87,12 +87,13 @@ const Locations = () => {
                         <div id="locationInput" className='col-lg-3 loc'>
                         <TextField
 
-                        helperText={cityFailure ? "Error, invalid characters ($, {, }, or /" : (citySubmitted ? "Submitted!" : "Search a city, then press enter")}
+                        helperText={cityFailure ? "Error, invalid characters" : (citySubmitted ? "Submitted!" : "Search a city, then press enter")}
                         color={cityFailure ? 'error' : (citySubmitted ? 'success' : 'primary')}
                             label="City"
                             variant= 'outlined'
                             placeholder='Search over +39,000 cities'
                             value={inputValue}
+                            
                             onKeyDown={e => {
                                 if (e.key == "Enter") {
                                     if ((() => {
@@ -113,7 +114,7 @@ const Locations = () => {
                                         setTimeout(() => {
                                             setCitySubmitted(false);
                                         }, 2000)
-                                        fetch(`${mainserver}/allDistance/${userLocation.substring(0, userLocation.indexOf(','))}&city&${inputValue}`)
+                                        fetch(`${mainserver}/allDistance/${userLocation.substring(0, userLocation.indexOf(','))}&city&${encodeURIComponent(inputValue)}`)
                                         .then(data => data.json())
                                         .catch(e => console.error(e.message))
                                         .then((json) => {
@@ -132,7 +133,7 @@ const Locations = () => {
                         
                         <div id="countryInput" className='col-lg-3 con'>
                         <TextField
-                            helperText={countryFailure ? "Error, invalid characters ($, {, }, or /" : (countrySubmitted ? "Submitted!" : "Search a city, then press enter")}
+                            helperText={countryFailure ? "Error, invalid characters" : (countrySubmitted ? "Submitted!" : "Search a country, then press enter")}
                             color={countryFailure ? 'error' : (countrySubmitted ? 'success' : 'primary')}
                             placeholder='Search by country'
                             label="Country"
@@ -159,7 +160,7 @@ const Locations = () => {
                                         setTimeout(() => {
                                             setCountrySubmitted(false);
                                         }, 2000)
-                                        fetch(`${mainserver}/allDistance/${userLocation.substring(0, userLocation.indexOf(','))}&country&${countryValue}`)
+                                        fetch(`${mainserver}/allDistance/${userLocation.substring(0, userLocation.indexOf(','))}&country&${encodeURIComponent(countryValue)}`)
                                             .then(data => data.json())
                                             .catch(e => console.error(e.message))
                                             .then((json) => {
