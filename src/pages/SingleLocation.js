@@ -2,15 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 //import './cssSingleLocation/SingleLocation.css'
+import {Button} from '@mui/material'
+import {TextField} from '@mui/material'
 import styled from 'styled-components';
 import './cssSingleLocation/GASESGraphs.css'
 import './cssSingleLocation/AQIGraph.css'
 import './cssSingleLocation/Header.css';
 import './cssSingleLocation/BackLink.css';
 import './cssSingleLocation/graphs.css'
+import './cssSingleLocation/SingleLocation.css'
 import Layout from './Layout';
 const countryColors = require("./locations/country-colors-true-single.json")
 const cityFlags = require("./locations/country-flag-true.json")
+
+const valid_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~:\n "
 
 const LoadingHeader = styled.div`
 
@@ -21,61 +26,67 @@ const LoadingHeader = styled.div`
 const SingleLocation = () => {
 
     const { userLocation } = useParams();
+    const [buttonSuccessOrFailure, setButtonSuccessOrFailure] = useState('primary')
+    const [buttonMSG, setButtonMSG] = useState('Submit Review')
     const [city, setCity] = useState(() => userLocation.substring(0, userLocation.indexOf(',')))
     const [country, setCountry] = useState(() => userLocation.substring(userLocation.indexOf(',') + 2, userLocation.indexOf('&')))
     const [userLoc, setUserLoc] = useState(() => userLocation.substring(userLocation.indexOf('&') + 1))
     const [isFinished, setIsFinished] = useState(false);
-    
+    const mainserver = 'https://ecoventures-server.vercel.app';
+    const server = 'http://localhost:3001'; // for dev only
     
     
     const [apiInfo, setApiInfo] = useState(() => {
-        fetch(`https://ecoventures-server.vercel.app/location/${city}`)
+        fetch(`${mainserver}/location/${city}`)
         .then(data => data.json())
         .then(json => {
             setApiInfo([json.date, json.aqi, json.gas])
-            // console.log(json.gas);
         })
         return [new Date(), 0, null]
     })
-    
-    const [reviewData, setReviewData] = useState(async () => {
-        return 0; //implement mongodb access, need to npm install this and also npm install styled components
+    const [reviewData, setReviewData] = useState(() => {
+        fetch(`${mainserver}/reviewData/${process.env.REACT_APP_MONGODB_PASSWORD}/${city}`, { method: 'POST' })
+        .then(data => data.json())
+        .then(json => {
+            setReviewData(json)
+        })
+        return null;
     })
 
-    useEffect(() => {
-        // console.log("useEffect Ran and apiInfo[2] is " + apiInfo[2])
-        if (apiInfo[2] != null) {
-            // console.log("notnull");
-            setIsFinished(true)
-        }
-    }, [apiInfo])
-    
+    const [userName, setUserName] = useState('')
+
+    const [reviewSubmission, setReviewSubmission] = useState('')
+
+    const [userNameEdited, setUserNameEdited] = useState(false)
+
+    const [reviewSubmissionEdited, setReviewSubmissionEdited] = useState(false)
+
+   
+
 
     return (
 
         <div id="singlelocation">
             <Layout userLocExtra = {userLocation.substring(0, userLocation.indexOf('&'))} userLoc={userLocation.substring(userLocation.indexOf('&') + 1)} specific="Location"/>
-            {/* <BackDiv cityName = {city} countryName = {country} userLoc = {userLoc} /> */}
-            <Header cityName = {city} countryName = {country} finished = {isFinished} />
-            <div className='pt-4 container-fluid'>
+            <Header cityName = {city} countryName = {country} finished = {apiInfo[2] != null} Review = {null} userNameEdited = {userNameEdited} reviewSubmissionEdited = {reviewSubmissionEdited}/>
+            <div className='p-2 container-fluid'>
                 {apiInfo[2] == null ? (
-                    <div className='row gx-3'>
-                    <div className='gasGraph col-lg-3'>
+                    <div className='row align-items-center justify-content-between gx-3'>
+                    <div className='col-md-3 d-flex justify-content-center m-1'>
                         <GASESGraphs gases = {apiInfo[2]}/>
                     </div>
-                    <div className='col-lg-6'>
-                    </div>
-                    <div className='aqiGraph col-lg-3'>
+                    
+                    <div className='col-md-3 d-flex justify-content-center m-1'>
                         <AQIGraph AQI = {apiInfo[1]} />
 
                     </div>
                 </div>
                 ) : (
-                    <div className='row gx-3'>
-                        <div className='gasGraph col-lg-9'>
+                    <div className='row align-items-center justify-content-around gx-4'>
+                        <div className='col-md-9 d-flex'>
                             <GASESGraphs gases = {apiInfo[2]}/>
                         </div>
-                        <div className='aqiGraph col-lg-3'>
+                        <div className='col-md-3 d-flex justify-content-center'>
                             <AQIGraph AQI = {apiInfo[1]} />
 
                         </div>
@@ -83,38 +94,198 @@ const SingleLocation = () => {
                 )}
                 
             </div>
-            
+            <Header cityName = {city} countryName = {country} finished = {apiInfo[2] != null} Review = {'ReviewShow'} userNameEdited = {userNameEdited} reviewSubmissionEdited = {reviewSubmissionEdited}/>
+            <ReviewDataList reviewDataFinished = {reviewData != null} reviewData = {reviewData}/> 
+            <Header cityName = {city} countryName = {country} finished = {apiInfo[2] != null} Review = {'ReviewSubmit'} userNameEdited = {userNameEdited} reviewSubmissionEdited = {reviewSubmissionEdited} />
+
+            <div className='container pt-4'>
+                <div className='row pb-4'>
+                    <div className='col-lg-12'>
+                        <TextField 
+                        id="username"
+                        value={userName}
+                        label="Name"
+                        placeholder='Enter your name'
+                        color='primary' 
+                        variant='outlined' 
+                        size='large' 
+                        className='submitButton'
+                        onChange={(e) => {
+                            setUserNameEdited(true)
+                            setUserName(e.target.value)
+                        }}>
+
+                        </TextField>
+                    </div>
+                </div>
+                
+                <div className='row pb-4'>
+                    <div className='col-lg-12'>
+                        <TextField 
+                        id = "reviewsubmission"
+                        multiline
+                        value = {reviewSubmission}
+                        label="Review"
+                        placeholder='Review this location'
+                        color= 'primary'
+                        variant='outlined' 
+                        size='large' 
+                        className='submitButton'
+                        onChange={(e) => {
+                            setReviewSubmissionEdited(true)
+                            setReviewSubmission(e.target.value)
+                        }}
+                        ></TextField>
+                    </div>
+                </div>
+                <div className='row pb-4'> 
+                    <div className='col-12 mb-5'>
+                        <Button 
+                        size='large' 
+                        variant="contained" 
+                        color = {buttonSuccessOrFailure}
+                        className='submitButton'
+                        onClick={() => {
+                            const userNameFailure = (userName == '')
+                            const reviewSubmissionFailure = (reviewSubmission == '')
+                            const userNameIllegal = (() => {
+                                for (let character of userName) {
+                                    if (!valid_chars.includes(character)) {
+                                        return true;
+                                    }
+                                }
+                                return false;
+                                })()
+                            const reviewSubmissionIllegal = (() => {
+                                for (let character of reviewSubmission) {
+                                    if (!valid_chars.includes(character)) {
+                                        return true;
+                                    }
+                                }
+                                return false;
+                            })()
+                            if (userNameFailure || reviewSubmissionFailure) {
+                                if (!userNameEdited) {
+                                    setUserNameEdited(true)
+                                }
+                                if (!reviewSubmissionEdited) {
+                                    setReviewSubmissionEdited(true)
+                                }
+                                if (userNameFailure && reviewSubmissionFailure) {
+                                    setButtonMSG("Error: name and review have not been filled out")
+                                }
+                                else {
+                                    setButtonMSG(`Error: ${userNameFailure ? 'name' : 'review'} field has not been filled out`)
+                                }
+                                setButtonSuccessOrFailure('error')
+                                
+                            }
+                            else if (userNameIllegal || reviewSubmissionIllegal) {
+                                if (userNameIllegal && reviewSubmissionIllegal) {
+                                    setButtonMSG(`Error: illegal characters in name and review`)
+                                    setButtonSuccessOrFailure('error')
+                                }
+                                else {
+                                    setButtonMSG(`Error: illegal ${userNameIllegal ? "name" : "review"}`)
+                                    setButtonSuccessOrFailure('error')
+                                }
+                                
+                            }
+                            else {
+                                
+                                setButtonSuccessOrFailure('success')
+                                setButtonMSG('Review Submitted!')
+                                setUserName('')
+                                setReviewSubmission('')
+                                setTimeout(() => {
+                                    fetch(`${mainserver}/submitreview/${process.env.REACT_APP_MONGODB_PASSWORD}/${city}/${userName}/${reviewSubmission}`, { method: 'POST' })
+                                    .then(() => {
+                                        fetch(`${mainserver}/reviewData/${process.env.REACT_APP_MONGODB_PASSWORD}/${city}`, { method: 'POST' })
+                                        .then(data => data.json())
+                                        .then(json => {
+                                            setReviewData(json)
+                                        })
+                                    })
+                                }, 3000)   
+                            }
+                        setTimeout(() => {
+                            setButtonSuccessOrFailure('primary')
+                            setButtonMSG('Submit Review')
+                        }, 2000)    
+                        }}>{buttonMSG}</Button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     );
 };
 
-const BackDiv = (props) => {
-    const cityColor = countryColors[props.countryName][1]
-    const countryColor = countryColors[props.countryName][0]
-    const BackLink = styled(Link)`
-    background-color: ${cityColor};
-    color: ${countryColor}
-    `
-    /*
-    a {
-        color: ${countryColor};
-    */
-    return (
-        <BackLink to={`/locations/${props.userLoc}`} className="backLink">
-            <div>
-                Back to Locations
-            </div>   
-        </BackLink>
-        
-    )
-    
+const ReviewDataList = (props) => {
 
-    
+    if (props.reviewData != null) {
+        let reviewBoxes = []
+        let iterator = 1
+        for (const property of props.reviewData) {
+            reviewBoxes.push(
+            <ReviewDataElement 
+            reviewNum = {iterator}
+            user = {property["user"]} 
+            timeSubmitted = {property["timeSubmitted"]} 
+            review = {property["review"]} 
+            />)
+
+            iterator++
+        }
+        return (
+            <div className='container mb-4'>
+                <div className="accordion" id="reviewContainer">
+                
+                    {reviewBoxes}
+                </div>
+            </div>
+            
+        )
+    }
+    else {
+        return (
+            <LoadingHeader className='loading'>
+                Loading...
+            </LoadingHeader> 
+        )
+            
+    }
 }
 
+const ReviewDataElement = (props) => {
+    return (
+        <div className="accordion-item">
+            <h2 className="accordion-header" id={`review${props.reviewNum}`}>
+            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${props.reviewNum}`} aria-expanded="false" aria-controls={`collapse${props.reviewNum}`}>
+                <div className='container-fluid p-0 d-flex justify-content-between align-items-center'>
+                    
+                        <div className='ps-2'>
+                        Written by: {props.user}
+                        </div>
+                        <div className='pe-3'>      
+                        Submitted on {props.timeSubmitted}
+                        </div>
+                    
+                </div>
+            </button>
+            </h2>
+                <div id={`collapse${props.reviewNum}`} className="accordion-collapse collapse" aria-labelledby={`review${props.reviewNum}`} data-bs-parent="#reviewContainer">
+                <div className="accordion-body">
+                    {props.review}
+                </div>
+            </div>
+        </div>
+                    
+    )
+}
+
+
 const Header = (props) => {
-    // console.log(props.countryName + " is country")
-    // console.log(props.cityName + " is city")
     const cityColor = countryColors[props.countryName][1]
     const countryColor = countryColors[props.countryName][0]
     const flag = cityFlags[props.countryName];
@@ -123,27 +294,105 @@ const Header = (props) => {
     color: ${cityColor};
     background-color: ${countryColor};
     `
-
+    let typing = (props.userNameEdited || props.reviewSubmission)
     
     if (props.finished) {
-        return (
-            <SpecialHeader className="container-fluid p-4 header finished">
-                
-                <div className='row align-items-center'>
-                    <div className='col-2'>
-                        <img className='flagHeader' src={flag}></img>
-                    </div>
-                    <div className='col'>
-                        Welcome to {props.cityName}, {props.countryName}
-                    </div>
-                    <div className='col-2'>
-                        <img className='flagHeader' src={flag}></img>
-                    </div>
-                </div>
-                
-                
-            </SpecialHeader>
-        )
+        if (props.Review == 'ReviewShow') {
+            if (typing) {
+                return (
+                    <SpecialHeader className="container-fluid py-2 mb-4 subHeader header typingHeader">
+                        
+                        <div className='row align-items-center justify-content-center'>
+                            <div className='col-12 text-start'>
+                                Reviews
+                            </div>
+                        </div>
+                    </SpecialHeader>
+                )
+            }
+            else {
+                return (
+                    <SpecialHeader className="container-fluid py-2 mb-4 subHeader header finished">
+                        
+                        <div className='row align-items-center justify-content-center'>
+                            <div className='col-12 text-start'>
+                                Reviews
+                            </div>
+                        </div>
+                    </SpecialHeader>
+                )
+            }
+        }
+        else if (props.Review == 'ReviewSubmit') {
+            if (typing) {
+                return (
+                    <SpecialHeader className="container-fluid py-2 mb-4 subHeader header typingHeader">
+                        
+                        <div className='row align-items-center justify-content-center'>
+                            <div className='col-12 text-start'>
+                                Write a Review
+                            </div>
+                        </div>
+                    </SpecialHeader>
+                )
+            }
+            else {
+                return (
+                    <SpecialHeader className="container-fluid py-2 mb-4 subHeader header finished">
+                        
+                        <div className='row align-items-center justify-content-center'>
+                            <div className='col-12 text-start'>
+                                Write a Review
+                            </div>
+                        </div>
+                    </SpecialHeader>
+                )
+            }
+            
+        }
+        else {
+            if (typing) {
+                return (
+                    <SpecialHeader className="container-fluid py-2 header typingHeader">
+                        
+                        <div className='row align-items-center justify-content-center'>
+                            <div className='col-2'>
+                                <img className='flagHeader' src={flag}></img>
+                            </div>
+                            <div className='col-8'>
+                                Welcome to {props.cityName}, {props.countryName}
+                            </div>
+                            <div className='col-2'>
+                                <img className='flagHeader' src={flag}></img>
+                            </div>
+                        </div>
+                        
+                        
+                    </SpecialHeader>
+                    )
+            }
+            else {
+                return (
+                    <SpecialHeader className="container-fluid py-2 header finished">
+                        
+                        <div className='row align-items-center justify-content-center'>
+                            <div className='col-2'>
+                                <img className='flagHeader' src={flag}></img>
+                            </div>
+                            <div className='col-8'>
+                                Welcome to {props.cityName}, {props.countryName}
+                            </div>
+                            <div className='col-2'>
+                                <img className='flagHeader' src={flag}></img>
+                            </div>
+                        </div>
+                        
+                        
+                    </SpecialHeader>
+                    )
+            }
+            
+        }
     }
     else {
         return (
@@ -159,10 +408,11 @@ const GASESGraphs = (props) => {
     const svgWidth = 1000
     const barHeight = 20
     const barDisplace = 45
-    const initialOffset = 15;
+    const initialOffset = 25;
+    const initialBarOffset = 15;
     const dxOffset = ".35em";
     const dyOffset = ".25em";
-    const fsize = 30;
+    const fsize = 20;
     const g = props.gases
     if (props.gases == null) {
         let severity = `aqitype0`
@@ -174,7 +424,7 @@ const GASESGraphs = (props) => {
                     <circle cx='180' cy='180' r='170' className='front' fill='none'/>
 
                     <g className={textLabel}>
-                        <text fontSize="50" x='180' y='230' textAnchor="middle" id='percentage'>Loading</text>
+                        <text fontSize="50" x='180' y='190' textAnchor="middle" id='percentage'>Loading</text>
                     </g>
                 </svg>
             </div>
@@ -198,6 +448,7 @@ const GASESGraphs = (props) => {
         for (const property in props.gases) {
             bars.push(
                 <Bar 
+                
                 barInterval = {barIntervals[iterator]}
                 barMax = {barMaxs[iterator]}
                 property = {property}
@@ -208,19 +459,21 @@ const GASESGraphs = (props) => {
                 barDisplaceExtent = {iterator} 
                 fsize = {fsize}
                 initialOffset = {initialOffset}
+                initialBarOffset = {initialBarOffset}
                 dyOffset = {dyOffset}
                 dxOffset = {dxOffset}
                 />
             )
             iterator++;
         }
-        // console.log("done");
-        // console.log(bars);
+
         return  (
+        <div className='gasGraph'>
+            <svg className="chart"  viewBox={`0 0 ${svgWidth} ${barDisplace * 8}`}>
+                {bars}
+            </svg>
+        </div>
         
-        <svg className="chart"  viewBox={`0 0 ${svgWidth + 250} ${barDisplace * 8}`}>
-            {bars}
-        </svg>
 
         )
     }
@@ -274,15 +527,18 @@ const Bar = (props) => {
         i++;
     }
     color = colorArray[i]
+    const realWidth = props.gas/props.barMax * props.svgWidth
+    const barWidth = Math.min(Math.max(realWidth, 0), props.svgWidth-270);
     return (
-        <g className="bar">
-            <rect fill={color} width={props.gas/props.barMax * props.svgWidth} height={props.barHeight} y={props.barDisplace * props.barDisplaceExtent}>
+        <g className='bar'>
+            
+            <rect className='gasindexbar' fill={color} width={barWidth} height={props.barHeight} y={props.initialBarOffset + props.barDisplace * props.barDisplaceExtent}>
             <animate attributeName="width" 
                 from="0" 
-                to={props.gas/props.barMax * props.svgWidth}
+                to={barWidth}
                 dur="2s" fill='freeze'/>
             </rect>
-            <text fontSize={props.fsize} x={props.gas/props.barMax * props.svgWidth} y={props.initialOffset + props.barDisplace * props.barDisplaceExtent} dy={props.dyOffset} dx={props.dxOffset}>{name} {props.gas} μg/m³</text>
+            <text fontSize={props.fsize} x={barWidth} y={props.initialOffset + props.barDisplace * props.barDisplaceExtent} dy={props.dyOffset} dx={props.dxOffset}>{name}: {props.gas} μg/m³</text>
         </g>
     )
 }

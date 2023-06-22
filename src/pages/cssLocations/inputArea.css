@@ -3,12 +3,17 @@
     width: 100%;
 }
 
-.MuiInputBase-root, .MuiOutlinedInput-input::placeholder {
+#locationInput .MuiInputBase-root, #countryInput .MuiInputBase-root, #locationInput .MuiOutlinedInput-input::placeholder, #countryInput .MuiOutlinedInput-input::placeholder {
     font-size: 1.5rem !important;
     font-weight: 500 !important;
 
 }
 
-.MuiInputLabel-outlined {
+
+#locationInput .MuiInputLabel-outlined, #countryInput .MuiInputLabel-outlined {
     font-size: 1.6rem !important;
+}
+
+.MuiFormHelperText-root {
+    font-size: 1em !important;
 }

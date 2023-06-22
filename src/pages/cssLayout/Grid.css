@@ -13,7 +13,9 @@
     object-fit: contain;
     color:crimson;
 }
-
+.spacer {
+    height: 1vh;
+}
 .navbar-fixed-top {
     top: 0px !important;
     margin-bottom: 0vh !important;
@@ -21,6 +23,13 @@
     position: sticky !important;
     z-index: 2;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nav-item {
+    font-size: 1.1rem;
+}
+
+.navbar-nav .active {
+    font-weight: 500;
 }
 
 .navbar-brand {

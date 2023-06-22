@@ -9,7 +9,7 @@ const AboutUs = () => {
     <div>
     <Layout userLoc={userLocation} specific = "Credits"/>
     
-      <h1>Credits</h1>
+      <h1 className='container-fluid p-4'>TBD</h1>
     </div>
   );
 };

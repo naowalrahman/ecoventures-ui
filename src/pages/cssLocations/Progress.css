@@ -1,4 +1,3 @@
-.progress-extra {
-    padding-bottom: 20vh;
-    padding-top: 20vh;
+.progress-extra .MuiCircularProgress-root {
+    color: green !important
 }
