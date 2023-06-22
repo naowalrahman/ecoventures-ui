@@ -84,6 +84,7 @@ function Home() {
                 <div className="main-search-bar">
                     <InputLabel shrink={false} />
                     <TextField
+                        multiline
                         variant='filled'
                         color='secondary'
                         label="Location"

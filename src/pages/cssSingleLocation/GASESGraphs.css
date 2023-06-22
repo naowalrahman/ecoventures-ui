@@ -3,12 +3,17 @@
     border: 2px solid black;
 }
 
+.gasindexbar {
+    stroke:black;
+    stroke-width: 1.2px;
+}
 
 .bar {
     height: 21px;
     transition: fill .3s ease;
     cursor: pointer;
     font-family: Helvetica, sans-serif;
+    
 }
 
 
@@ -28,5 +33,8 @@
 }
 
 .chart {
-    border: 2px solid black
+    width: 100%;
+    padding: 3px;
+    border-radius: 10px;
+    border: 2px solid rgba(224, 224, 224, 0.4)
 }

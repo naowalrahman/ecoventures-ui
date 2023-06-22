@@ -1,5 +1,18 @@
-.gasGraph, .aqiGraph {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media screen and (max-width: 768px) {
+    .aqiGraph {
+        width: 50%;
+        height: 50%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .aqiGraph {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.gasGraph {
+    width: 100%;
+    height: 100%;
 }

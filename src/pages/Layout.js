@@ -29,7 +29,7 @@ const Layout = (props) => {
                 <Link className={`nav-link ${props.specific == urlStrList[2] ? "active" : ""}`} aria-current="page" to={`/credits/${props.userLoc}`}>Credits</Link>
                 </li>
                 <li className="nav-item">
-                <Link className={`nav-link ${props.specific == urlStrList[3] ? "active" : ""}`} aria-current="page" to={`/contactus/${props.userLoc}`}>ContactUs</Link>
+                <Link className={`nav-link ${props.specific == urlStrList[3] ? "active" : ""}`} aria-current="page" to={`/contactus/${props.userLoc}`}>Contact Us</Link>
                 </li>
                 <li className="nav-item">
                 <Link className={`nav-link ${props.specific == urlStrList[4] ? "active" : "disabled"}`} aria-current="page" to={`/location/${props.userLocExtra}`}>
@@ -38,9 +38,14 @@ const Layout = (props) => {
                 </li>
             </ul>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li className="nav-item d-flex align-items-center">
+                    <span> {props.userLoc} </span>
+                </li>
+                <li className="nav-item spacer">
+                    <span>&nbsp;&nbsp;</span>
+                </li>
                 <li className="nav-item">
                     <img className="iconImage" height="50px" src={cityFlags[props.userLoc.substring(props.userLoc.indexOf(',') + 2)]} />
-
                 </li>
             </ul>
             </div>

@@ -8,7 +8,7 @@
     font-family: header;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size: 2.5rem;
-    /* z-index:1; */
+    margin-bottom: 1em;
     width:100vw;
     font-weight:700;
 
@@ -26,18 +26,32 @@
     letter-spacing: .05rem;
     font-family: header;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-size: 2.5rem;
+    font-size: 3vw;
 
     font-weight:700;
     /* padding-top: 3vh;
     padding-bottom: 3vh; */
     text-align: center;
     font-style: italic;
-    /* transform: translateY(0%);
-    opacity: 1;
-    font-weight: 450; */
+  
     
 }
+
+.typingHeader {
+    transform: translateY(0%);
+    opacity: 1;
+    font-weight: 450;
+}
+
+@media screen and (min-width: 1330px) {
+    .subHeader {
+        font-size: 2vw !important;
+    }
+}
+
+/* .subHeader {
+    font-size: 2vw !important;
+} */ 
 
 .finished {
     animation: load-in 1s linear;

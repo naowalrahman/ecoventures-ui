@@ -6,10 +6,6 @@
     --pink: #ee36d5;
 }
 
-.aqiGraph {
-    width: 100%;
-    height: 100%;
-}
 
 /* -- Special Area -- */
 @keyframes loading {
