@@ -37,6 +37,7 @@ const SingleLocation = () => {
     
     
     const [apiInfo, setApiInfo] = useState(() => {
+        console.log(userLocation);
         fetch(`${mainserver}/location/${city}`)
         .then(data => data.json())
         .then(json => {
@@ -61,7 +62,12 @@ const SingleLocation = () => {
 
     const [reviewSubmissionEdited, setReviewSubmissionEdited] = useState(false)
 
-   
+    useEffect(() => {
+        document.documentElement.scrollTo( {
+            top:0,
+            behavior: 'instant'
+        })
+    }, [])
 
 
     return (

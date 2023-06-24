@@ -86,7 +86,7 @@ const Locations = () => {
                 <div className='row gx-5'>
                         <div id="locationInput" className='col-lg-3 loc'>
                         <TextField
-                        inputProps={{enterkeyhint: "done"}}
+                        inputProps={{enterKeyHint: "done"}}
                         helperText={cityFailure ? "Error, invalid characters" : (citySubmitted ? "Submitted!" : "Search a city, then press enter")}
                         color={cityFailure ? 'error' : (citySubmitted ? 'success' : 'primary')}
                             label="City"
@@ -133,7 +133,7 @@ const Locations = () => {
                         
                         <div id="countryInput" className='col-lg-3 con'>
                         <TextField
-                            inputProps={{enterkeyhint: "done"}}
+                            inputProps={{enterKeyHint: "done"}}
                             helperText={countryFailure ? "Error, invalid characters" : (countrySubmitted ? "Submitted!" : "Search a country, then press enter")}
                             color={countryFailure ? 'error' : (countrySubmitted ? 'success' : 'primary')}
                             placeholder='Search by country'
