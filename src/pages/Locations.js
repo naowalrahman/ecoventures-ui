@@ -91,7 +91,7 @@ const Locations = () => {
                         color={cityFailure ? 'error' : (citySubmitted ? 'success' : 'primary')}
                             label="City"
                             variant= 'outlined'
-                            placeholder='Search over +39,000 cities'
+                            placeholder='Search +39,000 cities'
                             value={inputValue}
                             
                             onKeyDown={e => {

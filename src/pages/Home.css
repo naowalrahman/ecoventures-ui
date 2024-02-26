@@ -14,9 +14,9 @@
   bottom:0;
   left:0;
   right:0;
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
-  background-image: url(../../public/rainforest.png)
+  background-image: url(../../public/forestfree.jpg)
 }
 
 .main-search { /* contains the header as well */ 
@@ -35,19 +35,23 @@
     min-height: 100px;
     max-width: 300px; */
   }
+  #special-title {
+    font-weight: 600;
+    color: #5DBB63;
+    text-shadow: olive 0px 2px 10px;
+  }
   .main-search-title {
-    top:25%;
+    top:31%;
     transform: translateY(-50%);
-    left:7%;
+    left:5%;
     font-size: min(10vh, 12vw);
-    color:whitesmoke;
-    
+    color:whitesmoke
   }
   .main-search-text {
-    bottom: 40%;
-    left:7%;
+    bottom: 36%;
+    left:5%;
     transform: translateY(50%);
-    font-size:max(2.5vw, 2rem);
+    font-size:min(5vh, 4vw);
     max-width: 50vw;
     color:honeydew;
     padding:1vh;
