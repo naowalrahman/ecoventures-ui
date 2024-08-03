@@ -1,0 +1,2 @@
+put on credits tab in website:
+link to github for server and ui, indicate package-lock.json and additional credits file
