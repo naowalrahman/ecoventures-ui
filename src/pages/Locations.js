@@ -22,7 +22,6 @@ const valid_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-' "
 const Locations = () => {
     const { userLocation } = useParams();
 
-    //const start = Math.floor(Math.random() * (39000 - interval));
     const mainserver = 'https://ecoventures-server.vercel.app';
     const server = 'http://localhost:3001'; // for dev only
     const [citySubmitted, setCitySubmitted] = useState(false)
