@@ -78,7 +78,7 @@ function Home() {
                     <span id="special-title">Eco</span><br></br>Ventures
                 </div>
                 <div className="main-search-text">
-                    Here to provide the best, cost-effective, eco friendly vacation areas.
+                    Here to display locations along with their respective chemical data.
                 </div>
 
                 <div className="main-search-bar">
