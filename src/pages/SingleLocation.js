@@ -27,7 +27,7 @@ const SingleLocation = () => {
 
     const { userLocation } = useParams();
     const [buttonSuccessOrFailure, setButtonSuccessOrFailure] = useState('primary')
-    const [buttonMSG, setButtonMSG] = useState('Submit Review')
+    const [buttonMSG, setButtonMSG] = useState('Submit Comment')
     const [city, setCity] = useState(() => userLocation.substring(0, userLocation.indexOf(',')))
     const [country, setCountry] = useState(() => userLocation.substring(userLocation.indexOf(',') + 2, userLocation.indexOf('&')))
     const [userLoc, setUserLoc] = useState(() => userLocation.substring(userLocation.indexOf('&') + 1))
@@ -131,8 +131,8 @@ const SingleLocation = () => {
                         id = "reviewsubmission"
                         multiline
                         value = {reviewSubmission}
-                        label="Review"
-                        placeholder='Review this location'
+                        label="Comment"
+                        placeholder='Comment on this location'
                         color= 'primary'
                         variant='outlined' 
                         size='large' 
@@ -217,7 +217,7 @@ const SingleLocation = () => {
                             }
                         setTimeout(() => {
                             setButtonSuccessOrFailure('primary')
-                            setButtonMSG('Submit Review')
+                            setButtonMSG('Submit Comment')
                         }, 2000)    
                         }}>{buttonMSG}</Button>
                     </div>
@@ -311,7 +311,7 @@ const Header = (props) => {
                         
                         <div className='row align-items-center justify-content-center'>
                             <div className='col-12 text-start'>
-                                Reviews
+                                Comments
                             </div>
                         </div>
                     </SpecialHeader>
@@ -323,7 +323,7 @@ const Header = (props) => {
                         
                         <div className='row align-items-center justify-content-center'>
                             <div className='col-12 text-start'>
-                                Reviews
+                                Comments
                             </div>
                         </div>
                     </SpecialHeader>
@@ -337,7 +337,7 @@ const Header = (props) => {
                         
                         <div className='row align-items-center justify-content-center'>
                             <div className='col-12 text-start'>
-                                Write a Review
+                                Write a Comment
                             </div>
                         </div>
                     </SpecialHeader>
@@ -349,7 +349,7 @@ const Header = (props) => {
                         
                         <div className='row align-items-center justify-content-center'>
                             <div className='col-12 text-start'>
-                                Write a Review
+                                Write a Comment
                             </div>
                         </div>
                     </SpecialHeader>
